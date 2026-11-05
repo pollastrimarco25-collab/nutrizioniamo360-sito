@@ -40,19 +40,23 @@ TOOL = "nutrizioniamo360-rassegna"
 
 # ---------------------------------------------------------------- PubMed
 
-def ncbi(endpoint, params):
+def ncbi(endpoint, params, metodo="auto"):
     params = dict(params, tool=TOOL)
     if os.environ.get("NCBI_EMAIL"):
         params["email"] = os.environ["NCBI_EMAIL"]
     if os.environ.get("NCBI_API_KEY"):
         params["api_key"] = os.environ["NCBI_API_KEY"]
-    # sempre POST: le ricerche lunghe in GET superano i limiti di NCBI e danno errore 500
+    # GET per le richieste corte, POST per quelle lunghe (come consiglia NCBI)
     dati = urllib.parse.urlencode(params).encode()
     url = EUTILS + endpoint
+    usa_post = metodo == "post" or (metodo == "auto" and len(dati) > 1500)
     for tentativo in range(4):
         try:
-            req = urllib.request.Request(url, data=dati, headers={
-                "Content-Type": "application/x-www-form-urlencoded", "User-Agent": TOOL})
+            if usa_post:
+                req = urllib.request.Request(url, data=dati, headers={
+                    "Content-Type": "application/x-www-form-urlencoded", "User-Agent": TOOL})
+            else:
+                req = urllib.request.Request(url + "?" + dati.decode(), headers={"User-Agent": TOOL})
             with urllib.request.urlopen(req, timeout=60) as r:
                 testo = r.read()
             time.sleep(0.4)  # sotto il limite di NCBI (3 richieste/s senza chiave)
@@ -80,6 +84,10 @@ def cerca(query, giorni, quanti):
         "maxdate": oggi.strftime("%Y/%m/%d"),
     }))["esearchresult"]
     if DIAGNOSI:  # nella prova mostra come PubMed ha interpretato la ricerca
+        if r.get("ERROR"):
+            print(f'    ERRORE PubMed: {r["ERROR"][:300]}')
+        if not r.get("count") or r.get("count") == "0":
+            print(f"    risposta grezza: {json.dumps(r, ensure_ascii=False)[:400]}")
         for chiave in ("errorlist", "warninglist"):
             v = {k: x for k, x in (r.get(chiave) or {}).items() if x}
             if v:
@@ -154,7 +162,29 @@ def scarica(pmids):
     return articoli
 
 
+def controllo_connessione():
+    """Prove minime per capire se il problema è PubMed, le date o il metodo di invio."""
+    oggi = dt.date.today()
+    prove = [
+        ("GET semplice", {"term": "diet"}, "get"),
+        ("GET con date", {"term": "diet", "datetype": "edat",
+                          "mindate": (oggi - dt.timedelta(days=14)).strftime("%Y/%m/%d"),
+                          "maxdate": oggi.strftime("%Y/%m/%d")}, "get"),
+        ("POST semplice", {"term": "diet"}, "post"),
+        ("GET relevance", {"term": "diet", "sort": "relevance", "reldate": 14, "datetype": "edat"}, "get"),
+    ]
+    print(f"Controllo connessione a PubMed (data del server: {oggi})")
+    for nome, extra, metodo in prove:
+        try:
+            r = json.loads(ncbi("esearch.fcgi", dict({"db": "pubmed", "retmode": "json", "retmax": 2}, **extra), metodo))
+            print(f"  {nome}: {json.dumps(r.get('esearchresult', r), ensure_ascii=False)[:250]}")
+        except Exception as e:
+            print(f"  {nome}: FALLITA ({e})")
+
+
 def candidati(cfg, gia_usciti):
+    if DIAGNOSI:
+        controllo_connessione()
     trovati = {}
     for tema in cfg["temi"]:
         q = f'({tema["query"]}) AND {cfg["filtro_comune"]}'
