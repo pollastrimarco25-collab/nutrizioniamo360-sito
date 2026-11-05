@@ -5,7 +5,7 @@
   "candidati_per_tema": 15,
   "articoli_per_settimana": 5,
   "max_per_tema": 2,
-  "filtro_comune": "(\"randomized controlled trial\"[pt] OR \"meta-analysis\"[pt] OR \"systematic review\"[pt] OR \"practice guideline\"[pt] OR randomi*[tiab] OR meta-analys*[tiab] OR \"systematic review\"[tiab] OR \"umbrella review\"[tiab] OR \"prospective cohort\"[tiab] OR \"position stand\"[ti] OR consensus[ti] OR guideline*[ti]) NOT (animals[mh] NOT humans[mh]) NOT (protocol[ti] OR comment[pt] OR letter[pt] OR editorial[pt] OR erratum[pt] OR \"retracted publication\"[pt] OR preprint[pt]) AND (english[la] OR italian[la]) AND hasabstract",
+  "filtro_comune": "(\"randomized controlled trial\"[pt] OR \"meta-analysis\"[pt] OR \"systematic review\"[pt] OR \"practice guideline\"[pt] OR randomi*[tiab] OR meta-analys*[tiab] OR \"systematic review\"[tiab] OR \"umbrella review\"[tiab] OR \"prospective cohort\"[tiab] OR \"position stand\"[ti] OR consensus[ti] OR guideline*[ti]) NOT (animals[mh] NOT humans[mh]) NOT (protocol[ti] OR comment[pt] OR letter[pt] OR editorial[pt] OR erratum[pt] OR \"retracted publication\"[pt]) AND (english[la] OR italian[la])",
   "temi": [
     {
       "nome": "Nutrizione clinica",

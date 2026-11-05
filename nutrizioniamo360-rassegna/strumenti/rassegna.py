@@ -25,6 +25,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -39,27 +40,31 @@ TOOL = "nutrizioniamo360-rassegna"
 
 # ---------------------------------------------------------------- PubMed
 
-def ncbi(endpoint, params, post=False):
+def ncbi(endpoint, params):
     params = dict(params, tool=TOOL)
     if os.environ.get("NCBI_EMAIL"):
         params["email"] = os.environ["NCBI_EMAIL"]
     if os.environ.get("NCBI_API_KEY"):
         params["api_key"] = os.environ["NCBI_API_KEY"]
+    # sempre POST: le ricerche lunghe in GET superano i limiti di NCBI e danno errore 500
     dati = urllib.parse.urlencode(params).encode()
     url = EUTILS + endpoint
     for tentativo in range(4):
         try:
-            if post:
-                req = urllib.request.Request(url, data=dati)
-            else:
-                req = urllib.request.Request(url + "?" + dati.decode())
+            req = urllib.request.Request(url, data=dati, headers={
+                "Content-Type": "application/x-www-form-urlencoded", "User-Agent": TOOL})
             with urllib.request.urlopen(req, timeout=60) as r:
                 testo = r.read()
-            time.sleep(0.35)  # sotto il limite di NCBI (3 richieste/s senza chiave)
+            time.sleep(0.4)  # sotto il limite di NCBI (3 richieste/s senza chiave)
             return testo
-        except Exception as e:  # rete instabile o limite superato: riprova
+        except urllib.error.HTTPError as e:
+            corpo = e.read()[:300].decode("utf-8", "replace").replace("\n", " ")
+            print(f"  NCBI {endpoint}: HTTP {e.code} (tentativo {tentativo + 1}) {corpo}", file=sys.stderr)
+            if 400 <= e.code < 500 and e.code != 429:
+                break  # richiesta sbagliata: inutile riprovare
+        except Exception as e:  # rete instabile: riprova
             print(f"  NCBI {endpoint}: {e} (tentativo {tentativo + 1})", file=sys.stderr)
-            time.sleep(2 * (tentativo + 1))
+        time.sleep(3 * (tentativo + 1))
     raise RuntimeError(f"NCBI {endpoint} non risponde")
 
 
@@ -100,7 +105,7 @@ def scarica(pmids):
     articoli = {}
     for i in range(0, len(pmids), 150):
         xml = ncbi("efetch.fcgi", {"db": "pubmed", "id": ",".join(pmids[i:i + 150]),
-                                   "retmode": "xml"}, post=True)
+                                   "retmode": "xml"})
         for pa in ET.fromstring(xml).findall("PubmedArticle"):
             mc = pa.find("MedlineCitation")
             pmid = mc.findtext("PMID")
@@ -136,7 +141,11 @@ def candidati(cfg, gia_usciti):
     trovati = {}
     for tema in cfg["temi"]:
         q = f'({tema["query"]}) AND {cfg["filtro_comune"]}'
-        ids, totale = cerca(q, cfg["giorni_finestra"], cfg["candidati_per_tema"])
+        try:
+            ids, totale = cerca(q, cfg["giorni_finestra"], cfg["candidati_per_tema"])
+        except RuntimeError as e:
+            print(f'- {tema["nome"]}: ricerca non riuscita ({e}), tema saltato questa settimana')
+            continue
         print(f'- {tema["nome"]}: {totale} risultati, presi i primi {len(ids)}')
         for pmid in ids:
             if pmid not in gia_usciti:
