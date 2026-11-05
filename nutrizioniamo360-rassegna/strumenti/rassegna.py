@@ -75,6 +75,10 @@ def ncbi(endpoint, params, metodo="auto"):
 DIAGNOSI = "--solo-pubmed" in sys.argv
 
 
+class PubMedNonDisponibile(RuntimeError):
+    pass
+
+
 def cerca(query, giorni, quanti):
     oggi = dt.date.today()
     r = json.loads(ncbi("esearch.fcgi", {
@@ -83,11 +87,9 @@ def cerca(query, giorni, quanti):
         "mindate": (oggi - dt.timedelta(days=giorni)).strftime("%Y/%m/%d"),
         "maxdate": oggi.strftime("%Y/%m/%d"),
     }))["esearchresult"]
-    if DIAGNOSI:  # nella prova mostra come PubMed ha interpretato la ricerca
-        if r.get("ERROR"):
-            print(f'    ERRORE PubMed: {r["ERROR"][:300]}')
-        if not r.get("count") or r.get("count") == "0":
-            print(f"    risposta grezza: {json.dumps(r, ensure_ascii=False)[:400]}")
+    if r.get("ERROR"):  # es. "Search is temporarily unavailable": PubMed è giù
+        raise PubMedNonDisponibile(r["ERROR"][:200])
+    if DIAGNOSI:
         for chiave in ("errorlist", "warninglist"):
             v = {k: x for k, x in (r.get(chiave) or {}).items() if x}
             if v:
@@ -95,10 +97,6 @@ def cerca(query, giorni, quanti):
         if r.get("querytranslation"):
             print(f'    interpretata come: {r["querytranslation"][:300]}')
     return r.get("idlist", []), int(r.get("count", 0))
-
-
-FILTRO_SEMPLICE = ('("randomized controlled trial"[pt] OR "meta-analysis"[pt] OR "systematic review"[pt] '
-                   'OR randomized[tiab] OR "meta-analysis"[tiab] OR "systematic review"[tiab])')
 
 
 def testo_di(el):
@@ -162,49 +160,97 @@ def scarica(pmids):
     return articoli
 
 
-def controllo_connessione():
-    """Prove minime per capire se il problema è PubMed, le date o il metodo di invio."""
-    oggi = dt.date.today()
-    prove = [
-        ("GET semplice", {"term": "diet"}, "get"),
-        ("GET con date", {"term": "diet", "datetype": "edat",
-                          "mindate": (oggi - dt.timedelta(days=14)).strftime("%Y/%m/%d"),
-                          "maxdate": oggi.strftime("%Y/%m/%d")}, "get"),
-        ("POST semplice", {"term": "diet"}, "post"),
-        ("GET relevance", {"term": "diet", "sort": "relevance", "reldate": 14, "datetype": "edat"}, "get"),
-    ]
-    print(f"Controllo connessione a PubMed (data del server: {oggi})")
-    for nome, extra, metodo in prove:
-        try:
-            r = json.loads(ncbi("esearch.fcgi", dict({"db": "pubmed", "retmode": "json", "retmax": 2}, **extra), metodo))
-            print(f"  {nome}: {json.dumps(r.get('esearchresult', r), ensure_ascii=False)[:250]}")
-        except Exception as e:
-            print(f"  {nome}: FALLITA ({e})")
+def pubmed_disponibile():
+    try:
+        cerca("diet", 14, 1)
+        return True
+    except Exception as e:
+        print(f"PubMed non disponibile ({e}): uso Europe PMC")
+        return False
 
+
+# ---------------------------------------------------------------- Europe PMC (riserva)
+# Europe PMC contiene tutti gli articoli di PubMed (stessi PMID) e restituisce anche gli abstract.
+
+EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+
+
+def epmc_gruppo(termini):
+    return "(" + " OR ".join(f'TITLE:"{t}" OR ABSTRACT:"{t}"' for t in termini) + ")"
+
+
+def epmc_query(cfg, tema, giorni):
+    oggi = dt.date.today()
+    da = (oggi - dt.timedelta(days=giorni)).isoformat()
+    gruppi = " AND ".join(epmc_gruppo(g) for g in tema["termini_epmc"])
+    return (f'{gruppi} AND {cfg["filtro_epmc"]} AND SRC:MED AND HAS_ABSTRACT:Y '
+            f'AND {cfg.get("data_epmc", "FIRST_PDATE")}:[{da} TO {oggi.isoformat()}]')
+
+
+def epmc_cerca(query, quanti):
+    params = urllib.parse.urlencode({"query": query, "format": "json", "resultType": "core",
+                                     "pageSize": quanti})
+    for tentativo in range(4):
+        try:
+            req = urllib.request.Request(EPMC + "?" + params, headers={"User-Agent": TOOL})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                d = json.loads(r.read())
+            time.sleep(0.3)
+            return d.get("resultList", {}).get("result", []), int(d.get("hitCount", 0))
+        except Exception as e:
+            print(f"  Europe PMC: {e} (tentativo {tentativo + 1})", file=sys.stderr)
+            time.sleep(3 * (tentativo + 1))
+    raise RuntimeError("Europe PMC non risponde")
+
+
+def da_epmc(x):
+    j = (x.get("journalInfo") or {}).get("journal") or {}
+    abstract = re.sub(r"<[^>]+>", " ", x.get("abstractText") or "")
+    abstract = re.sub(r"\s+", " ", abstract).strip()
+    titolo = re.sub(r"<[^>]+>", "", x.get("title") or "").strip()
+    return {
+        "pmid": str(x.get("pmid") or ""),
+        "titolo": titolo,
+        "abstract": abstract,
+        "rivista": j.get("title") or x.get("journalTitle") or "",
+        "rivista_abbr": j.get("isoabbreviation") or j.get("medlineAbbreviation") or "",
+        "data": x.get("electronicPublicationDate") or x.get("firstPublicationDate") or "",
+        "tipi": (x.get("pubTypeList") or {}).get("pubType") or [],
+        "doi": x.get("doi") or "",
+    }
+
+
+# ---------------------------------------------------------------- raccolta candidati
 
 def candidati(cfg, gia_usciti):
-    if DIAGNOSI:
-        controllo_connessione()
-    trovati = {}
+    giorni, quanti = cfg["giorni_finestra"], cfg["candidati_per_tema"]
+    fonte = "Europe PMC" if "--europepmc" in sys.argv or not pubmed_disponibile() else "PubMed"
+    print(f"Fonte di questa settimana: {fonte}")
+    trovati, articoli = {}, {}
     for tema in cfg["temi"]:
-        q = f'({tema["query"]}) AND {cfg["filtro_comune"]}'
         try:
-            ids, totale = cerca(q, cfg["giorni_finestra"], cfg["candidati_per_tema"])
-        except RuntimeError:
-            # PubMed a volte non regge le ricerche complesse: riprova con un filtro più semplice
-            print(f'- {tema["nome"]}: ricerca completa non riuscita, riprovo con un filtro semplificato')
-            try:
-                ids, totale = cerca(f'({tema["query"]}) AND {FILTRO_SEMPLICE}', cfg["giorni_finestra"], cfg["candidati_per_tema"])
-            except RuntimeError as e:
-                print(f'- {tema["nome"]}: ricerca non riuscita ({e}), tema saltato questa settimana')
-                continue
+            if fonte == "PubMed":
+                ids, totale = cerca(f'({tema["query"]}) AND {cfg["filtro_comune"]}', giorni, quanti)
+            else:
+                risultati, totale = epmc_cerca(epmc_query(cfg, tema, giorni), quanti)
+                ids = []
+                for x in risultati:
+                    a = da_epmc(x)
+                    if a["pmid"]:
+                        articoli[a["pmid"]] = a
+                        ids.append(a["pmid"])
+        except RuntimeError as e:
+            print(f'- {tema["nome"]}: ricerca non riuscita ({e}), tema saltato questa settimana')
+            continue
         print(f'- {tema["nome"]}: {totale} risultati, presi i primi {len(ids)}')
         for pmid in ids:
             if pmid not in gia_usciti:
                 trovati.setdefault(pmid, []).append(tema["nome"])
     if not trovati:
         return {}
-    articoli = scarica(list(trovati))
+    if fonte == "PubMed":
+        articoli = scarica(list(trovati))
+    articoli = {p: a for p, a in articoli.items() if p in trovati}
     for pmid, a in articoli.items():
         a["temi"] = trovati.get(pmid, [])
     # senza abstract non si può fare una sintesi onesta

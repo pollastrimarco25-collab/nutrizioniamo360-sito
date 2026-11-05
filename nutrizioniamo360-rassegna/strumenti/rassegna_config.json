@@ -9,27 +9,139 @@
   "temi": [
     {
       "nome": "Nutrizione clinica",
-      "query": "(diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR \"Mediterranean diet\"[tiab] OR \"dietary pattern\"[tiab] OR \"dietary patterns\"[tiab] OR \"medical nutrition therapy\"[tiab])"
+      "query": "(diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR \"Mediterranean diet\"[tiab] OR \"dietary pattern\"[tiab] OR \"dietary patterns\"[tiab] OR \"medical nutrition therapy\"[tiab])",
+      "termini_epmc": [
+        [
+          "diet",
+          "diets",
+          "dietary",
+          "nutrition",
+          "nutritional",
+          "Mediterranean diet",
+          "dietary pattern",
+          "medical nutrition therapy"
+        ]
+      ]
     },
     {
       "nome": "Microbiota",
-      "query": "(\"gut microbiota\"[tiab] OR \"gut microbiome\"[tiab] OR \"intestinal microbiota\"[tiab] OR probiotic[tiab] OR probiotics[tiab] OR prebiotic[tiab] OR prebiotics[tiab] OR synbiotic[tiab] OR synbiotics[tiab] OR postbiotics[tiab])"
+      "query": "(\"gut microbiota\"[tiab] OR \"gut microbiome\"[tiab] OR \"intestinal microbiota\"[tiab] OR probiotic[tiab] OR probiotics[tiab] OR prebiotic[tiab] OR prebiotics[tiab] OR synbiotic[tiab] OR synbiotics[tiab] OR postbiotics[tiab])",
+      "termini_epmc": [
+        [
+          "gut microbiota",
+          "gut microbiome",
+          "intestinal microbiota",
+          "probiotic",
+          "probiotics",
+          "prebiotic",
+          "prebiotics",
+          "synbiotic",
+          "synbiotics",
+          "postbiotics"
+        ]
+      ]
     },
     {
       "nome": "Salute femminile",
-      "query": "(menopause[tiab] OR menopausal[tiab] OR postmenopausal[tiab] OR pregnancy[tiab] OR pregnant[tiab] OR \"polycystic ovary syndrome\"[tiab] OR endometriosis[tiab] OR \"vaginal microbiota\"[tiab] OR \"vaginal microbiome\"[tiab] OR women[ti]) AND (microbiota[tiab] OR microbiome[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])"
+      "query": "(menopause[tiab] OR menopausal[tiab] OR postmenopausal[tiab] OR pregnancy[tiab] OR pregnant[tiab] OR \"polycystic ovary syndrome\"[tiab] OR endometriosis[tiab] OR \"vaginal microbiota\"[tiab] OR \"vaginal microbiome\"[tiab] OR women[ti]) AND (microbiota[tiab] OR microbiome[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])",
+      "termini_epmc": [
+        [
+          "menopause",
+          "menopausal",
+          "postmenopausal",
+          "pregnancy",
+          "pregnant",
+          "polycystic ovary syndrome",
+          "endometriosis",
+          "vaginal microbiota"
+        ],
+        [
+          "microbiota",
+          "microbiome",
+          "diet",
+          "diets",
+          "dietary",
+          "nutrition",
+          "nutritional",
+          "supplementation"
+        ]
+      ]
     },
     {
       "nome": "Nutrizione sportiva",
-      "query": "(\"sports nutrition\"[tiab] OR athlete[tiab] OR athletes[tiab] OR \"exercise performance\"[tiab] OR endurance[tiab] OR \"resistance training\"[tiab]) AND (protein[tiab] OR carbohydrate[tiab] OR carbohydrates[tiab] OR caffeine[tiab] OR creatine[tiab] OR hydration[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])"
+      "query": "(\"sports nutrition\"[tiab] OR athlete[tiab] OR athletes[tiab] OR \"exercise performance\"[tiab] OR endurance[tiab] OR \"resistance training\"[tiab]) AND (protein[tiab] OR carbohydrate[tiab] OR carbohydrates[tiab] OR caffeine[tiab] OR creatine[tiab] OR hydration[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])",
+      "termini_epmc": [
+        [
+          "sports nutrition",
+          "athlete",
+          "athletes",
+          "exercise performance",
+          "endurance",
+          "resistance training"
+        ],
+        [
+          "protein",
+          "carbohydrate",
+          "caffeine",
+          "creatine",
+          "hydration",
+          "diet",
+          "diets",
+          "dietary",
+          "nutrition",
+          "nutritional",
+          "supplementation"
+        ]
+      ]
     },
     {
       "nome": "Longevità",
-      "query": "(longevity[tiab] OR \"healthy aging\"[tiab] OR \"healthy ageing\"[tiab] OR \"older adults\"[tiab] OR sarcopenia[tiab] OR frailty[tiab] OR mortality[ti]) AND (\"caloric restriction\"[tiab] OR fasting[tiab] OR protein[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])"
+      "query": "(longevity[tiab] OR \"healthy aging\"[tiab] OR \"healthy ageing\"[tiab] OR \"older adults\"[tiab] OR sarcopenia[tiab] OR frailty[tiab] OR mortality[ti]) AND (\"caloric restriction\"[tiab] OR fasting[tiab] OR protein[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])",
+      "termini_epmc": [
+        [
+          "longevity",
+          "healthy aging",
+          "healthy ageing",
+          "older adults",
+          "sarcopenia",
+          "frailty"
+        ],
+        [
+          "caloric restriction",
+          "fasting",
+          "protein",
+          "diet",
+          "diets",
+          "dietary",
+          "nutrition",
+          "nutritional",
+          "supplementation"
+        ]
+      ]
     },
     {
       "nome": "Prevenzione e infiammazione",
-      "query": "(\"chronic inflammation\"[tiab] OR \"low-grade inflammation\"[tiab] OR \"systemic inflammation\"[tiab] OR cardiometabolic[tiab] OR \"primary prevention\"[tiab] OR \"noncommunicable diseases\"[tiab] OR \"metabolic syndrome\"[tiab]) AND (lifestyle[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])"
+      "query": "(\"chronic inflammation\"[tiab] OR \"low-grade inflammation\"[tiab] OR \"systemic inflammation\"[tiab] OR cardiometabolic[tiab] OR \"primary prevention\"[tiab] OR \"noncommunicable diseases\"[tiab] OR \"metabolic syndrome\"[tiab]) AND (lifestyle[tiab] OR diet[tiab] OR diets[tiab] OR dietary[tiab] OR nutrition[tiab] OR nutritional[tiab] OR supplementation[tiab] OR supplement[tiab] OR supplements[tiab])",
+      "termini_epmc": [
+        [
+          "chronic inflammation",
+          "low-grade inflammation",
+          "systemic inflammation",
+          "cardiometabolic",
+          "primary prevention",
+          "noncommunicable diseases",
+          "metabolic syndrome"
+        ],
+        [
+          "lifestyle",
+          "diet",
+          "diets",
+          "dietary",
+          "nutrition",
+          "nutritional",
+          "supplementation"
+        ]
+      ]
     }
   ],
   "riviste_preferite": [
@@ -75,5 +187,7 @@
     "Hum Reprod Update",
     "Menopause",
     "Am J Obstet Gynecol"
-  ]
+  ],
+  "filtro_epmc": "(PUB_TYPE:\"Randomized Controlled Trial\" OR PUB_TYPE:\"Meta-Analysis\" OR PUB_TYPE:\"Systematic Review\" OR PUB_TYPE:\"Practice Guideline\" OR TITLE:\"randomized\" OR TITLE:\"randomised\" OR TITLE:\"meta-analysis\" OR TITLE:\"systematic review\" OR TITLE:\"umbrella review\" OR ABSTRACT:\"randomized controlled\" OR ABSTRACT:\"prospective cohort\")",
+  "data_epmc": "FIRST_PDATE"
 }
