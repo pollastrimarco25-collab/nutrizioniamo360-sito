@@ -339,11 +339,17 @@ def scheda_candidato(a, max_abstract=1800):
             f'tipo: {", ".join(a["tipi"])}\nTitolo: {a["titolo"]}\nAbstract: {ab}')
 
 
+PAROLE_NUMERO = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+                 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+                 "nineteen", "twenty"]
+
+
 def numeri(testo):
     """Numeri del testo, normalizzati: virgola decimale -> punto, zeri finali tolti (0,50 = 0.5).
     Le migliaia scritte con separatore (1,234 / 1.234 / 1 234) vengono riunite."""
     testo = re.sub(r"(?<=\d)[   ](?=\d{3}\b)", "", testo)
-    trovati = set()
+    testo = re.sub(r"(?<![\d.,])([.,])(\d)", r"0\1\2", testo)  # ".016" negli abstract = "0,016"
+    trovati = {str(i) for i, p in enumerate(PAROLE_NUMERO) if re.search(rf"\b{p}\b", testo, re.I)}
     for n in re.findall(r"\d+(?:[.,]\d+)?", testo):
         trovati.add(n.replace(",", "").replace(".", ""))  # lettura come migliaia
         n = n.replace(",", ".")
