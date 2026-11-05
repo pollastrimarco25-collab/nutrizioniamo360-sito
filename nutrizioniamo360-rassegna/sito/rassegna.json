@@ -1,3 +1,122 @@
 {
-  "numeri": []
+  "numeri": [
+    {
+      "settimana": "2026-11-02",
+      "articoli": [
+        {
+          "pmid": "41275510",
+          "titolo_originale": "Vegetarian and Vegan Diets and the Risk of Hip Fracture in Adults: A Systematic Review and Meta-analysis.",
+          "rivista": "Nutrition reviews",
+          "rivista_abbr": "Nutr Rev",
+          "data": "2026-11-01",
+          "doi": "10.1093/nutrit/nuaf241",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41275510/",
+          "tema": "Nutrizione clinica",
+          "titolo_it": "Diete vegetariane e vegane e rischio di frattura dell'anca negli adulti: revisione sistematica e meta-analisi",
+          "tipo_studio": "Revisione sistematica con meta-analisi di 4 studi di coorte (registrazione PROSPERO CRD 42024592448)",
+          "popolazione": "Adulti; 529 672 partecipanti complessivi in 4 studi di coorte, di cui 38 433 vegetariani e 5344 vegani, a confronto con i consumatori di carne.",
+          "obiettivo": "Valutare l'impatto delle diete vegetariane e vegane sul rischio di frattura dell'anca negli adulti rispetto ai consumatori di carne.",
+          "risultati": [
+            "Sia la dieta vegetariana sia quella vegana sono associate a un rischio più elevato di frattura dell'anca dopo aggiustamento per i fattori di confondimento.",
+            "Vegetariani vs consumatori di carne: HR 1,25 (IC 95% 1,11-1,39; 38 433 vegetariani; I2 = 0%); certezza delle evidenze bassa.",
+            "Vegani vs consumatori di carne: HR 1,75 (IC 95% 1,17-2,63; 5344 vegani; I2 = 64%); certezza delle evidenze molto bassa."
+          ],
+          "limiti": "Le evidenze provengono solo da studi di coorte (disegno osservazionale, quindi non è possibile stabilire un nesso causale). La certezza delle evidenze secondo GRADE è bassa per i vegetariani e molto bassa per i vegani. Per i vegani l'eterogeneità è sostanziale (I2 = 64%). Altri limiti non sono riportati nell'abstract.",
+          "perche_selezionato": "Offre una stima quantitativa aggregata dell'associazione tra pattern alimentari a base vegetale e frattura dell'anca, tema rilevante per la nutrizione clinica data la diffusione di queste diete.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42980314",
+          "titolo_originale": "Exercise and Nutritional Interventions for Muscle Strength, Physical Performance, and Body Composition Among Older Adults With Sarcopenia or Pre-Sarcopenia: A Network Meta-Analysis.",
+          "rivista": "Geriatrics & gerontology international",
+          "rivista_abbr": "Geriatr Gerontol Int",
+          "data": "2026-11-01",
+          "doi": "10.1111/ggi.70897",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42980314/",
+          "tema": "Longevità",
+          "titolo_it": "Interventi di esercizio fisico e nutrizionali su forza muscolare, performance fisica e composizione corporea in anziani con sarcopenia o pre-sarcopenia: una network meta-analisi",
+          "tipo_studio": "Network meta-analisi frequentista di 57 RCT (65 report); 4 nodi: Controllo, Esercizio, Nutrizione, Combinato",
+          "popolazione": "Anziani con sarcopenia o pre-sarcopenia; 6017 partecipanti in 57 RCT.",
+          "obiettivo": "Confrontare gli effetti relativi di interventi di esercizio fisico, nutrizionali e combinati su forza muscolare, performance fisica, massa muscolare e outcome di composizione corporea.",
+          "risultati": [
+            "Forza di presa: rispetto al controllo, gli interventi Combinato, Nutrizione ed Esercizio hanno migliorato il risultato; la stima maggiore è per il Combinato (differenza media [MD] 4,29 kg, IC 95% 2,50-6,07; p-score 0,877).",
+            "Funzione fisica: l'Esercizio ha migliorato il Timed Up and Go (MD 1,19 s, IC 95% 0,72-1,66) ed è risultato ben posizionato per la velocità del cammino (MD 0,11 m/s, IC 95% 0,06-0,17).",
+            "Indice di massa muscolare scheletrica appendicolare (ASMI): aumento con Combinato, Esercizio e Nutrizione; il Combinato è al primo posto (MD 0,32 kg/m², IC 95% 0,17-0,48; p-score 0,831)."
+          ],
+          "limiti": "La certezza complessiva delle evidenze, valutata con CINeMA, è limitata; gli autori indicano che i risultati richiedono conferma in trial di alta qualità. Altri limiti non sono riportati nell'abstract.",
+          "perche_selezionato": "Confronta indirettamente esercizio, nutrizione e loro combinazione su più outcome funzionali e di composizione corporea in una popolazione sarcopenica, con ranking relativi per ciascun outcome.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42962273",
+          "titolo_originale": "Effect of Energy Restriction Combined with Probiotic Supplementation on Body Weight and Adiposity-Related Parameters in Adults with Overweight or Obesity: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+          "rivista": "Nutrition reviews",
+          "rivista_abbr": "Nutr Rev",
+          "data": "2026-10-30",
+          "doi": "10.1093/nutrit/nuag152",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42962273/",
+          "tema": "Microbiota",
+          "titolo_it": "Effetto della restrizione energetica associata a integrazione con probiotici su peso corporeo e parametri di adiposità in adulti con sovrappeso o obesità: revisione sistematica e meta-analisi di trial clinici randomizzati",
+          "tipo_studio": "Revisione sistematica con meta-analisi di RCT (PRISMA; registrazione PROSPERO CRD42024619326)",
+          "popolazione": "Adulti con sovrappeso o obesità; 19 RCT con 1343 partecipanti, di cui 16 RCT inclusi nella meta-analisi.",
+          "obiettivo": "Determinare se l'integrazione con probiotici associata a restrizione energetica migliori peso corporeo e outcome di adiposità rispetto alla sola restrizione energetica.",
+          "risultati": [
+            "Nessun effetto aggiuntivo dei probiotici su peso corporeo (MD -0,41 kg; IC 95% -1,21 a 0,40), BMI (-0,12 kg/m²; da -0,39 a 0,15), percentuale di grasso corporeo (-0,63%; da -1,52 a 0,26), circonferenza vita (-0,33 cm; da -1,06 a 0,39) e massa libera da grasso (0,03 kg; da -0,18 a 0,24).",
+            "Piccola riduzione della massa grassa a favore di restrizione energetica più probiotici (-0,34 kg; da -0,60 a -0,08; P = 0,016), che rimane significativa dopo l'esclusione degli studi ad alto rischio di bias.",
+            "Durata degli interventi 3-20 settimane; dosi di probiotici da 1,8 × 10^6 a 1,5 × 10^11 UFC/giorno; restrizione energetica da deficit fissi di 300-1000 kcal/die a riduzioni relative del 20-30%."
+          ],
+          "limiti": "Gli studi inclusi sono eterogenei per durata, dose di probiotici e tipo di restrizione energetica. Gli autori indicano che la rilevanza clinica della riduzione di massa grassa resta incerta. I risultati della valutazione GRADE e i dati di eterogeneità statistica non sono riportati nell'abstract.",
+          "perche_selezionato": "Valuta in modo specifico il contributo aggiuntivo dei probiotici durante restrizione energetica, con risultati prevalentemente nulli sugli outcome ponderali e di adiposità.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42957052",
+          "titolo_originale": "Supplementation with fortified balanced energy-protein during pregnancy and lactation and infant growth outcomes in southern Nepal: a community-based 2×2 factorial randomized trial.",
+          "rivista": "The American journal of clinical nutrition",
+          "rivista_abbr": "Am J Clin Nutr",
+          "data": "2026-10-29",
+          "doi": "10.1016/j.ajcnut.2026.101614",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42957052/",
+          "tema": "Salute femminile",
+          "titolo_it": "Integrazione con supplemento energetico-proteico bilanciato fortificato durante gravidanza e allattamento ed esiti di crescita infantile nel Nepal meridionale: trial randomizzato comunitario fattoriale 2×2",
+          "tipo_studio": "RCT di efficacia comunitario, fattoriale 2×2, randomizzato per nucleo familiare, non in cieco (MINT; NCT03668977); analisi intention-to-treat modificata",
+          "popolazione": "1554 madri e 1568 infanti randomizzati dopo il parto a Sarlahi, Nepal.",
+          "obiettivo": "Valutare l'effetto di un supplemento energetico-proteico bilanciato (BEP) fortificato giornaliero in gravidanza e/o allattamento sul z-score della lunghezza per età (LAZ) medio a 6 mesi e su esiti di crescita secondari.",
+          "risultati": [
+            "Nessuna interazione tra supplementazione in gravidanza e in allattamento sull'esito primario (LAZ a 6 mesi).",
+            "Nessun effetto sul LAZ medio a 6 mesi: differenza media non aggiustata 0,01 (IC 95% -0,10; 0,12) per la gravidanza e -0,02 (IC 95% -0,13; 0,09) per l'allattamento.",
+            "Nessuna differenza significativa negli esiti secondari (z-score peso/lunghezza e peso/età, peso, lunghezza, circonferenza cranica, circonferenza del braccio, prevalenza di arresto della crescita, deperimento e sottopeso) a 6 mesi, né in un sottogruppo di infanti a 12 mesi.",
+            "Gli effetti nulli sono rimasti dopo l'aggiustamento per le dimensioni alla nascita."
+          ],
+          "limiti": "Disegno non in cieco (unblinded). Altri limiti non sono riportati nell'abstract.",
+          "perche_selezionato": "Fornisce dati da RCT sull'estensione della supplementazione BEP all'allattamento, ambito in cui l'abstract indica evidenze limitate.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42962673",
+          "titolo_originale": "Dietary Inflammatory Index and Thyroid Disease: A Large Prospective Cohort Study.",
+          "rivista": "Hormone and metabolic research = Hormon- und Stoffwechselforschung = Hormones et metabolisme",
+          "rivista_abbr": "Horm Metab Res",
+          "data": "2026-10-30",
+          "doi": "10.1055/a-2973-9769",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42962673/",
+          "tema": "Prevenzione e infiammazione",
+          "titolo_it": "Indice infiammatorio della dieta e malattie tiroidee: un ampio studio di coorte prospettico",
+          "tipo_studio": "Coorte prospettica (UK Biobank); modelli di Cox, spline cubiche ristrette e analisi di mediazione",
+          "popolazione": "210.839 partecipanti UK Biobank (2008-2012); punteggi Dietary Inflammatory Index (DII) ed energy-adjusted DII (E-DII) derivati da recall alimentari delle 24 ore.",
+          "obiettivo": "Indagare le associazioni tra DII, E-DII e incidenza di malattie tiroidee.",
+          "risultati": [
+            "Punteggi DII ed E-DII più elevati sono associati a un aumento del rischio di malattia tiroidea complessiva, ipotiroidismo e ipertiroidismo.",
+            "Per ogni incremento di 1 punto di E-DII: malattia tiroidea complessiva HR 1,04 (IC 95% 1,02-1,06); ipertiroidismo HR 1,10 (IC 95% 1,05-1,15).",
+            "Analisi dose-risposta: associazioni lineari per ipotiroidismo e malattia tiroidea complessiva, andamento a J per l'ipertiroidismo.",
+            "Conta piastrinica, conta dei neutrofili, proteina C-reattiva e IGF-1 mediano parzialmente, in termini statistici, le associazioni osservate."
+          ],
+          "limiti": "Disegno osservazionale: i risultati indicano associazioni e non consentono inferenze causali. L'esposizione dietetica deriva da recall delle 24 ore. Durata del follow-up, numero di eventi e covariate di aggiustamento non sono riportati nell'abstract. L'HR dell'ipotiroidismo non è riportato nell'abstract.",
+          "perche_selezionato": "Esamina in una grande coorte l'associazione tra potenziale infiammatorio della dieta e incidenza di patologie tiroidee, con analisi dose-risposta e di mediazione.",
+          "nota_redazione": ""
+        }
+      ]
+    }
+  ],
+  "aggiornato": "2026-11-05T12:44+01:00"
 }
