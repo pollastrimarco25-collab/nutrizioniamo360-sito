@@ -289,6 +289,18 @@ def estrai_json(testo):
     return json.loads(testo[inizio:fine + 1])
 
 
+def chiedi_json(cfg, sistema, messaggio, max_tokens):
+    """Chiede a Claude una risposta JSON; se arriva incompleta o malformata riprova una volta."""
+    for tentativo in range(2):
+        testo = claude(cfg, sistema, messaggio, max_tokens)
+        try:
+            return estrai_json(testo)
+        except (ValueError, json.JSONDecodeError) as e:
+            print(f"  Risposta JSON non valida ({e}), riprovo", file=sys.stderr)
+            max_tokens = int(max_tokens * 1.5)
+    raise RuntimeError("Claude non ha restituito un JSON valido")
+
+
 SISTEMA_SELEZIONE = """Sei il comitato di redazione di NutrizioniaMO 360, associazione scientifica di Modena che fa formazione per professionisti sanitari (biologi nutrizionisti, medici, dietisti) su nutrizione, microbiota, sport, longevità e prevenzione.
 Ogni settimana scegli dalla letteratura recente gli studi più utili per un professionista. Criteri, in ordine:
 1. solidità del disegno: meta-analisi e revisioni sistematiche di RCT, RCT ben dimensionati, grandi coorti prospettiche, linee guida e position stand;
@@ -297,7 +309,7 @@ Ogni settimana scegli dalla letteratura recente gli studi più utili per un prof
 4. varietà: al massimo {max_per_tema} studi per tema, coprendo più temi possibile.
 Escludi: studi pilota o con campioni molto piccoli, studi solo su animali o in vitro, protocolli, riviste predatorie, studi sponsorizzati con conclusioni promozionali, articoli il cui abstract non permette di capire i risultati.
 Se i candidati validi sono meno di {n}, scegline meno: meglio 3 studi solidi che 5 deboli.
-Rispondi SOLO con JSON: {{"scelti": [{{"pmid": "...", "tema": "<uno dei temi indicati>", "motivo": "<una frase>"}}]}}"""
+Rispondi SOLO con JSON: {{"scelti": [{{"pmid": "...", "tema": "<uno dei temi indicati>", "motivo": "<massimo 15 parole>"}}]}}"""
 
 SISTEMA_SINTESI = """Scrivi sintesi in italiano di studi scientifici per professionisti sanitari, per la rassegna settimanale di NutrizioniaMO 360.
 Regole tassative:
@@ -384,7 +396,7 @@ def main():
     msg = (f"Temi: {', '.join(t['nome'] for t in cfg['temi'])}\n"
            f"Riviste preferite: {', '.join(cfg['riviste_preferite'])}\n"
            f"Scegli fino a {n} studi tra questi {len(cand)} candidati:\n\n{elenco}")
-    scelti = estrai_json(claude(cfg, SISTEMA_SELEZIONE.format(n=n, max_per_tema=cfg["max_per_tema"]), msg, 2000))["scelti"]
+    scelti = chiedi_json(cfg, SISTEMA_SELEZIONE.format(n=n, max_per_tema=cfg["max_per_tema"]), msg, 4000)["scelti"]
     scelti = [s for s in scelti if str(s.get("pmid")) in cand][:n]  # solo PMID realmente trovati su PubMed
     if not scelti:
         print("Claude non ha selezionato studi validi: niente rassegna questa settimana.")
@@ -393,7 +405,7 @@ def main():
 
     # 2. sintesi
     testi = "\n\n---\n\n".join(scheda_candidato(cand[str(s["pmid"])], max_abstract=6000) for s in scelti)
-    sintesi = estrai_json(claude(cfg, SISTEMA_SINTESI, testi, 6000))["articoli"]
+    sintesi = chiedi_json(cfg, SISTEMA_SINTESI, testi, 12000)["articoli"]
     per_pmid = {str(s["pmid"]): s for s in sintesi}
 
     articoli, avvisi = [], []
