@@ -68,12 +68,29 @@ def ncbi(endpoint, params):
     raise RuntimeError(f"NCBI {endpoint} non risponde")
 
 
+DIAGNOSI = "--solo-pubmed" in sys.argv
+
+
 def cerca(query, giorni, quanti):
+    oggi = dt.date.today()
     r = json.loads(ncbi("esearch.fcgi", {
         "db": "pubmed", "term": query, "retmode": "json", "retmax": quanti,
-        "sort": "relevance", "datetype": "edat", "reldate": giorni,
+        "sort": "relevance", "datetype": "edat",
+        "mindate": (oggi - dt.timedelta(days=giorni)).strftime("%Y/%m/%d"),
+        "maxdate": oggi.strftime("%Y/%m/%d"),
     }))["esearchresult"]
+    if DIAGNOSI:  # nella prova mostra come PubMed ha interpretato la ricerca
+        for chiave in ("errorlist", "warninglist"):
+            v = {k: x for k, x in (r.get(chiave) or {}).items() if x}
+            if v:
+                print(f"    {chiave}: {json.dumps(v, ensure_ascii=False)[:400]}")
+        if r.get("querytranslation"):
+            print(f'    interpretata come: {r["querytranslation"][:300]}')
     return r.get("idlist", []), int(r.get("count", 0))
+
+
+FILTRO_SEMPLICE = ('("randomized controlled trial"[pt] OR "meta-analysis"[pt] OR "systematic review"[pt] '
+                   'OR randomized[tiab] OR "meta-analysis"[tiab] OR "systematic review"[tiab])')
 
 
 def testo_di(el):
@@ -143,9 +160,14 @@ def candidati(cfg, gia_usciti):
         q = f'({tema["query"]}) AND {cfg["filtro_comune"]}'
         try:
             ids, totale = cerca(q, cfg["giorni_finestra"], cfg["candidati_per_tema"])
-        except RuntimeError as e:
-            print(f'- {tema["nome"]}: ricerca non riuscita ({e}), tema saltato questa settimana')
-            continue
+        except RuntimeError:
+            # PubMed a volte non regge le ricerche complesse: riprova con un filtro più semplice
+            print(f'- {tema["nome"]}: ricerca completa non riuscita, riprovo con un filtro semplificato')
+            try:
+                ids, totale = cerca(f'({tema["query"]}) AND {FILTRO_SEMPLICE}', cfg["giorni_finestra"], cfg["candidati_per_tema"])
+            except RuntimeError as e:
+                print(f'- {tema["nome"]}: ricerca non riuscita ({e}), tema saltato questa settimana')
+                continue
         print(f'- {tema["nome"]}: {totale} risultati, presi i primi {len(ids)}')
         for pmid in ids:
             if pmid not in gia_usciti:
