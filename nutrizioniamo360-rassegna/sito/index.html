@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="format-detection" content="telephone=no">
+<title>NutrizioniaMO 360</title>
+<meta name="description" content="NutrizioniaMO 360 è un'associazione di promozione sociale nata a Modena nel 2022 per promuovere sani stili di vita a 360 gradi, con un approccio scientifico e multidisciplinare.">
+<script>
+document.documentElement.className+=" js";
+try{ if(sessionStorage.getItem("n360-intro")){ document.documentElement.className+=" no-intro"; } else { sessionStorage.setItem("n360-intro","1"); } }catch(e){}
+</script>
+<link rel="preload" href="assets/img/logo.webp" as="image" type="image/webp">
+<link rel="preload" href="assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" type="image/png" href="assets/img/fav.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="NutrizioniaMO 360">
+<meta property="og:title" content="NutrizioniaMO 360 · Associazione di promozione sociale, Modena">
+<meta property="og:description" content="Sani stili di vita a 360 gradi: formazione scientifica, divulgazione e lavoro di rete. Prossimi eventi: cena di Natale dei soci, 13 febbraio 2027 e congresso Nutriamo la Vita il 22 maggio 2027.">
+<meta name="twitter:card" content="summary">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "NutrizioniaMO 3esessanta APS", "alternateName": "NutrizioniaMO 360", "description": "Associazione di promozione sociale nata a Modena nel 2022 per promuovere sani stili di vita a 360 gradi, con un approccio scientifico e multidisciplinare.", "foundingDate": "2022-03-08", "taxID": "04020480366", "vatID": "04020480366", "email": "nutrizioniamo360@gmail.com", "telephone": "+39 331 983 8404", "address": {"@type": "PostalAddress", "streetAddress": "Via Alberto Brasili 91", "postalCode": "41122", "addressLocality": "Modena", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/nutrizioniamo_360/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Event", "name": "Cena di Natale dei soci di NutrizioniaMO 360", "startDate": "2026-11-25T20:30:00+01:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Elio Park", "address": {"@type": "PostalAddress", "addressLocality": "Modena", "addressCountry": "IT"}}, "organizer": {"@type": "Organization", "name": "NutrizioniaMO 3esessanta APS"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Event", "name": "Parla bene e ti sarà dato (quasi) tutto", "startDate": "2027-02-13", "endDate": "2027-02-13", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "description": "Evento per biologi nutrizionisti su comunicazione persuasiva, linguaggio di precisione e gestione delle obiezioni, per trasformare la competenza in adesione al percorso.", "organizer": {"@type": "Organization", "name": "NutrizioniaMO 3esessanta APS"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Event", "name": "Congresso Nutriamo la Vita 2027 – VI edizione", "startDate": "2027-05-22", "endDate": "2027-05-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "description": "Congresso annuale di NutrizioniaMO 360: un momento di aggiornamento e confronto tra professionisti dell'area sanitaria.", "location": {"@type": "Place", "name": "Modena", "address": {"@type": "PostalAddress", "addressLocality": "Modena", "addressCountry": "IT"}}, "organizer": {"@type": "Organization", "name": "NutrizioniaMO 3esessanta APS"}}</script>
+
+<style>
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/fraunces-latin-wght-normal.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/figtree-latin-400-normal.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/figtree-latin-600-normal.woff2) format('woff2');}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/figtree-latin-700-normal.woff2) format('woff2');}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/caveat-latin-600-normal.woff2) format('woff2');}
+
+:root{
+  --logo:url(assets/img/logo.webp);
+  --f-rel:url(assets/img/f-rel.webp);--f-bm:url(assets/img/f-bm.webp);--f-ec:url(assets/img/f-ec.webp);--f-cm:url(assets/img/f-cm.webp);--f-dg:url(assets/img/f-dg.webp);--f-sa:url(assets/img/f-sa.webp);
+  --g1t:url(assets/img/g1-t.webp);--g1f:url(assets/img/g1-f.webp);--g2t:url(assets/img/g2-t.webp);--g2f:url(assets/img/g2-f.webp);--g3t:url(assets/img/g3-t.webp);--g3f:url(assets/img/g3-f.webp);--g4t:url(assets/img/g4-t.webp);--g4f:url(assets/img/g4-f.webp);--g5t:url(assets/img/g5-t.webp);--g5f:url(assets/img/g5-f.webp);--g6t:url(assets/img/g6-t.webp);--g6f:url(assets/img/g6-f.webp);--g7t:url(assets/img/g7-t.webp);--g7f:url(assets/img/g7-f.webp);--g8t:url(assets/img/g8-t.webp);--g8f:url(assets/img/g8-f.webp);--g9t:url(assets/img/g9-t.webp);--g9f:url(assets/img/g9-f.webp);--g10t:url(assets/img/g10-t.webp);--g10f:url(assets/img/g10-f.webp);--g11t:url(assets/img/g11-t.webp);--g11f:url(assets/img/g11-f.webp);--g12t:url(assets/img/g12-t.webp);--g12f:url(assets/img/g12-f.webp);
+  --p1:url(assets/img/p1.webp);--p2:url(assets/img/p2.webp);--p3:url(assets/img/p3.webp);--p4:url(assets/img/p4.webp);--p5:url(assets/img/p5.webp);
+  /* Palette presa dal logo: verde degli anelli, pesca del "360", marrone del tronco */
+  --verde:#82BB0D;
+  --verde-scuro:#4A6E0E;
+  --verde-pieno:#4E7D0B; /* verde per fondi con testo bianco: contrasto 4,9:1 */
+  --pesca-testo:#C27A2E; /* pesca per testi grandi su bianco: contrasto 3,4:1 */
+  --pesca:#E5A45F;
+  --pesca-chiaro:#FCEFE0;
+  --marrone:#633126;
+  --testo:#3B2A24;
+  --tenue:#6E5F58;
+  --fondo:#FFFFFF;
+  --fondo-alt:#F5F8EC;
+  --linea:#E3E8D3;
+  --rosa:#D2577F;
+  --display:'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --body:'Figtree', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --mano:'Caveat', 'Segoe Print', cursive;
+  /* Layout: intestazione fissa, una pagina visibile alla volta (routing su #), sezioni alternate bianco / verde chiarissimo */
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;-webkit-tap-highlight-color:rgba(130,187,13,.18);overflow-x:hidden;background:var(--fondo);color:var(--testo);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--verde-scuro);text-underline-offset:3px}
+a:hover{color:var(--marrone)}
+:focus-visible{outline:3px solid var(--pesca);outline-offset:3px;border-radius:4px}
+h1,h2,h3{overflow-wrap:break-word;hyphens:manual;font-family:var(--display);color:var(--marrone);line-height:1.15;text-wrap:balance;margin:0;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,5vw,3.4rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.3rem)}
+h3{font-size:1.3rem}
+p{margin:0}
+.wrap{width:min(1120px,100% - 40px - env(safe-area-inset-left) - env(safe-area-inset-right));margin-inline:auto}
+.narrow{max-width:66ch}
+.mano{font-family:var(--mano);color:var(--pesca-testo);font-weight:600}
+
+/* Intestazione */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding-top:env(safe-area-inset-top);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--marrone);min-width:0}
+.brand span{white-space:nowrap}
+.logo-img{display:block;background:var(--logo) center/contain no-repeat;aspect-ratio:1/1}
+.brand .logo-img{width:52px;height:52px;flex-shrink:0}
+.brand span{font-family:var(--display);font-size:1.3rem;font-weight:600;letter-spacing:.01em}
+.brand b{font-family:var(--mano);color:#A8621F;font-weight:600;font-size:1.45rem;margin-left:2px}
+nav.menu ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+nav.menu a{display:block;padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--testo);font-weight:600;font-size:.95rem}
+@media (hover:hover){nav.menu a:hover{background:var(--fondo-alt);color:var(--verde-scuro)}}
+nav.menu a[aria-current="page"]{background:var(--verde-pieno);color:#fff}
+.menu-btn{flex-shrink:0;min-height:44px;display:none;align-items:center;gap:8px;border:1.5px solid var(--linea);background:#fff;color:var(--marrone);font:600 .95rem var(--body);padding:8px 14px;border-radius:999px;cursor:pointer}
+.menu-btn svg{width:18px;height:18px}
+@media (max-width:1080px){
+  html.js .menu-btn{display:inline-flex}
+  html.js nav.menu{position:absolute;top:100%;right:max(20px,env(safe-area-inset-right));left:max(20px,env(safe-area-inset-left));background:#fff;border:1px solid var(--linea);border-radius:16px;box-shadow:0 14px 40px rgba(99,49,38,.12);padding:8px;display:none;max-height:calc(100vh - 96px);max-height:calc(100dvh - 96px);overflow-y:auto;overscroll-behavior:contain}
+  html.js nav.menu.open{display:block}
+  html.js nav.menu ul{flex-direction:column}
+  html.js nav.menu a{padding:12px 16px;border-radius:10px}
+  html:not(.js) .top .wrap{flex-wrap:wrap;padding-top:8px}
+  html:not(.js) nav.menu{width:100%;padding-bottom:10px}
+  html:not(.js) nav.menu ul{flex-wrap:wrap;gap:2px}
+  html:not(.js) nav.menu a{white-space:nowrap;padding:8px 12px}
+}
+
+@media (max-width:400px){
+  .top .wrap{gap:10px;min-height:64px}
+  .brand{gap:8px}
+  .brand .logo-img{width:42px;height:42px}
+  .brand span{font-size:1.08rem}
+  .brand b{font-size:1.2rem}
+  .menu-btn{padding:0;width:44px;height:44px;justify-content:center}
+  .menu-lbl{display:none}
+  .wrap{width:calc(100% - 32px - env(safe-area-inset-left) - env(safe-area-inset-right))}
+  section.band{padding:56px 0}
+  .card,.socio,.evento-top,.congresso{padding:22px}
+  .btns .btn{flex:1 1 100%;justify-content:center}
+}
+@media (max-height:500px) and (orientation:landscape){
+  html.js nav.menu ul{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+  .hero{padding:32px 0 40px}
+  .hero-logo{width:min(200px,40%)}
+  .top .wrap{min-height:60px}
+}
+/* Pagine */
+.page{display:none;scroll-margin-top:120px}
+.page[data-page="home"],.page:target,.page.active{display:block}
+main:has(.page:target) .page[data-page="home"]:not(:target){display:none}
+html.js main .page:not(.active){display:none}
+section.band{padding:72px 0}
+section.band.alt{background:var(--fondo-alt)}
+.head{display:grid;gap:14px;margin-bottom:36px}
+.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde-scuro)}
+.pennellata{display:block;width:120px;height:12px;margin-top:6px}
+.lead{font-size:1.2rem;color:var(--testo)}
+.muted{color:var(--tenue)}
+.page-hero{padding:64px 0 40px;border-bottom:1px solid var(--linea);background:linear-gradient(180deg,var(--fondo-alt),#fff)}
+.page-hero .wrap{display:grid;gap:14px}
+
+/* Home */
+.hero{padding:56px 0 64px;background:radial-gradient(ellipse at 85% 30%,rgba(130,187,13,.10),transparent 60%),radial-gradient(ellipse at 10% 90%,rgba(229,164,95,.12),transparent 55%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-text{display:grid;gap:22px}
+.hero h1 .mano{font-size:1.15em;line-height:1}
+.hero-logo{justify-self:center;width:min(420px,100%)}
+.hero-visual .hero-logo{justify-self:auto}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--verde);transition:background .15s,color .15s}
+.btn.pieno{background:var(--verde-pieno);border-color:var(--verde-pieno);color:#fff}
+.btn.pieno:hover{background:#3F660A;border-color:#3F660A;color:#fff}
+.btn.vuoto{color:var(--verde-scuro);background:#fff}
+.btn.vuoto:hover{background:var(--fondo-alt)}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+
+.pilastri{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:p}
+.pilastro{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:24px;display:grid;gap:10px;align-content:start}
+.pilastro .num{font-family:var(--mano);font-size:2.2rem;line-height:1;color:var(--pesca)}
+.pilastro h3{font-size:1.15rem}
+.pilastro p{font-size:.98rem;color:var(--tenue)}
+@media (max-width:980px){.pilastri{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.pilastri{grid-template-columns:1fr}}
+
+.evento-top{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:#fff;border:2px solid var(--verde);border-radius:22px;padding:28px}
+.data{display:grid;place-items:center;text-align:center;width:118px;height:118px;border-radius:50%;background:var(--verde-pieno);color:#fff;font-family:var(--display);line-height:1}
+.data strong{font-size:2.6rem;font-weight:700}
+.data span{font-size:.95rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-top:4px;display:block}
+.evento-top .info{display:grid;gap:8px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.95rem;color:var(--tenue)}
+@media (max-width:600px){.evento-top{grid-template-columns:1fr;justify-items:start}.data{width:100px;height:100px}.data strong{font-size:2.1rem}.data span{font-size:.78rem;letter-spacing:.04em}}
+
+.contatti{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.contatto{display:grid;gap:4px;padding:20px;border-radius:16px;background:#fff;border:1px solid var(--linea)}
+.contatto .lbl{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--verde-scuro)}
+.contatto .val{font-weight:600;color:var(--marrone);overflow-wrap:break-word;font-size:.97rem}
+.contatto a{font-size:.92rem}
+@media (max-width:900px){.contatti{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.contatti{grid-template-columns:1fr}}
+
+/* Blocchi generici */
+.due{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media (max-width:820px){.due{grid-template-columns:1fr;gap:32px}}
+.stack{display:grid;gap:16px}
+.lista{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.lista li{position:relative;padding-left:26px}
+.lista li::before{content:"";position:absolute;left:4px;top:.6em;width:10px;height:10px;border-radius:50%;background:var(--verde)}
+.lista.pesca li::before{background:var(--pesca)}
+.card{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:28px;display:grid;gap:14px;align-content:start}
+.valori{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:820px){.valori{grid-template-columns:1fr}}
+.citazione{font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.4;color:var(--marrone);font-weight:500;border-left:4px solid var(--pesca);padding:6px 0 6px 24px;max-width:60ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:8px 16px;border-radius:999px;background:#fff;border:1.5px solid var(--linea);font-weight:600;font-size:.95rem;color:var(--marrone)}
+
+/* Mission */
+.obiettivo{display:grid;grid-template-columns:72px 1fr;gap:24px;padding:36px 0;border-top:1px solid var(--linea)}
+.head + .obiettivo{border-top:0;padding-top:0}
+.obiettivo .num{font-family:var(--mano);font-size:3.4rem;line-height:.9;color:var(--pesca-testo)}
+.obiettivo .corpo{display:grid;gap:14px}
+.obiettivo .colonne{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.obiettivo h4{margin:0 0 8px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--verde-scuro)}
+@media (max-width:700px){.obiettivo{grid-template-columns:1fr;gap:8px}.obiettivo .colonne{grid-template-columns:1fr}}
+
+/* Direttivo */
+.persone{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:900px){.persone{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.persone{grid-template-columns:1fr}}
+.persona{background:#fff;border:1px solid var(--linea);border-radius:20px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.foto{aspect-ratio:4/3.4;background:linear-gradient(135deg,var(--fondo-alt),var(--pesca-chiaro));display:grid;place-items:center;position:relative}
+.foto.con-foto{background:var(--img) var(--pos,center 6%)/cover no-repeat}
+.foto .iniziali{font-family:var(--display);font-size:3rem;color:var(--verde-scuro);font-weight:600}
+.foto .nota{position:absolute;bottom:12px;left:12px}
+.persona .testo{padding:22px;display:grid;gap:8px;align-content:start}
+.ruolo{font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#9A5715}
+.persona p{font-size:.98rem;color:var(--tenue)}
+
+/* Statuto */
+.scheda{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--linea);border-radius:18px;overflow:hidden;background:#fff}
+.scheda dt,.scheda dd{margin:0;padding:14px 20px;border-top:1px solid var(--linea)}
+.scheda dt{font-weight:700;color:var(--marrone);background:var(--fondo-alt)}
+.scheda dt:first-of-type,.scheda dt:first-of-type + dd{border-top:0}
+@media (max-width:600px){.scheda{grid-template-columns:1fr}.scheda dd{border-top:0;padding-top:0;background:var(--fondo-alt)}.scheda dt{padding-bottom:4px}}
+.legale-testo{display:grid;gap:14px}
+.legale-testo h2{font-size:1.45rem;margin-top:24px}
+.legale-testo h2:first-child{margin-top:0}
+.legale-testo h3{font-size:1.08rem;margin-top:8px}
+.legale-testo p,.legale-testo li{font-size:1rem}
+.download{display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding:24px 28px;border-radius:18px;background:var(--pesca-chiaro);border:1.5px solid var(--pesca)}
+.download .doc{display:grid;gap:2px;flex:1;min-width:220px}
+.download .doc strong{font-family:var(--display);font-size:1.2rem;color:var(--marrone)}
+
+/* Eventi */
+.anno{display:grid;grid-template-columns:120px 1fr;gap:28px;padding:32px 0;border-top:1px solid var(--linea)}
+.anno:first-of-type{border-top:0}
+.anno .y{font-family:var(--display);font-size:2.2rem;font-weight:600;color:var(--verde-scuro);line-height:1}
+.anno .y small{display:block;font-family:var(--body);font-size:.85rem;font-weight:600;color:var(--tenue);margin-top:6px}
+.eventi{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.ev{display:grid;gap:6px;padding:18px 20px;border-radius:14px;background:#fff;border:1px solid var(--linea)}
+.ev h3{font-size:1.12rem}
+.ev p{font-size:.96rem;color:var(--tenue)}
+.tag{justify-self:start;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.tag.pro{background:#E8F2D2;color:#3F5F0B}
+.tag.pub{background:var(--pesca-chiaro);color:#8A4A10}
+.tag.soc{background:#FBE3EB;color:#9C2F55}
+.legenda{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:.92rem;color:var(--tenue)}
+@media (max-width:640px){.anno{grid-template-columns:1fr;gap:14px}}
+.congresso{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:28px;border-radius:20px;background:#fff;border:1px solid var(--linea)}
+.edizioni{display:flex;gap:8px;flex-wrap:wrap}
+.ed{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:700;background:var(--fondo-alt);color:var(--verde-scuro);border:1.5px solid var(--linea);font-size:.95rem}
+.ed.next{background:var(--verde-pieno);color:#fff;border-color:var(--verde-pieno)}
+@media (max-width:700px){.congresso{grid-template-columns:1fr}}
+
+.btn.pesca{background:var(--pesca);border-color:var(--pesca);color:var(--marrone)}
+.btn.pesca:hover{background:#D48F45;border-color:#D48F45;color:var(--marrone)}
+nav.menu a.cta{background:var(--pesca);color:var(--marrone);margin-left:6px}
+nav.menu a.cta:hover{background:#D48F45;color:var(--marrone)}
+.socio{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:32px;border-radius:22px;background:var(--pesca-chiaro);border:1.5px solid var(--pesca)}
+.socio .stack{gap:10px}
+@media (max-width:760px){.socio{grid-template-columns:1fr}nav.menu a.cta{margin-left:0;margin-top:6px;text-align:center}}
+
+.locandine{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:960px){.locandine{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.locandine{grid-template-columns:1fr}}
+.loc{background:#fff;border:1px solid var(--linea);border-radius:18px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.poster summary{list-style:none;cursor:zoom-in;position:relative;display:block;background:#EEF2E3}
+.poster summary::-webkit-details-marker{display:none}
+.poster-img{display:block;aspect-ratio:1/1.1;background:var(--img) center/contain no-repeat;margin:14px}
+.zoom{position:absolute;right:12px;bottom:12px;background:rgba(99,49,38,.85);color:#fff;font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:999px}
+.lb{display:none}
+.poster[open] .lb{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:fixed;inset:0;z-index:100;background:rgba(40,22,17,.88);padding:max(20px,env(safe-area-inset-top)) 20px max(20px,env(safe-area-inset-bottom));cursor:zoom-out}
+.lb-img{display:block;width:min(92vw,620px);height:min(80vh,880px);height:min(80dvh,880px);background:var(--img) center/contain no-repeat}
+.lb-chiudi{color:#fff;font-weight:600;font-size:.9rem;background:rgba(255,255,255,.15);padding:6px 14px;border-radius:999px}
+.loc-testo{padding:20px 22px 22px;display:grid;gap:8px;align-content:start}
+.loc-ed{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--verde-scuro)}
+.loc h3{font-size:1.15rem}
+.loc p{font-size:.95rem;color:var(--tenue)}
+.loc-meta{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:2px;font-size:.88rem;color:var(--tenue)}
+.prossima{border:2px solid var(--verde)}
+.prossima-box{aspect-ratio:1/1.1;margin:14px;border-radius:12px;background:linear-gradient(160deg,#5E8F0B,#3F660A);color:#fff;display:grid;place-content:center;text-align:center;gap:4px}
+.prossima-box .mano{color:#fff;font-size:3.2rem;line-height:1}
+.prossima-box strong{font-family:var(--display);font-size:1.6rem}
+body:has(.poster[open]){overflow:hidden}
+
+
+/* ===== Animazione d'apertura (solo CSS: funziona anche senza JavaScript) ===== */
+.intro{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;overflow:hidden;
+  background:radial-gradient(circle at 50% 45%,#fff 0%,#fff 38%,var(--fondo-alt) 100%);
+  animation:intro-via .7s cubic-bezier(.6,0,.4,1) 2.35s forwards;cursor:pointer}
+.intro.salta{animation:intro-salta .35s ease forwards}
+.intro.salta *{animation-play-state:paused}
+html.no-intro .intro{display:none}
+.intro-stage{position:relative;width:min(58vw,300px,48vh);aspect-ratio:1/1;animation:intro-zoom .7s cubic-bezier(.6,0,.4,1) 2.35s forwards}
+.intro-anelli{position:absolute;inset:-14%;width:128%;height:128%;overflow:visible;transform:rotate(-90deg)}
+.intro-anelli circle{fill:none;stroke-linecap:round;stroke-dasharray:352;stroke-dashoffset:352}
+.intro-anelli .a1{stroke:var(--verde);stroke-width:2.6;animation:disegna 1.05s cubic-bezier(.65,0,.35,1) .1s forwards}
+.intro-anelli .a2{stroke:var(--pesca);stroke-width:1.8;stroke-dasharray:330;stroke-dashoffset:-330;animation:disegna 1.05s cubic-bezier(.65,0,.35,1) .3s forwards}
+.intro-logo{position:absolute;inset:0;clip-path:circle(0% at 50% 55%);transform:scale(.86) rotate(-6deg);
+  animation:rivela 1s cubic-bezier(.2,.8,.2,1) .55s forwards}
+.mano-dot{position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;opacity:0;
+  animation:scoppio 1.1s cubic-bezier(.15,.7,.3,1) 1.25s forwards}
+.d1{background:#4A7FD4;--dx:-150px;--dy:-60px}.d2{background:#E2558E;--dx:140px;--dy:-85px}
+.d3{background:#F1C232;--dx:-120px;--dy:95px}.d4{background:#8C5CD1;--dx:155px;--dy:70px}
+.d5{background:#EE8A3C;--dx:-30px;--dy:-160px}.d6{background:#82BB0D;--dx:40px;--dy:160px}
+.d7{background:#E2558E;--dx:-175px;--dy:10px;width:8px;height:8px}.d8{background:#4A7FD4;--dx:175px;--dy:-10px;width:8px;height:8px}
+.intro-motto{margin:0;font-family:var(--display);font-size:clamp(1.1rem,3.6vw,1.45rem);color:var(--marrone);opacity:0;transform:translateY(8px);
+  animation:motto .6s ease 1.35s forwards}
+.intro-motto span{font-family:var(--mano);color:var(--pesca);font-size:1.25em}
+@keyframes disegna{to{stroke-dashoffset:0}}
+@keyframes rivela{to{clip-path:circle(75% at 50% 55%);transform:none}}
+@keyframes scoppio{0%{opacity:0;transform:translate(0,0) scale(.3)}25%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1)}}
+@keyframes motto{to{opacity:1;transform:none}}
+@keyframes intro-zoom{to{transform:scale(1.35)}}
+@keyframes intro-via{to{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes intro-salta{to{opacity:0;visibility:hidden;pointer-events:none}}
+
+/* ===== Hero ===== */
+.chip-evento{justify-self:start;max-width:100%;line-height:1.4;display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;background:#fff;
+  border:1.5px solid var(--linea);color:var(--testo);text-decoration:none;font-size:.93rem;box-shadow:0 6px 18px rgba(99,49,38,.06);transition:border-color .2s,transform .2s}
+.chip-evento strong{color:var(--marrone)}
+.chip-evento .pallino{width:10px;height:10px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 0 rgba(130,187,13,.55);animation:pulsa 2.2s ease-out infinite;flex-shrink:0}
+@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(130,187,13,.55)}70%{box-shadow:0 0 0 10px rgba(130,187,13,0)}100%{box-shadow:0 0 0 0 rgba(130,187,13,0)}}
+.hero-visual{position:relative;justify-self:center;width:min(420px,100%);aspect-ratio:1/1}
+.hero-visual .hero-logo{position:absolute;inset:6%;width:auto;animation:galleggia 7s ease-in-out infinite}
+.orbita{position:absolute;inset:0;width:100%;height:100%;animation:ruota 60s linear infinite}
+.orbita circle{fill:none;stroke:var(--pesca);stroke-width:.5;stroke-dasharray:1.2 3.2;opacity:.8}
+.bolla{position:absolute;border-radius:50%;animation:galleggia 6s ease-in-out infinite}
+.b1{width:16px;height:16px;background:#4A7FD4;top:9%;left:12%;animation-delay:-1s}
+.b2{width:11px;height:11px;background:#E2558E;top:4%;right:22%;animation-delay:-2.5s}
+.b3{width:14px;height:14px;background:#F1C232;bottom:12%;right:6%;animation-delay:-4s}
+.b4{width:9px;height:9px;background:#8C5CD1;bottom:6%;left:24%;animation-delay:-3s}
+.b5{width:12px;height:12px;background:#EE8A3C;top:46%;left:-1%;animation-delay:-5s}
+@keyframes galleggia{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes ruota{to{transform:rotate(360deg)}}
+@media (max-width:820px){.hero-visual{order:-1;width:min(270px,72%)}}
+@media (max-height:500px) and (orientation:landscape){.hero-visual{width:min(210px,40%)}}
+
+/* ===== Numeri ===== */
+.numeri{padding:0 0 8px;position:relative;z-index:2}
+.numeri-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid var(--linea);border-radius:22px;box-shadow:0 18px 40px rgba(99,49,38,.07);margin-top:-8px}
+.numero{display:grid;gap:2px;padding:22px 24px;border-left:1px solid var(--linea);align-content:start}
+.numero:first-child{border-left:0}
+.numero strong{font-family:var(--display);font-size:clamp(2rem,4vw,2.6rem);line-height:1;color:var(--verde-scuro);font-weight:600;font-variant-numeric:tabular-nums}
+.numero:nth-child(2) strong{color:#B86F25}.numero:nth-child(3) strong{color:var(--marrone)}.numero:nth-child(4) strong{color:#3E6FB8}
+.numero span{font-size:.92rem;color:var(--tenue);line-height:1.35}
+@media (max-width:820px){.numeri-grid{grid-template-columns:repeat(2,1fr)}.numero:nth-child(3){border-left:0}.numero:nth-child(n+3){border-top:1px solid var(--linea)}}
+@media (max-width:360px){.numeri-grid{grid-template-columns:1fr}.numero{border-left:0}.numero+.numero{border-top:1px solid var(--linea)}}
+
+/* ===== Pilastri con icone ===== */
+.pilastro{position:relative;overflow:hidden}
+.pilastro .icona{width:48px;height:48px;border-radius:14px;display:grid;place-items:center}
+.pilastro .icona svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.p1 .icona{background:#E8F2D2;color:#4A6E0E}.p2 .icona{background:#FBE3EB;color:#B23A64}
+.p3 .icona{background:#E2ECFA;color:#2F5FA8}.p4 .icona{background:var(--pesca-chiaro);color:#9A5715}
+.pilastro .num{position:absolute;top:14px;right:18px;font-size:2.6rem;opacity:.35}
+
+/* ===== Onde tra le sezioni ===== */
+section.band.alt{position:relative}
+section.band.alt::before,section.band.alt::after{content:"";position:absolute;left:0;right:0;height:28px;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28' preserveAspectRatio='none'%3E%3Cpath d='M0 28V14C150 2 300 2 450 12s300 14 450 6S1100 4 1200 10v18Z' fill='%23F5F8EC'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+section.band.alt::before{top:-27px}
+section.band.alt::after{bottom:-27px;transform:scaleY(-1)}
+footer{position:relative}
+footer::before{content:"";position:absolute;left:0;right:0;top:-27px;height:28px;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28' preserveAspectRatio='none'%3E%3Cpath d='M0 28V16C200 4 380 0 560 10s360 16 520 6c50-3 90-6 120-8v20Z' fill='%23633126'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+
+/* ===== Timeline eventi ===== */
+.eventi{position:relative;padding-left:26px}
+.eventi::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:2px;border-radius:2px;background:linear-gradient(var(--verde),var(--pesca))}
+.ev{position:relative}
+.ev::before{content:"";position:absolute;left:-25px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 3px var(--fondo)}
+.ev:has(.tag.pub)::before{background:var(--pesca)}
+.ev:has(.tag.soc)::before{background:var(--rosa)}
+
+/* ===== Movimento: hover, ingresso pagine, header ===== */
+.top{transition:box-shadow .25s}
+.top.scrolled{box-shadow:0 8px 24px rgba(99,49,38,.08)}
+.page{animation:entra .45s ease}  /* senza fill: a fine animazione non resta alcuna transform (servirebbe da contenitore e intrappolerebbe la locandina ingrandita) */
+@keyframes entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.page .pennellata{animation:pennello .8s cubic-bezier(.65,0,.35,1) .2s both}
+@keyframes pennello{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.pilastro,.persona,.loc,.ev,.contatto,.card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+@media (hover:hover){
+  .pilastro:hover,.persona:hover,.contatto:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(99,49,38,.10);border-color:#D5DDBF}
+  .loc:hover{box-shadow:0 16px 34px rgba(99,49,38,.10);border-color:#D5DDBF}
+  .ev:hover{transform:translateX(4px);border-color:#D5DDBF}
+  .chip-evento:hover{border-color:var(--verde);transform:translateY(-1px)}
+  .btn{transition:background .15s,color .15s,transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(99,49,38,.12)}
+}
+@supports (animation-timeline: view()){
+  .pilastro,.persona,.contatto,.numero,.obiettivo,.valori .card,.socio{animation:sale linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+  @keyframes sale{from{transform:translateY(26px)}to{transform:none}}
+}
+
+/* ===== Movimento ridotto: niente intro, niente animazioni ===== */
+@media (prefers-reduced-motion: reduce){
+  .intro{display:none}
+  .page,.page .pennellata,.hero-visual .hero-logo,.orbita,.bolla,.chip-evento .pallino{animation:none!important}
+  .pilastro,.persona,.contatto,.numero,.obiettivo,.valori .card,.socio{animation:none!important}
+}
+
+
+/* ===== Calendario e conto alla rovescia ===== */
+.cal-azioni{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:6px}
+.countdown{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:var(--marrone);color:#fff;font-size:.9rem}
+.countdown[hidden]{display:none}
+.countdown strong{font-family:var(--display);font-size:1.15rem;font-variant-numeric:tabular-nums}
+.btn-mini{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--linea);background:#fff;color:var(--verde-scuro);font-weight:600;font-size:.9rem;text-decoration:none}
+.btn-mini svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (hover:hover){.btn-mini:hover{border-color:var(--verde);background:var(--fondo-alt)}}
+
+/* ===== FAQ ===== */
+.faq-band{padding-top:24px}
+.faq{display:grid;gap:12px;max-width:820px}
+.faq details{background:#fff;border:1px solid var(--linea);border-radius:16px;transition:border-color .2s,box-shadow .2s}
+.faq details[open]{border-color:#D5DDBF;box-shadow:0 10px 26px rgba(99,49,38,.07)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 56px 18px 22px;position:relative;font-family:var(--display);font-weight:600;font-size:1.12rem;color:var(--marrone)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:22px;top:50%;width:12px;height:12px;margin-top:-8px;border-right:2.5px solid var(--verde);border-bottom:2.5px solid var(--verde);transform:rotate(45deg);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(225deg);margin-top:-2px}
+.faq details p{padding:0 22px 20px;color:var(--tenue)}
+
+/* ===== Accessibilità e navigazione ===== */
+.salta-link{display:none;position:absolute;left:12px;top:-60px;z-index:1100;background:var(--marrone);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none}
+html.js .salta-link{display:block}
+.salta-link:focus{top:12px}
+main:focus{outline:none}
+.su{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:50;width:48px;height:48px;border-radius:50%;border:0;
+  background:var(--verde-pieno);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 24px rgba(74,110,14,.35)}
+.su[hidden]{display:none}
+.su svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+@media (hover:hover){.su:hover{background:var(--verde-scuro)}}
+@media print{.intro,.su,.top,.salta-link{display:none!important}.page{display:block!important}}
+
+
+/* ===== Tasto chiudi (Privacy, Statuto) ===== */
+.chiudi{display:none;position:fixed;z-index:15;top:calc(env(safe-area-inset-top) + 86px);right:max(18px,env(safe-area-inset-right));
+  width:46px;height:46px;border-radius:50%;background:#fff;border:1.5px solid var(--linea);color:var(--marrone);place-items:center;
+  box-shadow:0 10px 26px rgba(99,49,38,.14);text-decoration:none;transition:transform .2s,border-color .2s,background .2s}
+.chiudi svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+html.js body:has(.page.con-x.active) .chiudi{display:grid}
+html:not(.js) body:has(.page.con-x:target) .chiudi{display:grid}
+html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* senza JS l'intestazione mobile è più alta: la × va in basso */
+@media (hover:hover){.chiudi:hover{border-color:var(--marrone);background:var(--fondo-alt);transform:rotate(90deg)}}
+@media (max-width:400px){.chiudi{top:calc(env(safe-area-inset-top) + 76px);width:44px;height:44px}}
+.page.con-x .page-hero .wrap{padding-right:58px}
+/* × nella locandina ingrandita */
+.lb{position:fixed}
+.lb-x{position:absolute;top:max(16px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));width:46px;height:46px;border-radius:50%;
+  background:rgba(255,255,255,.95);color:var(--marrone);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.lb-x svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+
+
+/* ===== Galleria foto eventi ===== */
+.galleria{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:960px){.galleria{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){.galleria{grid-template-columns:repeat(2,1fr);gap:12px}}
+.foto-ev{margin:0;display:grid;gap:8px;align-content:start}
+.foto-ev .poster summary{background:none;border-radius:14px;overflow:hidden}
+.fe-img{display:block;aspect-ratio:4/3;background:var(--img) center/cover no-repeat #EEF2E3;border-radius:14px;transition:filter .25s}
+.foto-ev figcaption{font-size:.88rem;color:var(--tenue);line-height:1.35}
+.lb-chiudi{max-width:min(92vw,620px);text-align:center}
+@media (hover:hover){.foto-ev summary:hover .fe-img{filter:brightness(1.06) saturate(1.05)}}
+/* striscia in home */
+.striscia{padding-top:24px}
+.striscia-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,minmax(150px,1fr));gap:14px}
+.striscia-foto{display:block;border-radius:18px;background:var(--img) center/cover no-repeat #EEF2E3;min-height:150px;transition:transform .3s ease,box-shadow .3s ease}
+.striscia-foto:first-child{grid-row:span 2}
+.striscia-foto:nth-child(4){grid-column:2 / span 2}
+@media (hover:hover){.striscia-foto:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(99,49,38,.14)}}
+@media (max-width:620px){.striscia-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 130px 130px}.striscia-foto:first-child{grid-column:span 2;grid-row:auto}.striscia-foto:nth-child(4){grid-column:span 2}}
+
+
+/* ===== Evento con programma dettagliato ===== */
+.link-freccia{justify-self:start;font-weight:700;text-decoration:none;color:var(--verde-scuro);display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+.link-freccia::after{content:"→";transition:transform .2s}
+@media (hover:hover){.link-freccia:hover::after{transform:translateX(4px)}}
+.evento-dett{align-items:start;margin-bottom:24px;scroll-margin-top:96px}
+.dett-corpo{grid-column:1 / -1;display:grid;grid-template-columns:1fr 240px;gap:32px;border-top:1px solid var(--linea);padding-top:24px}
+.dett-testo{display:grid;gap:12px;max-width:66ch}
+.dett-lead{font-family:var(--display);font-size:1.25rem;line-height:1.45;color:var(--marrone)}
+.dett-colonne{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+.dett-colonne h4{margin:0 0 10px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--verde-scuro)}
+.momenti{margin:0;padding:0;list-style:none;counter-reset:m;display:grid;gap:10px}
+.momenti li{counter-increment:m;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start}
+.momenti li::before{content:counter(m);width:30px;height:30px;border-radius:50%;background:var(--pesca-chiaro);color:#9A5715;font-weight:700;display:grid;place-items:center;font-size:.9rem}
+.relatore{display:grid;gap:6px;align-content:start;text-align:center;justify-items:center}
+.rel-foto{width:180px;height:180px;border-radius:50%;background:var(--f-rel) center 20%/cover no-repeat #EEF2E3;box-shadow:0 0 0 6px #fff,0 0 0 8px var(--linea)}
+.relatore .ruolo{margin-top:10px}
+@media (max-width:820px){.dett-corpo{grid-template-columns:1fr}.relatore{order:-1}.dett-colonne{grid-template-columns:1fr}}
+#prossimi .evento-top + .evento-top, .page[data-page="eventi"] .evento-top + .evento-top{margin-top:20px}
+
+
+/* ===== Evento soci ===== */
+.tag.soci{background:#FFF1C9;color:#6E5200}
+.evento-cena .data{background:#9E2A2B}
+.chips-evento{justify-self:start;max-width:100%}
+.chips-evento .chip-evento:not(:first-child){display:none}
+
+
+/* ===== Perché associarsi ===== */
+.associarsi{background:linear-gradient(180deg,#fff, var(--pesca-chiaro) 140%)}
+.motivi-titolo{font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--verde-scuro);font-family:var(--body);font-weight:700;margin:0 0 16px}
+.motivi{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1000px){.motivi{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.motivi{grid-template-columns:1fr}}
+.motivo{background:#fff;border:1px solid var(--linea);border-radius:18px;padding:24px;display:grid;gap:10px;align-content:start;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.motivo .icona{width:48px;height:48px;border-radius:14px;display:grid;place-items:center}
+.motivo .icona svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.motivo.p1 .icona{background:#E8F2D2;color:#4A6E0E}.motivo.p2 .icona{background:#E2ECFA;color:#2F5FA8}
+.motivo.p3 .icona{background:#FBE3EB;color:#B23A64}.motivo.p4 .icona{background:var(--pesca-chiaro);color:#9A5715}
+.motivo h3{font-size:1.12rem}
+.motivo p{font-size:.96rem;color:var(--tenue)}
+@media (hover:hover){.motivo:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(99,49,38,.10);border-color:#D5DDBF}}
+.motto-soci{font-family:var(--display);font-size:clamp(1.2rem,2.4vw,1.5rem);color:var(--marrone);text-align:center;margin:36px auto 28px;max-width:40ch;line-height:1.4;text-wrap:balance}
+.motto-soci .mano{font-size:1.2em}
+@supports (animation-timeline: view()){ .motivo{animation:sale linear both;animation-timeline:view();animation-range:entry 0% entry 40%} }
+@media (prefers-reduced-motion: reduce){ .motivo{animation:none!important} }
+
+
+/* ===== Come associarsi ===== */
+.come{background:#fff;border:1.5px solid var(--pesca);border-radius:22px;padding:32px;display:grid;gap:22px;scroll-margin-top:90px}
+.come-testa h3{font-size:clamp(1.4rem,2.8vw,1.8rem)}
+.come-testa{display:grid;gap:6px}
+.passi{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.passi::before{content:"";position:absolute;top:24px;left:calc(16.66% + 24px);right:calc(16.66% + 24px);height:2px;background:repeating-linear-gradient(90deg,var(--pesca) 0 8px,transparent 8px 14px)}
+.passo{position:relative;display:grid;gap:12px;justify-items:center;text-align:center}
+.passo-n{position:relative;z-index:1;width:48px;height:48px;border-radius:50%;background:var(--pesca);color:var(--marrone);font-family:var(--display);font-weight:700;font-size:1.35rem;display:grid;place-items:center;box-shadow:0 0 0 6px #fff}
+.passo h4{margin:0 0 6px;font-family:var(--display);font-size:1.1rem;color:var(--marrone)}
+.passo p{font-size:.95rem;color:var(--tenue)}
+.nota-soci{background:var(--pesca-chiaro);border-radius:12px;padding:12px 16px;font-size:.95rem}
+.come-azioni{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+@media (max-width:760px){
+  .come{padding:24px}
+  .passi{grid-template-columns:1fr;gap:18px}
+  .passi::before{top:24px;bottom:24px;left:23px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--pesca) 0 8px,transparent 8px 14px)}
+  .passo{grid-template-columns:48px 1fr;justify-items:start;text-align:left;align-items:start}
+}
+
+
+/* ===== Due percorsi in home ===== */
+.percorsi-band{padding-top:40px}
+.percorsi{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:860px){.percorsi{grid-template-columns:1fr}}
+.percorso{display:grid;grid-template-rows:auto 1fr;background:#fff;border:1px solid var(--linea);border-radius:22px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.percorso.pro{border-top:5px solid var(--verde-pieno)}
+.percorso.pub{border-top:5px solid var(--pesca)}
+.percorso-img{display:block;aspect-ratio:16/7;background:var(--img) center/cover no-repeat #EEF2E3}
+.percorso-testo{padding:24px 26px 26px;display:grid;gap:10px;align-content:start}
+.percorso h2{font-size:clamp(1.45rem,2.6vw,1.85rem)}
+.percorso.pub .eyebrow{color:#9A5715}
+.percorso.pub .percorso-img{background-position:center 22%}
+.percorso-link{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:4px}
+.percorso-link a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 14px;border-radius:12px;background:var(--fondo-alt);color:var(--marrone);font-weight:600;text-decoration:none;font-size:.97rem}
+.percorso.pub .percorso-link a{background:var(--pesca-chiaro)}
+.percorso-link a::after{content:"→";color:var(--verde-scuro);transition:transform .2s}
+.percorso.pub .percorso-link a::after{color:#9A5715}
+@media (hover:hover){.percorso:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(99,49,38,.10)}.percorso-link a:hover::after{transform:translateX(4px)}.percorso-link a:hover{filter:brightness(.97)}}
+@supports (animation-timeline: view()){ .percorso{animation:sale linear both;animation-timeline:view();animation-range:entry 0% entry 40%} }
+@media (prefers-reduced-motion: reduce){ .percorso{animation:none!important} }
+
+/* ===== Filtro archivio ===== */
+.filtri{display:flex;flex-wrap:wrap;gap:8px}
+.filtro{font:600 .9rem var(--body);padding:8px 16px;min-height:40px;border-radius:999px;border:1.5px solid var(--linea);background:#fff;color:var(--testo);cursor:pointer}
+.filtro[aria-pressed="true"]{background:var(--marrone);border-color:var(--marrone);color:#fff}
+.filtro.f-pro[aria-pressed="false"]{border-color:#CFE2A8}.filtro.f-pub[aria-pressed="false"]{border-color:#F0CFA6}.filtro.f-soc[aria-pressed="false"]{border-color:#F2BFD0}
+html:not(.js) .filtri{display:none}
+.archivio[data-filtro="pro"] .ev:not(:has(.tag.pro)),
+.archivio[data-filtro="pub"] .ev:not(:has(.tag.pub)),
+.archivio[data-filtro="soc"] .ev:not(:has(.tag.soc)){display:none}
+.archivio[data-filtro="pro"] .anno:not(:has(.tag.pro)),
+.archivio[data-filtro="pub"] .anno:not(:has(.tag.pub)),
+.archivio[data-filtro="soc"] .anno:not(:has(.tag.soc)){display:none}
+.archivio[data-filtro] .anno .y small{display:none}
+
+/* Segnaposto per dati ancora da ricevere */
+.tbd{display:inline-block;border:1.5px dashed var(--pesca);background:var(--pesca-chiaro);color:#8A4A10;padding:0 .45em;border-radius:5px;font-size:.92em;font-weight:600;line-height:1.5}
+
+/* Footer */
+footer{background:var(--marrone);color:#F3E7E1;padding:56px 0 calc(28px + env(safe-area-inset-bottom));margin-top:0}
+footer ul a{display:inline-block;padding:3px 0}
+footer .wrap{display:grid;gap:32px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
+footer h3{color:#fff;font-size:1.1rem;margin-bottom:10px}
+footer a{color:#F7D3AE}
+footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+footer .legale{font-size:.88rem;color:#D9C6BD;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;display:flex;flex-wrap:wrap;gap:6px 18px}
+footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
+.foot-brand{display:flex;gap:14px;align-items:center}
+.foot-brand .logo-img{width:64px;height:64px;flex-shrink:0;background-color:#fff;border-radius:50%;background-size:92%}
+@media (max-width:820px){.foot-grid{grid-template-columns:1fr}}
+
+/* Rassegna scientifica */
+.nota-metodo{display:grid;gap:6px;padding:20px 24px;border-radius:18px;background:var(--pesca-chiaro);border:1.5px solid var(--pesca);font-size:.97rem}
+.nota-metodo strong{font-family:var(--display);font-size:1.1rem;color:var(--marrone)}
+.rs-griglia{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+@media (max-width:900px){.rs-griglia{grid-template-columns:1fr}}
+.studio{background:#fff;border:1px solid var(--linea);border-radius:20px;padding:26px;display:grid;gap:14px;align-content:start;border-top:5px solid var(--c,var(--verde))}
+.studio .rs-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:.88rem;color:var(--tenue)}
+.studio h3{font-size:1.22rem}
+.studio .orig{font-size:.9rem;color:var(--tenue);font-style:italic;margin-top:-6px}
+.studio dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:.95rem}
+.studio dt{font-weight:700;color:var(--marrone)}
+.studio dd{margin:0}
+.studio h4{margin:0 0 6px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--verde-scuro)}
+.studio .lista{gap:6px;font-size:.97rem}
+.studio .blocco p{font-size:.97rem}
+.studio .nota-red{background:var(--fondo-alt);border-left:4px solid var(--verde);border-radius:0 12px 12px 0;padding:12px 16px;font-size:.97rem}
+.studio .link-studio{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:12px;border-top:1px solid var(--linea);font-weight:600;font-size:.95rem}
+.tag.rs{background:color-mix(in srgb,var(--c) 16%,#fff);color:var(--ct,var(--marrone))}
+@supports not (background:color-mix(in srgb,red 10%,#fff)){.tag.rs{background:var(--fondo-alt)}}
+.rs-archivio{display:grid;gap:12px}
+.rs-archivio details{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:0 20px}
+.rs-archivio summary{cursor:pointer;padding:16px 0;font-weight:700;color:var(--marrone);list-style-position:outside}
+.rs-archivio summary span{font-weight:400;color:var(--tenue)}
+.rs-archivio ul{margin:0 0 18px;padding-left:20px;display:grid;gap:8px;font-size:.97rem}
+.rs-vuoto{padding:28px;border:1.5px dashed var(--linea);border-radius:18px;text-align:center;color:var(--tenue)}
+</style>
+</head>
+<body>
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-stage">
+    <svg class="intro-anelli" viewBox="0 0 120 120">
+      <circle class="a1" cx="60" cy="60" r="56"/>
+      <circle class="a2" cx="60" cy="60" r="52.5"/>
+    </svg>
+    <span class="intro-logo logo-img"></span>
+    <span class="mano-dot d1"></span><span class="mano-dot d2"></span><span class="mano-dot d3"></span>
+    <span class="mano-dot d4"></span><span class="mano-dot d5"></span><span class="mano-dot d6"></span>
+    <span class="mano-dot d7"></span><span class="mano-dot d8"></span>
+  </div>
+  <p class="intro-motto">Sani stili di vita <span>a 360°</span></p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="pen" viewBox="0 0 120 12"><path d="M3 8 C 22 3, 40 5, 58 6 S 96 9, 117 4" fill="none" stroke="#82BB0D" stroke-width="5" stroke-linecap="round"/><path d="M14 10 C 40 8, 70 9, 104 8" fill="none" stroke="#E5A45F" stroke-width="2.5" stroke-linecap="round" opacity=".9"/></symbol>
+  </defs>
+</svg>
+
+<a class="salta-link" href="#contenuto">Vai al contenuto</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">
+      <span class="logo-img" aria-hidden="true"></span>
+      <span>NutrizioniaMO<b>360</b></span>
+    </a>
+    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span class="menu-lbl">Menu</span>
+    </button>
+    <nav class="menu" id="menu" aria-label="Menu principale">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#direttivo">Consiglio direttivo</a></li>
+        <li><a href="#statuto">Statuto</a></li>
+        <li><a href="#eventi">Eventi</a></li>
+        <li><a href="#rassegna">Rassegna</a></li>
+        <li><a class="cta" href="#associarsi">Diventa socio</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto" tabindex="-1">
+
+<!-- ============ HOME ============ -->
+<div class="page" id="home" data-page="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="eyebrow">Associazione di Promozione Sociale · Modena · dal 2022</span>
+        <h1>Sani stili di vita, <span class="mano">a 360°</span></h1>
+        <p class="lead narrow">NutrizioniaMO 360 nasce nel 2022 per promuovere sani stili di vita a 360 gradi, con un approccio scientifico, multidisciplinare e orientato alla pratica quotidiana. Uniamo divulgazione, formazione scientifica e lavoro di rete per migliorare la qualità della presa in carico nutrizionale e preventiva.</p>
+        <div class="chips-evento">
+          <a class="chip-evento" href="#prossimi" data-fine="2026-11-25"><span class="pallino" aria-hidden="true"></span><span>Prossimo appuntamento: <strong>25 novembre</strong>, Cena di Natale dei soci</span></a>
+          <a class="chip-evento" href="#parla-bene" data-fine="2027-02-13"><span class="pallino" aria-hidden="true"></span><span>Prossimo appuntamento: <strong>13 febbraio 2027</strong>, Parla bene e ti sarà dato (quasi) tutto</span></a>
+          <a class="chip-evento" href="#prossimi" data-fine="2027-05-22"><span class="pallino" aria-hidden="true"></span><span>Prossimo appuntamento: <strong>22 maggio 2027</strong>, Congresso Nutriamo la Vita</span></a>
+        </div>
+        <div class="btns">
+          <a class="btn pieno" href="#chi-siamo">Scopri chi siamo</a>
+          <a class="btn pesca" href="#associarsi">Diventa socio</a>
+          <a class="btn vuoto" href="#prossimi">Prossimi eventi</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="orbita" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48"/></svg>
+        <span class="bolla b1" aria-hidden="true"></span><span class="bolla b2" aria-hidden="true"></span><span class="bolla b3" aria-hidden="true"></span>
+        <span class="bolla b4" aria-hidden="true"></span><span class="bolla b5" aria-hidden="true"></span>
+        <span class="hero-logo logo-img" role="img" aria-label="Logo di NutrizioniaMO 360: un albero con foglie a forma di mani colorate dentro due anelli, verde e pesca"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="numeri" aria-label="NutrizioniaMO 360 in numeri">
+    <div class="wrap numeri-grid">
+      <div class="numero"><strong>2022</strong><span>anno di fondazione</span></div>
+      <div class="numero"><strong>5</strong><span>edizioni del congresso Nutriamo la Vita</span></div>
+      <div class="numero"><strong>20</strong><span>eventi realizzati</span></div>
+      <div class="numero"><strong>32</strong><span>crediti ECM offerti ai professionisti</span></div>
+    </div>
+  </section>
+
+  <section class="band percorsi-band" aria-label="Scegli il tuo percorso">
+    <div class="wrap">
+      <div class="percorsi">
+        <article class="percorso pro">
+          <span class="percorso-img" style="--img:var(--g1t)" aria-hidden="true"></span>
+          <div class="percorso-testo">
+            <span class="eyebrow">Per i professionisti</span>
+            <h2>Sei un professionista sanitario?</h2>
+            <p>Congressi accreditati ECM, workshop e incontri di aggiornamento basati sulle evidenze, per confrontarti con medici, biologi nutrizionisti, dietisti e altre figure sanitarie.</p>
+            <ul class="percorso-link">
+              <li><a href="#parla-bene">13 febbraio 2027: Parla bene e ti sarà dato (quasi) tutto</a></li>
+              <li><a href="#eventi">22 maggio 2027: Congresso Nutriamo la Vita</a></li>
+              <li><a href="#archivio" data-filtro="pro">Gli eventi per professionisti già realizzati</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="percorso pub">
+          <span class="percorso-img" style="--img:var(--g9t)" aria-hidden="true"></span>
+          <div class="percorso-testo">
+            <span class="eyebrow">Per tutti</span>
+            <h2>Vuoi mangiare meglio?</h2>
+            <p>Serate informative, scuole di nutrizione con show cooking ed eventi su prevenzione e stili di vita, aperti a tutti: consigli pratici, basati sulla scienza, per la vita di tutti i giorni.</p>
+            <ul class="percorso-link">
+              <li><a href="#archivio" data-filtro="pub">Gli incontri aperti a tutti già realizzati</a></li>
+              <li><a href="#galleria">Le foto degli show cooking e degli eventi</a></li>
+              <li><a href="https://www.instagram.com/nutrizioniamo_360/">Segui Instagram per i prossimi incontri</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">La mission in sintesi</span>
+        <h2>Quattro pilastri</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="pilastri">
+        <article class="pilastro p1"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 11.6V16c3 2 7 2 10 0v-4.4"/><path d="M21 9.5V14"/></svg></span><span class="num" aria-hidden="true">1</span><h3>Formazione scientifica</h3><p>Congressi, convegni e incontri di aggiornamento per professionisti sanitari, basati sulle evidenze.</p></article>
+        <article class="pilastro p2"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span><span class="num" aria-hidden="true">2</span><h3>Cultura della salute</h3><p>Serate, scuole di nutrizione ed eventi su prevenzione e stili di vita, aperti alla comunità.</p></article>
+        <article class="pilastro p3"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2.4"/><circle cx="5.5" cy="17.5" r="2.4"/><circle cx="18.5" cy="17.5" r="2.4"/><path d="M10.8 7.6 6.7 15.4M13.2 7.6l4.1 7.8M7.9 17.5h8.2"/></svg></span><span class="num" aria-hidden="true">3</span><h3>Lavoro di rete</h3><p>Collaborazione con medici, farmacisti, ostetriche, fisioterapisti e altri professionisti sanitari.</p></article>
+        <article class="pilastro p4"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 19 6.5v5.6c0 4.3-2.9 7.3-7 8.9-4.1-1.6-7-4.6-7-8.9V6.5l7-3Z"/><path d="m9 12 2.1 2.1L15.3 10"/></svg></span><span class="num" aria-hidden="true">4</span><h3>Contro la disinformazione</h3><p>Valorizziamo il professionista qualificato della nutrizione e contrastiamo abusivismo e informazioni non validate.</p></article>
+      </div>
+      <div class="btns" style="margin-top:28px"><a class="btn vuoto" href="#mission">Leggi la mission completa</a></div>
+    </div>
+  </section>
+
+  <section class="band striscia" aria-label="Dai nostri eventi">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Dai nostri eventi</span>
+        <h2>Formazione, cucina e sport</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="striscia-grid"><a class="striscia-foto" href="#galleria" style="--img:var(--g1t)" aria-label="Congresso Nutriamo la Vita 2026: One planet, one health: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g9t)" aria-label="Show cooking: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g11t)" aria-label="Il team a un evento sportivo: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g5t)" aria-label="Il gruppo durante la pausa del congresso: apri la galleria"></a></div>
+      <div class="btns" style="margin-top:24px"><a class="btn vuoto" href="#galleria">Guarda tutte le foto</a></div>
+    </div>
+  </section>
+
+  <section class="band" id="prossimi">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">In programma</span>
+        <h2>Prossimi eventi</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <article class="evento-top evento-cena" data-fine="2026-11-25">
+        <div class="data" role="img" aria-label="25 novembre 2026"><div><strong>25</strong><span>nov 2026</span></div></div>
+        <div class="info">
+          <span class="tag soci">Per i soci</span>
+          <h3>Cena di Natale</h3>
+          <p class="muted">Una serata insieme per festeggiare il Natale con i soci dell’associazione.</p>
+          <div class="meta"><span>Mercoledì 25 novembre 2026, ore 20:30</span><span>Elio Park, Modena</span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2026-11-25" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cena+di+Natale+dei+soci+%E2%80%93+NutrizioniaMO+360&amp;dates=20261125T203000%2F20261125T230000&amp;ctz=Europe%2FRome&amp;location=Elio+Park%2C+Modena&amp;details=Cena+di+Natale+riservata+ai+soci+di+NutrizioniaMO+360." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="cena-natale-2026.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+          <a class="link-freccia" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Non sei ancora socio? Associati</a>
+        </div>
+      </article>
+      <article class="evento-top" data-fine="2027-02-13">
+        <div class="data" role="img" aria-label="13 febbraio 2027"><div><strong>13</strong><span>feb 2027</span></div></div>
+        <div class="info">
+          <span class="tag pro">Biologi nutrizionisti</span>
+          <h3>Parla bene e ti sarà dato (quasi) tutto</h3>
+          <p class="muted">Per trasformare la propria competenza in adesione al percorso: comunicazione persuasiva, linguaggio di precisione e gestione delle obiezioni.</p>
+          <div class="meta"><span>Sabato 13 febbraio 2027</span><span>Luogo: <span class="tbd">da fornire</span></span><span>Orario: <span class="tbd">da fornire</span></span><span>Iscrizioni in apertura a breve</span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2027-02-13" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Parla+bene+e+ti+sar%C3%A0+dato+%28quasi%29+tutto+%E2%80%93+NutrizioniaMO+360&amp;dates=20270213%2F20270214&amp;details=Evento+di+NutrizioniaMO+360+per+biologi+nutrizionisti%3A+comunicazione+persuasiva%2C+linguaggio+di+precisione+e+gestione+delle+obiezioni." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="evento-13-febbraio-2027.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+          <a class="link-freccia" href="#parla-bene">Scopri l’evento</a>
+        </div>
+      </article>
+      <article class="evento-top" data-fine="2027-05-22">
+        <div class="data" role="img" aria-label="22 maggio 2027"><div><strong>22</strong><span>mag 2027</span></div></div>
+        <div class="info">
+          <span class="tag pro">Professionisti sanitari</span>
+          <h3>Congresso Nutriamo la Vita</h3>
+          <p class="muted">Il congresso annuale dell'associazione: un momento centrale di aggiornamento e confronto tra professionisti dell'area sanitaria.</p>
+          <div class="meta"><span>Luogo: Modena</span><span>Iscrizioni in apertura a breve</span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2027-05-22" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Congresso+Nutriamo+la+Vita+2027+%E2%80%93+NutrizioniaMO+360&amp;dates=20270522%2F20270523&amp;details=VI+edizione+del+congresso+annuale+di+NutrizioniaMO+360+per+professionisti+sanitari.&amp;location=Modena" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="congresso-nutriamo-la-vita-2027.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+        </div>
+      </article>
+      <div class="btns" style="margin-top:28px"><a class="btn vuoto" href="#eventi">Tutti gli eventi</a></div>
+    </div>
+  </section>
+
+  <section class="band associarsi" id="associarsi">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Diventa socio</span>
+        <h2>Perché associarsi a NutrizioniaMO 360 APS</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+        <p class="lead narrow">NutrizioniaMO 360 APS promuove una visione integrata della salute: unire ricerca scientifica, prevenzione primaria, microbiota e longevità per trasformare il benessere quotidiano in una pratica consapevole e accessibile a tutti.</p>
+      </div>
+      <h3 class="motivi-titolo">4 motivi per unirti a noi</h3>
+      <div class="motivi">
+          <article class="motivo p1">
+            <span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 14h9"/></svg></span>
+            <h3>Scienza ed evidenze, zero fuffa</h3>
+            <p>Accedi a webinar, conferenze e materiali divulgativi curati da professionisti. Approfondisci temi all’avanguardia, dall’asse intestino-cervello alla crononutrizione, con contenuti liberi da mode passeggere e disinformazione.</p>
+          </article>
+          <article class="motivo p2">
+            <span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2.4"/><circle cx="5.5" cy="17.5" r="2.4"/><circle cx="18.5" cy="17.5" r="2.4"/><path d="M10.8 7.6 6.7 15.4M13.2 7.6l4.1 7.8M7.9 17.5h8.2"/></svg></span>
+            <h3>Una rete multidisciplinare attiva</h3>
+            <p>Entra in una community di biologi nutrizionisti, medici, psicologi e preparatori atletici. Uno spazio di confronto concreto tra clinici, ricercatori, studenti e appassionati di salute.</p>
+          </article>
+          <article class="motivo p3">
+            <span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <h3>Impatto reale sul territorio</h3>
+            <p>Sostieni progetti educativi nelle scuole, workshop nelle società sportive ed eventi pubblici dedicati alla prevenzione, alla sostenibilità alimentare e alla cultura della longevità.</p>
+          </article>
+          <article class="motivo p4">
+            <span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 9V6.5a1.5 1.5 0 0 1 1.5-1.5h14a1.5 1.5 0 0 1 1.5 1.5V9a3 3 0 0 0 0 6v2.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5V15a3 3 0 0 0 0-6Z"/><path d="M14 5v14" stroke-dasharray="2 2.2"/></svg></span>
+            <h3>Accesso prioritario e agevolazioni</h3>
+            <p>Partecipa con quote dedicate a congressi scientifici, workshop specialistici, camp di approfondimento e beneficia delle convenzioni attivate dall’associazione.</p>
+          </article>
+      </div>
+      <p class="motto-soci">Aderire a NutrizioniaMO 360 significa investire in una <span class="mano">longevità sana, attiva e consapevole.</span></p>
+      <div class="come" id="socio">
+        <div class="come-testa">
+          <h3>Come associarsi: 3 semplici passaggi</h3>
+          <p class="muted">Aderire a NutrizioniaMO 360 APS richiede pochi minuti.</p>
+        </div>
+        <ol class="passi">
+          <li class="passo"><span class="passo-n" aria-hidden="true">1</span><div><h4>Compila la domanda di adesione</h4><p>Inserisci i tuoi dati anagrafici e i tuoi recapiti nel modulo online dedicato per inoltrare la richiesta al Consiglio direttivo.</p></div></li>
+          <li class="passo"><span class="passo-n" aria-hidden="true">2</span><div><h4>Versa la quota annuale</h4><p>Effettua il pagamento della quota associativa tramite bonifico bancario o carta di pagamento sicura sul portale.</p></div></li>
+          <li class="passo"><span class="passo-n" aria-hidden="true">3</span><div><h4>Ricevi la conferma e la tessera digitale</h4><p>Una volta convalidata l’iscrizione, riceverai via email la tessera di socio, la ricevuta e le credenziali per accedere ai contenuti riservati.</p></div></li>
+        </ol>
+        <p class="nota-soci"><strong>Nota:</strong> la qualifica di socio ha validità per l’anno solare in corso e dà diritto immediato alla partecipazione a tutte le attività istituzionali dell’associazione.</p>
+        <div class="come-azioni">
+          <a class="btn pesca" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Compila la domanda di adesione</a>
+          <span class="muted">Prima di compilare puoi leggere l’<a href="#privacy">informativa privacy</a>.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band faq-band" id="domande">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Diventare socio</span>
+        <h2>Domande frequenti</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Chi può diventare socio?</summary>
+          <p>Possono associarsi professionisti sanitari e non: persone fisiche, persone giuridiche ed enti del Terzo settore che condividono gli scopi dell’associazione (art. 5 dello Statuto).</p>
+        </details>
+        <details>
+          <summary>Quanto costa associarsi?</summary>
+          <p>La quota associativa del socio ordinario è di 20 €, da versare con bonifico. Le coordinate bancarie sono indicate nel modulo di adesione.</p>
+        </details>
+        <details>
+          <summary>Come funziona l’iscrizione?</summary>
+          <p>Compili il modulo online e versi la quota. Il Consiglio direttivo valuta la domanda e, dopo il versamento, il tuo nome viene annotato nel libro soci.</p>
+        </details>
+        <details>
+          <summary>Che cosa comporta essere socio?</summary>
+          <p>Puoi partecipare a tutte le attività promosse dall’associazione, all’Assemblea con diritto di voto e accedere alle cariche associative (art. 6 dello Statuto). Nell’edizione 2026 l’iscrizione al congresso Nutriamo la Vita è stata gratuita per i soci.</p>
+        </details>
+        <details>
+          <summary>I congressi danno crediti ECM?</summary>
+          <p>Sì. Tutte le edizioni del congresso Nutriamo la Vita sono state accreditate ECM, con un numero di crediti compreso tra 5 e 7 a seconda dell’edizione, per diverse professioni sanitarie.</p>
+        </details>
+      </div>
+      <div class="btns" style="margin-top:28px"><a class="btn pesca" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Compila il modulo di adesione</a></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="contatti">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Scrivici o passa a trovarci</span>
+        <h2>Contatti</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="contatti">
+        <div class="contatto"><span class="lbl">Indirizzo</span><span class="val">Via Alberto Brasili 91<br>41122 Modena</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Alberto+Brasili+91+41122+Modena">Apri in Google Maps</a></div>
+        <div class="contatto"><span class="lbl">Telefono</span><span class="val">331&nbsp;983&nbsp;8404</span><a href="tel:+393319838404">Chiama</a></div>
+        <div class="contatto"><span class="lbl">Email</span><span class="val">nutrizioniamo360<wbr>@gmail.com</span><a href="mailto:nutrizioniamo360@gmail.com">Scrivi una email</a></div>
+        <div class="contatto"><span class="lbl">Instagram</span><span class="val">@nutrizioniamo_360</span><a href="https://www.instagram.com/nutrizioniamo_360/">Apri il profilo</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CHI SIAMO ============ -->
+<div class="page" id="chi-siamo" data-page="chi-siamo">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Chi siamo</span>
+      <h1>Nate dall'esperienza clinica</h1>
+      <p class="lead narrow">Un'associazione di promozione sociale fondata a Modena nel 2022 da professioniste della nutrizione.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap due">
+      <div class="stack">
+        <h2>La nostra storia</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="stack narrow">
+        <p>NutrizioniaMO 360 nasce nel 2022 con l'obiettivo di promuovere sani stili di vita a 360 gradi, attraverso un approccio scientifico, multidisciplinare e orientato alla pratica quotidiana.</p>
+        <p>L'associazione prende forma dall'esperienza clinica delle fondatrici, che hanno riscontrato non solo una carenza diffusa di cultura nutrizionale nella popolazione generale, ma anche la necessità di creare spazi strutturati di confronto e aggiornamento tra professionisti sanitari.</p>
+        <p>Da questa consapevolezza nasce un progetto che integra <strong>divulgazione</strong>, <strong>formazione scientifica</strong> e <strong>lavoro di rete</strong>, con l'obiettivo di migliorare la qualità della presa in carico nutrizionale e preventiva.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head">
+        <h2>A chi ci rivolgiamo</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="due">
+        <div class="card">
+          <h3>Professionisti sanitari</h3>
+          <p>Formazione continua e scientificamente validata: congressi, convegni, workshop e incontri di aggiornamento, per costruire un linguaggio comune tra le diverse figure sanitarie.</p>
+          <div class="chips"><span class="chip">Nutrizionisti</span><span class="chip">Dietisti</span><span class="chip">Medici</span><span class="chip">Farmacisti</span><span class="chip">Ostetriche</span><span class="chip">Fisioterapisti</span></div>
+        </div>
+        <div class="card">
+          <h3>Cittadini e comunità</h3>
+          <p>Educazione sanitaria per tutti: serate informative, scuole di nutrizione ed eventi su prevenzione e stili di vita. Le attività si rivolgono ai soci, alle loro famiglie e a chiunque sia interessato, con un'attenzione particolare all'alimentazione dei più giovani.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <h2>I nostri valori</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="valori">
+        <div class="card"><h3>Rigore scientifico</h3><p>Formazione e divulgazione basate su evidenze scientifiche, secondo scienza, coscienza e aggiornamento continuo.</p></div>
+        <div class="card"><h3>Divulgazione responsabile</h3><p>Tradurre le evidenze in strumenti pratici e contrastare le informazioni non validate e le distorsioni comunicative.</p></div>
+        <div class="card"><h3>Multidisciplinarità</h3><p>La sinergia tra competenze diverse permette una presa in carico più completa della persona, in un'ottica preventiva e sistemica.</p></div>
+      </div>
+      <p class="citazione" style="margin-top:40px">Riteniamo che la conoscenza, quando rigorosa e condivisa, sia lo strumento principale per generare un cambiamento consapevole, con un impatto positivo sulla salute individuale e sulla sostenibilità ambientale e sanitaria.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ MISSION ============ -->
+<div class="page" id="mission" data-page="mission">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Mission</span>
+      <h1>Cosa facciamo e perché</h1>
+      <p class="lead narrow">Formazione scientifica, divulgazione responsabile e multidisciplinarità sono i pilastri del nostro modello di salute integrato.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head"><h2>Obiettivi e attività</h2><svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg></div>
+
+      <article class="obiettivo">
+        <span class="num">1</span>
+        <div class="corpo">
+          <h3>Formazione scientifica per professionisti sanitari</h3>
+          <p class="narrow">Uno dei pilastri dell'associazione è la formazione continua e scientificamente validata rivolta ai professionisti sanitari. Il convegno annuale <strong>Nutriamo la Vita</strong> è il nostro principale momento di aggiornamento e confronto.</p>
+          <div class="colonne">
+            <div><h4>Cosa organizziamo</h4><ul class="lista"><li>Congressi e convegni scientifici</li><li>Incontri formativi tematici</li><li>Eventi di aggiornamento professionale</li></ul></div>
+            <div><h4>L'obiettivo</h4><ul class="lista pesca"><li>Aggiornamento basato su evidenze scientifiche</li><li>Dialogo interdisciplinare</li><li>Un linguaggio comune tra le diverse figure sanitarie</li></ul></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="obiettivo">
+        <span class="num">2</span>
+        <div class="corpo">
+          <h3>Promozione della cultura della salute nella popolazione</h3>
+          <p class="narrow">Accanto alla formazione professionale realizziamo attività di educazione sanitaria rivolte alla comunità.</p>
+          <div class="colonne">
+            <div><h4>Cosa organizziamo</h4><ul class="lista"><li>Serate formative e informative</li><li>Scuole di nutrizione</li><li>Eventi tematici su prevenzione e stili di vita</li></ul></div>
+            <div><h4>L'obiettivo</h4><ul class="lista pesca"><li>Tradurre le evidenze scientifiche in strumenti pratici</li><li>Favorire comportamenti sostenibili nel quotidiano</li></ul></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="obiettivo">
+        <span class="num">3</span>
+        <div class="corpo">
+          <h3>Approccio multidisciplinare e lavoro di rete</h3>
+          <p class="narrow">La sinergia tra competenze consente una presa in carico più completa e articolata della persona, in un'ottica preventiva e sistemica.</p>
+          <div><h4>Collaboriamo con</h4><div class="chips"><span class="chip">Medici</span><span class="chip">Farmacisti</span><span class="chip">Ostetriche</span><span class="chip">Fisioterapisti</span><span class="chip">Altri professionisti sanitari</span></div></div>
+        </div>
+      </article>
+
+      <article class="obiettivo">
+        <span class="num">4</span>
+        <div class="corpo">
+          <h3>Tutela della professione e contrasto alla disinformazione</h3>
+          <p class="narrow">Valorizziamo il professionista qualificato della nutrizione, che opera secondo scienza, coscienza e aggiornamento continuo.</p>
+          <div><h4>Ci impegniamo a contrastare</h4><ul class="lista"><li>L'abusivismo professionale</li><li>La diffusione di informazioni non validate scientificamente</li><li>Le distorsioni comunicative nel campo nutrizionale</li></ul></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap due">
+      <div class="stack">
+        <span class="eyebrow">L'impatto che vogliamo generare</span>
+        <h2>Conoscenza che cambia le abitudini</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="stack narrow">
+        <p>Crediamo che la qualità dell'intervento nutrizionale passi necessariamente attraverso una solida formazione scientifica e un confronto continuo tra professionisti.</p>
+        <p>Vogliamo che la conoscenza, rigorosa e condivisa, diventi cambiamento consapevole: con un impatto positivo sulla salute delle persone, ma anche sulla sostenibilità ambientale e sanitaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Dallo Statuto, art. 2</span><h2>Le nostre finalità</h2><svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg></div>
+      <ul class="lista narrow">
+        <li>Promuovere una corretta e salutare alimentazione, per vivere a lungo e con un'ottima qualità della vita, seguendo i criteri dell'Organizzazione Mondiale della Sanità.</li>
+        <li>Contrastare la malnutrizione, per eccesso e per difetto, considerando qualità degli alimenti, aspetti psicologici, attività motoria e integrazione.</li>
+        <li>Dare un'attenzione speciale all'alimentazione dei più giovani.</li>
+        <li>Studiare la nutrizione umana più salutare, anche alla luce dell'aumento della vita media.</li>
+        <li>Promuovere il volontariato e l'educazione alla responsabilità civile e al rispetto dell'ambiente.</li>
+      </ul>
+      <div class="btns" style="margin-top:28px"><a class="btn vuoto" href="#statuto">Vai allo Statuto</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ DIRETTIVO ============ -->
+<div class="page" id="direttivo" data-page="direttivo">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Consiglio direttivo</span>
+      <h1>Chi guida l'associazione</h1>
+      <p class="lead narrow">Il Consiglio direttivo è eletto dall'Assemblea dei soci, resta in carica tre anni e nomina al suo interno Presidente e Vicepresidente. Le cariche sono gratuite.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="persone">
+        <article class="persona">
+          <div class="foto con-foto" style="--img:var(--f-cm);--pos:center top" role="img" aria-label="Foto di Chiara Mezzetti"></div>
+          <div class="testo">
+            <span class="ruolo">Presidente</span>
+            <h3>Chiara Mezzetti</h3>
+            <p>Biologa nutrizionista, laureata in Biologia e specializzata in Nutrizione clinica e sportiva. Si occupa in particolare di microbiota e salute intestinale, con un approccio che unisce rigore scientifico e ascolto della persona. Ha partecipato al Campionato del Mondo IRONMAN 70.3 ed è finisher IRONMAN 140.6: per questo segue anche la nutrizione per lo sport. <a href="https://chiaramezzetti.it">chiaramezzetti.it</a></p>
+          </div>
+        </article>
+        <article class="persona">
+          <div class="foto con-foto" style="--img:var(--f-bm)" role="img" aria-label="Foto di Barbara Menozzi"></div>
+          <div class="testo">
+            <span class="ruolo">Vicepresidente</span>
+            <h3>Barbara Menozzi</h3>
+            <p>Biologa nutrizionista, esercita la professione da oltre trent’anni. Si occupa di salute femminile e metabolica, microbiota e longevità funzionale, oltre che di nutrizione per gli sport artistici. Nel tempo ha sviluppato un approccio integrato alla nutrizione che ha chiamato MenoDieta, che accompagna la persona al cambiamento di stile di vita. Affianca all’attività clinica quella di formazione e divulgazione scientifica. <a href="https://menodieta.it">menodieta.it</a></p>
+          </div>
+        </article>
+        <article class="persona">
+          <div class="foto con-foto" style="--img:var(--f-dg);--pos:center top" role="img" aria-label="Foto di Dealba Gheduzzi"></div>
+          <div class="testo">
+            <span class="ruolo">Segretaria</span>
+            <h3>Dealba Gheduzzi</h3>
+            <p>Biologa nutrizionista, libera professionista in diversi studi in provincia di Modena. Ha conseguito un Dottorato di Ricerca e un Master di II livello in Nutrizione e Dietetica. Formata anche in nutrizione sportiva e funzionale, promuove un approccio integrato volto alla prevenzione e al benessere attraverso l’alimentazione.</p>
+          </div>
+        </article>
+        <article class="persona">
+          <div class="foto con-foto" style="--img:var(--f-ec);--pos:center top" role="img" aria-label="Foto di Elena Cucchiara"></div>
+          <div class="testo">
+            <span class="ruolo">Consigliere</span>
+            <h3>Elena Cucchiara</h3>
+            <p>Biologa nutrizionista, propone percorsi personalizzati basati sulle evidenze scientifiche. Si dedica alla nutrizione femminile (gravidanza, post parto, insulino-resistenza), ai disturbi gastrointestinali come la sindrome dell’intestino irritabile (IBS) e alla nutrizione sportiva. Unisce scienza, ascolto ed empatia per promuovere un rapporto sereno e sostenibile con l’alimentazione.</p>
+          </div>
+        </article>
+        <article class="persona">
+          <div class="foto con-foto" style="--img:var(--f-sa);--pos:center top" role="img" aria-label="Foto di Silvia Accardo"></div>
+          <div class="testo">
+            <span class="ruolo">Consigliere</span>
+            <h3>Silvia Accardo</h3>
+            <p>Biologa nutrizionista, laureata all’Università di Modena e Reggio Emilia, con un Master internazionale in Dietetica e Coaching Nutrizionale. Dopo un’esperienza nella ricerca clinica oncoematologica, si occupa di nutrizione personalizzata, alimentazione antinfiammatoria e salute femminile nelle diverse fasi della vita, con attenzione alle patologie a base infiammatoria. Integra competenza scientifica, ascolto ed educazione alimentare.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ STATUTO ============ -->
+<div class="page con-x" id="statuto" data-page="statuto">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Statuto</span>
+      <h1>Le regole che ci siamo dati</h1>
+      <p class="lead narrow">Lo Statuto definisce scopi, attività, organi e funzionamento dell'associazione, nel rispetto del Codice del Terzo Settore (D.Lgs. 117/2017).</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:32px">
+      <div class="download">
+        <div class="doc">
+          <strong>Statuto di NutrizioniaMO 3esessanta APS</strong>
+          <span class="muted">Versione aggiornata per l'iscrizione al RUNTS (2025) · PDF, 9 pagine, 117 KB</span>
+        </div>
+        <a class="btn pieno" href="statuto-nutrizioniamo360.pdf" target="_blank" rel="noopener">Scarica il PDF</a>
+      </div>
+
+      <div class="stack">
+        <h2>In breve</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <dl class="scheda">
+        <dt>Denominazione</dt><dd>NutrizioniaMO 3esessanta APS</dd>
+        <dt>Natura</dt><dd>Associazione di Promozione Sociale, senza scopo di lucro</dd>
+        <dt>Sede legale</dt><dd>Comune di Modena</dd>
+        <dt>Costituzione</dt><dd>8 marzo 2022</dd>
+        <dt>Registro</dt><dd>Iscritta al RUNTS (Registro unico nazionale del Terzo settore), sezione Associazioni di promozione sociale, repertorio n. 116696, dal 7 luglio 2025</dd>
+        <dt>Codice fiscale</dt><dd>04020480366</dd>
+        <dt>Durata</dt><dd>Illimitata</dd>
+        <dt>Settori di attività</dt><dd>Educazione e formazione; ambiente; attività culturali e ricreative di interesse sociale; turismo sociale; sport dilettantistico; promozione dei diritti e delle pari opportunità (art. 2)</dd>
+        <dt>Organi</dt><dd>Assemblea dei soci, Consiglio direttivo, Presidente, Organo di controllo (art. 7)</dd>
+        <dt>Chi può associarsi</dt><dd>Persone fisiche, persone giuridiche ed enti del Terzo settore che condividono gli scopi dell'associazione, presentando domanda scritta al Consiglio direttivo (art. 5)</dd>
+        <dt>Esercizio</dt><dd>Dal 1° gennaio al 31 dicembre; il bilancio è approvato dall'Assemblea entro quattro mesi dalla chiusura (art. 3)</dd>
+      </dl>
+    </div>
+  </section>
+</div>
+
+<!-- ============ EVENTI ============ -->
+<div class="page" id="eventi" data-page="eventi">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Eventi</span>
+      <h1>Incontri, scuole e congressi</h1>
+      <p class="lead narrow">Dal 2022 organizziamo eventi per professionisti sanitari e per la cittadinanza, spesso insieme ad altre realtà del territorio modenese.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">In programma</span><h2>Eventi futuri</h2><svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg></div>
+      <article class="evento-top evento-cena" data-fine="2026-11-25">
+        <div class="data" role="img" aria-label="25 novembre 2026"><div><strong>25</strong><span>nov 2026</span></div></div>
+        <div class="info">
+          <span class="tag soci">Per i soci</span>
+          <h3>Cena di Natale</h3>
+          <p class="muted">Una serata insieme per festeggiare il Natale con i soci dell’associazione.</p>
+          <div class="meta"><span>Mercoledì 25 novembre 2026, ore 20:30</span><span>Elio Park, Modena</span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2026-11-25" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Cena+di+Natale+dei+soci+%E2%80%93+NutrizioniaMO+360&amp;dates=20261125T203000%2F20261125T230000&amp;ctz=Europe%2FRome&amp;location=Elio+Park%2C+Modena&amp;details=Cena+di+Natale+riservata+ai+soci+di+NutrizioniaMO+360." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="cena-natale-2026.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+          <a class="link-freccia" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Non sei ancora socio? Associati</a>
+        </div>
+      </article>
+      <article class="evento-top evento-dett" id="parla-bene" data-fine="2027-02-13">
+        <div class="data" role="img" aria-label="13 febbraio 2027"><div><strong>13</strong><span>feb 2027</span></div></div>
+        <div class="info">
+          <span class="tag pro">Biologi nutrizionisti</span>
+          <h3>Parla bene e ti sarà dato (quasi) tutto</h3>
+          <div class="meta"><span>Sabato 13 febbraio 2027</span><span>Luogo: <span class="tbd">da fornire</span></span><span>Orario: <span class="tbd">da fornire</span></span><span>Iscrizioni in apertura a breve</span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2027-02-13" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Parla+bene+e+ti+sar%C3%A0+dato+%28quasi%29+tutto+%E2%80%93+NutrizioniaMO+360&amp;dates=20270213%2F20270214&amp;details=Evento+di+NutrizioniaMO+360+per+biologi+nutrizionisti%3A+comunicazione+persuasiva%2C+linguaggio+di+precisione+e+gestione+delle+obiezioni." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="evento-13-febbraio-2027.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+        </div>
+        <div class="dett-corpo">
+          <div class="dett-testo">
+            <p class="dett-lead">Sai esattamente cosa serve al tuo paziente, ma non sempre lui ti segue. Dice “ci penso”, rimanda il controllo, molla il piano alla terza settimana.</p>
+            <p>Il limite non risiede nella tua competenza, ma nel modo in cui quella competenza arriva dall’altra parte. Ogni percorso interrotto costa due volte: è un risultato mancato per il paziente e un cliente perso per te.</p>
+            <p><strong>Parla bene e ti sarà dato (quasi) tutto</strong> è l’evento pensato per i biologi nutrizionisti che vogliono trasformare la propria competenza in adesione al percorso.</p>
+            <div class="dett-colonne">
+              <div>
+                <h4>Ti sarà utile in tre momenti</h4>
+                <ol class="momenti">
+                  <li>quando presenti il percorso</li>
+                  <li>quando spieghi cosa fare</li>
+                  <li>quando il paziente ti risponde “sì, ma…”</li>
+                </ol>
+              </div>
+              <div>
+                <h4>Cosa allenerai</h4>
+                <ul class="lista">
+                  <li>comunicazione persuasiva</li>
+                  <li>linguaggio di precisione</li>
+                  <li>gestione delle obiezioni</li>
+                </ul>
+                <p class="muted">Conoscenze e strumenti che determinano la qualità dei tuoi risultati.</p>
+              </div>
+            </div>
+          </div>
+          <aside class="relatore">
+            <span class="rel-foto" role="img" aria-label="Foto del relatore"></span>
+            <span class="ruolo">Relatore</span>
+            <strong><span class="tbd">nome da fornire</span></strong>
+          </aside>
+        </div>
+      </article>
+      <article class="evento-top" data-fine="2027-05-22">
+        <div class="data" role="img" aria-label="22 maggio 2027"><div><strong>22</strong><span>mag 2027</span></div></div>
+        <div class="info">
+          <span class="tag pro">Professionisti sanitari</span>
+          <h3>Congresso Nutriamo la Vita, VI edizione</h3>
+          <p class="muted">Il congresso annuale dell'associazione: un momento centrale di aggiornamento e confronto tra professionisti dell'area sanitaria.</p>
+          <div class="meta"><span>Luogo: Modena</span><span>Iscrizioni in apertura a breve</span><span>Locandina: <span class="tbd">da fornire</span></span></div>
+          <div class="cal-azioni">
+            <span class="countdown" data-data="2027-05-22" hidden></span>
+            <a class="btn-mini" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Congresso+Nutriamo+la+Vita+2027+%E2%80%93+NutrizioniaMO+360&amp;dates=20270522%2F20270523&amp;details=VI+edizione+del+congresso+annuale+di+NutrizioniaMO+360+per+professionisti+sanitari.&amp;location=Modena" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Aggiungi a Google Calendar</a>
+            <a class="btn-mini" href="congresso-nutriamo-la-vita-2027.ics" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>Calendario Apple / Outlook (.ics)</a>
+          </div>
+        </div>
+      </article>
+      <div style="margin-top:28px"><div class="socio">
+        <div class="stack">
+          <span class="eyebrow">Diventa socio</span>
+          <h3 style="font-size:1.5rem">Associati per partecipare ai nostri eventi</h3>
+          <p class="narrow">Compila il modulo di adesione online. Come previsto dallo Statuto, la domanda viene valutata dal Consiglio direttivo e l'iscrizione diventa effettiva con il versamento della quota associativa. Prima di compilare puoi leggere l'<a href="#privacy">informativa privacy</a>.</p>
+        </div>
+        <a class="btn pesca" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Compila il modulo</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Il nostro appuntamento annuale</span>
+        <h2>Congresso Nutriamo la Vita</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+        <p class="narrow">Il congresso accreditato ECM dell'associazione per professionisti sanitari, ogni anno a Modena. Cinque edizioni dal 2022 al 2026; la sesta è in programma il 22 maggio 2027.</p>
+      </div>
+      <div class="locandine">
+          <article class="loc prossima">
+            <div class="prossima-box"><span class="mano">2027</span><strong>VI edizione</strong><span>22 maggio 2027 · Modena</span></div>
+            <div class="loc-testo">
+              <span class="loc-ed">Prossima edizione</span>
+              <h3>Congresso Nutriamo la Vita 2027</h3>
+              <ul class="loc-meta"><li>Iscrizioni in apertura a breve</li></ul>
+            </div>
+          </article>
+          <article class="loc">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la locandina V edizione, 23 maggio 2026">
+                <span class="poster-img" style="--img:var(--p5)" role="img" aria-label="Locandina del congresso V edizione, 23 maggio 2026"></span>
+                <span class="zoom">Ingrandisci</span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--p5)"></span><span class="lb-chiudi">Tocca per chiudere</span></span>
+              </summary>
+            </details>
+            <div class="loc-testo">
+              <span class="loc-ed">V edizione · 23 maggio 2026</span>
+              <h3>One planet, one health</h3>
+              <p>Integrare salute umana, nutrizione e ambiente per una cura più sostenibile e centrata sulla persona.</p>
+              <ul class="loc-meta"><li>Hotel RMH Raffaello, Modena</li><li>6 crediti ECM · patrocinio FNOB e Università di Modena e Reggio Emilia</li></ul>
+            </div>
+          </article>
+          <article class="loc">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la locandina IV edizione, 17 maggio 2025">
+                <span class="poster-img" style="--img:var(--p4)" role="img" aria-label="Locandina del congresso IV edizione, 17 maggio 2025"></span>
+                <span class="zoom">Ingrandisci</span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--p4)"></span><span class="lb-chiudi">Tocca per chiudere</span></span>
+              </summary>
+            </details>
+            <div class="loc-testo">
+              <span class="loc-ed">IV edizione · 17 maggio 2025</span>
+              <h3>Dal “to cure” al “to care”</h3>
+              <p>L'approccio terapeutico della nuova era: vivere sani grazie a nutrizione e stile di vita adeguato.</p>
+              <ul class="loc-meta"><li>Hotel RMH Raffaello, Modena</li><li>7 crediti ECM</li></ul>
+            </div>
+          </article>
+          <article class="loc">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la locandina III edizione, 20 aprile 2024">
+                <span class="poster-img" style="--img:var(--p3)" role="img" aria-label="Locandina del congresso III edizione, 20 aprile 2024"></span>
+                <span class="zoom">Ingrandisci</span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--p3)"></span><span class="lb-chiudi">Tocca per chiudere</span></span>
+              </summary>
+            </details>
+            <div class="loc-testo">
+              <span class="loc-ed">III edizione · 20 aprile 2024</span>
+              <h3>Il paziente del futuro</h3>
+              <p>Verso una nuova visione di medicina personalizzata tra inquadramento clinico, diagnostica di laboratorio, epigenetica, nutrizione e nutraceutica.</p>
+              <ul class="loc-meta"><li>Hotel RMH Raffaello, Modena</li><li>7 crediti ECM</li></ul>
+            </div>
+          </article>
+          <article class="loc">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la locandina II edizione, 10 giugno 2023">
+                <span class="poster-img" style="--img:var(--p2)" role="img" aria-label="Locandina del congresso II edizione, 10 giugno 2023"></span>
+                <span class="zoom">Ingrandisci</span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--p2)"></span><span class="lb-chiudi">Tocca per chiudere</span></span>
+              </summary>
+            </details>
+            <div class="loc-testo">
+              <span class="loc-ed">II edizione · 10 giugno 2023</span>
+              <h3>Infezioni virali e patologie infiammatorie immunomediate</h3>
+              <ul class="loc-meta"><li>RMH Des Arts Hotel, Modena</li><li>7 crediti ECM</li></ul>
+            </div>
+          </article>
+          <article class="loc">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la locandina I edizione, 18 giugno 2022">
+                <span class="poster-img" style="--img:var(--p1)" role="img" aria-label="Locandina del congresso I edizione, 18 giugno 2022"></span>
+                <span class="zoom">Ingrandisci</span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--p1)"></span><span class="lb-chiudi">Tocca per chiudere</span></span>
+              </summary>
+            </details>
+            <div class="loc-testo">
+              <span class="loc-ed">I edizione · 18 giugno 2022</span>
+              <h3>Un approccio integrato per l'infiammazione cronica</h3>
+              <p>Nutrizione e stile di vita. Educare alla salute.</p>
+              <ul class="loc-meta"><li>Forum Monzani, Fondazione BPER, Modena</li><li>5 crediti ECM</li></ul>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="galleria">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Galleria</span>
+        <h2>Le nostre giornate</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+        <p class="narrow muted">Congressi, incontri e show cooking: qualche momento dagli eventi dell’associazione. Tocca una foto per ingrandirla.</p>
+      </div>
+      <div class="galleria">
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Congresso Nutriamo la Vita 2026: One planet, one health">
+                <span class="fe-img" style="--img:var(--g1t)" role="img" aria-label="Congresso Nutriamo la Vita 2026: One planet, one health"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g1f)"></span><span class="lb-chiudi">Congresso Nutriamo la Vita 2026: One planet, one health</span></span>
+              </summary>
+            </details>
+            <figcaption>Congresso Nutriamo la Vita 2026: One planet, one health</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Il benvenuto al congresso 2026 a Modena">
+                <span class="fe-img" style="--img:var(--g2t)" role="img" aria-label="Il benvenuto al congresso 2026 a Modena"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g2f)"></span><span class="lb-chiudi">Il benvenuto al congresso 2026 a Modena</span></span>
+              </summary>
+            </details>
+            <figcaption>Il benvenuto al congresso 2026 a Modena</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Congresso Nutriamo la Vita 2023">
+                <span class="fe-img" style="--img:var(--g3t)" role="img" aria-label="Congresso Nutriamo la Vita 2023"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g3f)"></span><span class="lb-chiudi">Congresso Nutriamo la Vita 2023</span></span>
+              </summary>
+            </details>
+            <figcaption>Congresso Nutriamo la Vita 2023</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Relatori e organizzatori al congresso Nutriamo la Vita">
+                <span class="fe-img" style="--img:var(--g4t)" role="img" aria-label="Relatori e organizzatori al congresso Nutriamo la Vita"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g4f)"></span><span class="lb-chiudi">Relatori e organizzatori al congresso Nutriamo la Vita</span></span>
+              </summary>
+            </details>
+            <figcaption>Relatori e organizzatori al congresso Nutriamo la Vita</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Il gruppo durante la pausa del congresso">
+                <span class="fe-img" style="--img:var(--g5t)" role="img" aria-label="Il gruppo durante la pausa del congresso"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g5f)"></span><span class="lb-chiudi">Il gruppo durante la pausa del congresso</span></span>
+              </summary>
+            </details>
+            <figcaption>Il gruppo durante la pausa del congresso</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Relatori e organizzatori a fine lavori">
+                <span class="fe-img" style="--img:var(--g6t)" role="img" aria-label="Relatori e organizzatori a fine lavori"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g6f)"></span><span class="lb-chiudi">Relatori e organizzatori a fine lavori</span></span>
+              </summary>
+            </details>
+            <figcaption>Relatori e organizzatori a fine lavori</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Un momento di formazione in sala">
+                <span class="fe-img" style="--img:var(--g7t)" role="img" aria-label="Un momento di formazione in sala"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g7f)"></span><span class="lb-chiudi">Un momento di formazione in sala</span></span>
+              </summary>
+            </details>
+            <figcaption>Un momento di formazione in sala</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Nutrizione in rosa: l’alimentazione come prevenzione">
+                <span class="fe-img" style="--img:var(--g8t)" role="img" aria-label="Nutrizione in rosa: l’alimentazione come prevenzione"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g8f)"></span><span class="lb-chiudi">Nutrizione in rosa: l’alimentazione come prevenzione</span></span>
+              </summary>
+            </details>
+            <figcaption>Nutrizione in rosa: l’alimentazione come prevenzione</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Show cooking">
+                <span class="fe-img" style="--img:var(--g9t)" role="img" aria-label="Show cooking"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g9f)"></span><span class="lb-chiudi">Show cooking</span></span>
+              </summary>
+            </details>
+            <figcaption>Show cooking</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Show cooking con lo chef">
+                <span class="fe-img" style="--img:var(--g10t)" role="img" aria-label="Show cooking con lo chef"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g10f)"></span><span class="lb-chiudi">Show cooking con lo chef</span></span>
+              </summary>
+            </details>
+            <figcaption>Show cooking con lo chef</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: Il team a un evento sportivo">
+                <span class="fe-img" style="--img:var(--g11t)" role="img" aria-label="Il team a un evento sportivo"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g11f)"></span><span class="lb-chiudi">Il team a un evento sportivo</span></span>
+              </summary>
+            </details>
+            <figcaption>Il team a un evento sportivo</figcaption>
+          </figure>
+          <figure class="foto-ev">
+            <details class="poster">
+              <summary aria-label="Ingrandisci la foto: La sala pronta per il congresso">
+                <span class="fe-img" style="--img:var(--g12t)" role="img" aria-label="La sala pronta per il congresso"></span>
+                <span class="lb" aria-hidden="true"><span class="lb-x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="lb-img" style="--img:var(--g12f)"></span><span class="lb-chiudi">La sala pronta per il congresso</span></span>
+              </summary>
+            </details>
+            <figcaption>La sala pronta per il congresso</figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band archivio" id="archivio">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Archivio</span>
+        <h2>Eventi passati</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+        <div class="filtri" role="group" aria-label="Filtra gli eventi passati">
+          <button type="button" class="filtro" data-f="tutti" aria-pressed="true">Tutti</button>
+          <button type="button" class="filtro f-pro" data-f="pro" aria-pressed="false">Professionisti sanitari</button>
+          <button type="button" class="filtro f-pub" data-f="pub" aria-pressed="false">Per il pubblico</button>
+          <button type="button" class="filtro f-soc" data-f="soc" aria-pressed="false">Sociale e sport</button>
+        </div>
+      </div>
+
+      <div class="anno">
+        <div class="y">2026<small>3 eventi</small></div>
+        <ul class="eventi">
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Nutrizione e integrazione in rosa: alleati nella prevenzione oncologica</h3><p>Marzo 2026</p></li>
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Salute intestinale e performance sportiva: probiotici, prevenzione, nutrizione</h3><p>Aprile 2026</p></li>
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Congresso Nutriamo la Vita, V edizione: One planet, one health</h3><p>23 maggio 2026, Hotel RMH Raffaello, Modena</p></li>
+        </ul>
+      </div>
+
+      <div class="anno">
+        <div class="y">2025<small>5 eventi</small></div>
+        <ul class="eventi">
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Congresso NutrizioniaMO 2025, IV edizione: Dal “to cure” al “to care”</h3><p>17 maggio 2025, Hotel RMH Raffaello, Modena</p></li>
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Ormoni e benessere nella donna</h3><p>Workshop per professionisti sanitari</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>Dalla Longevità alla LoungeVita</h3><p>Incontro informativo per non professionisti sanitari</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>Nutri la tua passione a 360°</h3><p>Incontro informativo per non professionisti sanitari, con il patrocinio del Comune di Modena</p></li>
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Microbiota al femminile: nutrizione, integrazione e casi clinici</h3><p>Incontro formativo per professionisti sanitari</p></li>
+        </ul>
+      </div>
+
+      <div class="anno">
+        <div class="y">2024<small>3 eventi</small></div>
+        <ul class="eventi">
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Convegno Nutriamo la Vita, III edizione: Il paziente del futuro</h3><p>20 aprile 2024, Hotel RMH Raffaello, Modena</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>Scuola di NutrizioniaMO 360</h3><p>Incontri informativi per non professionisti sanitari</p></li>
+          <li class="ev"><span class="tag soc">Sociale e sport</span><h3>Ottobre in Rosa</h3><p>In collaborazione con Pink Dragon</p></li>
+        </ul>
+      </div>
+
+      <div class="anno">
+        <div class="y">2023<small>6 eventi</small></div>
+        <ul class="eventi">
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Nutriamo la Vita, II edizione: Infezioni virali e patologie infiammatorie immunomediate</h3><p>10 giugno 2023, RMH Des Arts Hotel, Modena</p></li>
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Scuola di NutrizioniaMO</h3><p>Incontri formativi per professionisti sanitari</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>Scuola di NutrizioniaMO 360</h3><p>Incontri informativi per non professionisti sanitari</p></li>
+          <li class="ev"><span class="tag soc">Sociale e sport</span><h3>Ottobre Rosa: prevenzione a tavola e in palestra</h3><p>In collaborazione con La Fratellanza</p></li>
+          <li class="ev"><span class="tag soc">Sociale e sport</span><h3>Women in Run</h3><p>Camminata ludico-motoria contro la violenza sulle donne, con il patrocinio del Comune di Modena, in collaborazione con La Fratellanza</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>Performance e nutrizione</h3><p>Incontri informativi per non professionisti sanitari</p></li>
+        </ul>
+      </div>
+
+      <div class="anno">
+        <div class="y">2022<small>3 eventi</small></div>
+        <ul class="eventi">
+          <li class="ev"><span class="tag pro">Professionisti sanitari</span><h3>Convegno Nutriamo la Vita, I edizione: Un approccio integrato per l'infiammazione cronica</h3><p>18 giugno 2022, Forum Monzani, Fondazione BPER, Modena</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>MangiaMO Bene</h3><p>Scuola di nutrizione con show cooking</p></li>
+          <li class="ev"><span class="tag pub">Per il pubblico</span><h3>MangiaMO Bene a colazione</h3><p>Scuola di nutrizione con show cooking</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Impegno sociale</span><h2>Collaborazioni sul territorio</h2><svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg></div>
+      <p class="narrow" style="margin-bottom:20px">Abbiamo collaborato con diverse associazioni del territorio per realizzare:</p>
+      <ul class="lista narrow">
+        <li>eventi sportivi e informativi per la sensibilizzazione contro la violenza sulle donne;</li>
+        <li>iniziative legate a Ottobre Rosa per la prevenzione oncologica;</li>
+        <li>eventi di formazione per professionisti sanitari.</li>
+      </ul>
+      <div class="chips" style="margin-top:24px"><span class="chip">La Fratellanza</span><span class="chip">Pink Dragon</span><span class="chip">Patrocinio del Comune di Modena</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ RASSEGNA SCIENTIFICA ============ -->
+<div class="page" id="rassegna" data-page="rassegna">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Rassegna scientifica · per professionisti sanitari</span>
+      <h1>La ricerca della settimana</h1>
+      <p class="lead narrow">Ogni lunedì selezioniamo dalla letteratura scientifica internazionale alcuni studi recenti su nutrizione clinica, microbiota, salute femminile, nutrizione sportiva, longevità e prevenzione, con una sintesi in italiano e il link all'articolo originale.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap stack" style="gap:32px">
+      <div class="nota-metodo">
+        <strong>Come nasce la rassegna</strong>
+        <p>Gli studi vengono cercati su PubMed tra meta-analisi, revisioni sistematiche, studi randomizzati, grandi coorti e linee guida. Le sintesi sono preparate a partire dal solo abstract con l'aiuto di strumenti di intelligenza artificiale e vengono riviste dall'associazione prima della pubblicazione. Non sostituiscono la lettura dell'articolo completo e non costituiscono indicazioni cliniche.</p>
+      </div>
+
+      <div id="rs-corrente" class="stack" style="gap:24px" aria-live="polite">
+        <noscript><p class="rs-vuoto">Per leggere la rassegna è necessario attivare JavaScript nel browser.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="rs-precedenti" hidden>
+    <div class="wrap stack" style="gap:24px">
+      <div class="head">
+        <span class="eyebrow">Archivio</span>
+        <h2>Le settimane precedenti</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="rs-archivio" id="rs-archivio"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PRIVACY ============ -->
+<div class="page con-x" id="privacy" data-page="privacy">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Privacy</span>
+      <h1>Informativa sul trattamento dei dati personali</h1>
+      <p class="lead narrow">Come NutrizioniaMO 360 tratta i dati di chi visita il sito e di chi chiede di diventare socio, ai sensi dell’art. 13 del Regolamento (UE) 2016/679 (GDPR).</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap legale-testo narrow">
+      <h2>1. Titolare del trattamento</h2>
+      <p>Il titolare è <strong>NutrizioniaMO 3esessanta APS</strong>, con sede a Modena, recapito in Via Alberto Brasili 91, 41122 Modena, C.F. e P.IVA 04020480366, nella persona della Presidente e legale rappresentante, Chiara Mezzetti.</p>
+      <p>Per qualsiasi richiesta sulla privacy puoi scrivere a <a href="mailto:nutrizioniamo360@gmail.com">nutrizioniamo360@gmail.com</a> oppure alla PEC <a href="mailto:nutrizioniamo360aps@pec.it">nutrizioniamo360aps@pec.it</a>.</p>
+
+      <h2>2. Navigazione su questo sito</h2>
+      <p>Il sito non usa cookie, né tecnici né di profilazione, e non usa strumenti di statistica o di tracciamento. Per questo non viene mostrato alcun banner dei cookie. Caratteri e immagini sono contenuti nel sito stesso e non vengono caricati da servizi esterni.</p>
+      <p>Il sito è ospitato da Netlify, che per farlo funzionare e proteggerlo registra automaticamente alcuni dati tecnici di ogni accesso, come indirizzo IP, tipo di browser, data e ora. Il trattamento si basa sul legittimo interesse dell’associazione a mantenere il sito sicuro e funzionante (art. 6.1.f GDPR). Netlify può trattare questi dati anche fuori dall’Unione europea, con le garanzie previste dal GDPR.</p>
+      <p>I link a servizi esterni, come Instagram, Google Maps e il modulo di adesione su Google Moduli, portano su siti che hanno informative proprie.</p>
+
+      <h2>3. Domanda di ammissione a socio</h2>
+      <h3>Quali dati raccogliamo</h3>
+      <p>Con il modulo di adesione raccogliamo: nome e cognome, data e provincia di nascita, codice fiscale, indirizzo di residenza, telefono, email, la professione sanitaria eventualmente svolta, luogo e data della domanda. Nel caso di un socio minorenne, raccogliamo anche i dati del genitore che presenta la domanda.</p>
+      <h3>Perché li trattiamo e su quale base</h3>
+      <ul class="lista">
+        <li><strong>Gestire la domanda e il rapporto associativo</strong>: valutazione della domanda da parte del Consiglio direttivo, iscrizione nel libro soci, quote associative, convocazioni e comunicazioni sulla vita dell’associazione. Base giuridica: esecuzione del rapporto associativo previsto dallo Statuto (art. 6.1.b GDPR).</li>
+        <li><strong>Adempiere a obblighi di legge</strong>, ad esempio fiscali, contabili e legati al Registro unico nazionale del Terzo settore (art. 6.1.c GDPR).</li>
+        <li><strong>Tutelare i diritti dell’associazione</strong> in caso di contestazioni (legittimo interesse, art. 6.1.f GDPR).</li>
+        <li><strong>Inviarti comunicazioni promozionali e informative periodiche</strong> sulle attività e sugli eventi, solo se hai dato il consenso nel modulo (art. 6.1.a GDPR). Il consenso è facoltativo e puoi revocarlo in qualsiasi momento.</li>
+      </ul>
+      <h3>Se non fornisci i dati</h3>
+      <p>I dati richiesti come obbligatori servono per valutare la domanda: senza di essi non è possibile l’iscrizione. Il consenso alle comunicazioni promozionali è facoltativo e un eventuale rifiuto non ha conseguenze sull’adesione.</p>
+      <h3>Come li trattiamo</h3>
+      <p>I dati sono trattati con strumenti informatici e cartacei, da persone autorizzate e con misure adeguate a proteggerli. Non sono oggetto di diffusione né di decisioni automatizzate o profilazione. Il modulo è gestito con Google Moduli, il cui fornitore tratta i dati per conto dell’associazione e può trasferirli fuori dall’Unione europea con le garanzie previste dal GDPR.</p>
+      <h3>A chi possono essere comunicati</h3>
+      <ul class="lista">
+        <li>ai componenti del Consiglio direttivo e alle persone incaricate dall’associazione;</li>
+        <li>a fornitori e consulenti che lavorano per l’associazione, ad esempio per contabilità e servizi informatici, nominati responsabili del trattamento;</li>
+        <li>a enti e autorità, nei casi previsti dalla legge.</li>
+      </ul>
+      <p>Come previsto dall’art. 6 dello Statuto, i soci hanno diritto di prendere visione dei libri sociali.</p>
+      <h3>Per quanto tempo li conserviamo</h3>
+      <p>Per tutta la durata del rapporto associativo e, dopo la sua conclusione, per il tempo previsto dagli obblighi di legge e di prescrizione, in genere 10 anni. I dati usati per le comunicazioni promozionali sono conservati fino alla revoca del consenso.</p>
+
+      <h2>4. I tuoi diritti</h2>
+      <p>In qualsiasi momento puoi chiedere l’accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione del trattamento, la portabilità e opporti al trattamento (artt. 15-22 GDPR). Se il trattamento si basa sul consenso, puoi revocarlo senza conseguenze per quanto fatto prima della revoca. Basta scrivere ai recapiti del punto 1.</p>
+      <p>Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>.</p>
+
+      <p class="muted" style="margin-top:32px">Ultimo aggiornamento: 3 novembre 2026</p>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="stack" style="gap:14px">
+        <div class="foot-brand"><span class="logo-img" aria-hidden="true"></span><div><strong style="font-family:var(--display);font-size:1.25rem;color:#fff">NutrizioniaMO 360</strong><br><span>Associazione di Promozione Sociale</span></div></div>
+        <p>Promuoviamo sani stili di vita a 360 gradi, con un approccio scientifico e multidisciplinare.</p>
+      </div>
+      <div>
+        <h3>Contatti</h3>
+        <ul>
+          <li>Via Alberto Brasili 91, 41122 Modena</li>
+          <li>Tel. <a href="tel:+393319838404">331&nbsp;983&nbsp;8404</a></li>
+          <li><a href="mailto:nutrizioniamo360@gmail.com">nutrizioniamo360@gmail.com</a></li>
+          <li>PEC <a href="mailto:nutrizioniamo360aps@pec.it">nutrizioniamo360aps@pec.it</a></li>
+          <li>Instagram <a href="https://www.instagram.com/nutrizioniamo_360/">@nutrizioniamo_360</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pagine</h3>
+        <ul>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#direttivo">Consiglio direttivo</a></li>
+          <li><a href="#statuto">Statuto</a></li>
+          <li><a href="#eventi">Eventi</a></li>
+          <li><a href="#rassegna">Rassegna scientifica</a></li>
+          <li><a href="#associarsi">Diventa socio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legale">
+      <span>© <span id="anno">2026</span> NutrizioniaMO 3esessanta APS</span>
+      <span>Sede legale: Modena</span>
+      <span>C.F. e P.IVA 04020480366</span>
+      <span>Iscritta al RUNTS, sezione APS, repertorio n. 116696 dal 07/07/2025</span>
+      <span><a href="#privacy">Privacy</a> · Questo sito non usa cookie</span>
+    </div>
+  </div>
+</footer>
+<a class="chiudi" id="chiudi" href="#home" aria-label="Chiudi e torna indietro" title="Chiudi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></a>
+<button class="su" id="su" type="button" aria-label="Torna all’inizio della pagina" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg></button>
+
+<script>
+(function(){
+
+  var pagine = ['home','chi-siamo','mission','direttivo','statuto','eventi','rassegna','privacy'];
+  var ancore = {prossimi:'home', contatti:'home', socio:'home', domande:'home', galleria:'eventi', 'parla-bene':'eventi', associarsi:'home', archivio:'eventi'};
+  var menu = document.getElementById('menu'), btn = document.getElementById('menu-btn');
+
+  var ritorno = null, tornando = null;
+  function vai(y){ try { window.scrollTo({top:y, left:0, behavior:'instant'}); } catch(err){ window.scrollTo(0, y); } }
+  function paginaAttiva(){ var a = document.querySelector('.page.active'); return a ? a.id : 'home'; }
+  // prima di aprire Privacy o Statuto, ricorda pagina e posizione di partenza
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href="#privacy"], a[href="#statuto"]');
+    if (a && paginaAttiva() !== a.getAttribute('href').slice(1)) ritorno = { pagina: paginaAttiva(), y: window.scrollY };
+  }, true);
+  function chiudiPagina(){
+    if (ritorno && ritorno.pagina !== paginaAttiva()) { tornando = ritorno; ritorno = null; location.replace('#' + tornando.pagina); }
+    else { location.replace('#home'); }
+  }
+  function mostra(){
+    var h = (location.hash || '#home').slice(1);
+    var pagina = pagine.indexOf(h) >= 0 ? h : (ancore[h] || 'home');
+    document.querySelectorAll('.page').forEach(function(p){ p.classList.toggle('active', p.dataset.page === pagina); });
+    document.querySelectorAll('nav.menu a').forEach(function(a){
+      if (a.getAttribute('href') === '#' + pagina) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    menu.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+    if (tornando && tornando.pagina === pagina) { var y = tornando.y; tornando = null; vai(y); requestAnimationFrame(function(){ vai(y); }); }
+    else if (ancore[h]) { tornando = null; var el = document.getElementById(h); if (el) { var off = (document.querySelector('.top').offsetHeight || 0) + 8; vai(el.getBoundingClientRect().top + window.scrollY - off); } }
+    else { tornando = null; vai(0); }
+  }
+  window.addEventListener('hashchange', mostra);
+  var top = document.querySelector('.top');
+  function ombra(){ top.classList.toggle('scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', ombra, {passive:true}); ombra();
+  // filtro dell'archivio eventi
+  var archivio = document.getElementById('archivio');
+  function filtra(f){
+    if (!archivio) return;
+    if (f === 'tutti') archivio.removeAttribute('data-filtro'); else archivio.setAttribute('data-filtro', f);
+    archivio.querySelectorAll('.filtro').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-f') === f ? 'true' : 'false'); });
+  }
+  if (archivio) archivio.querySelectorAll('.filtro').forEach(function(b){ b.addEventListener('click', function(){ filtra(b.getAttribute('data-f')); }); });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[data-filtro]');
+    if (a) filtra(a.getAttribute('data-filtro'));
+  }, true);
+  // eventi già passati: nascondi schede e etichette (senza JavaScript restano visibili)
+  (function(){
+    var oggi = new Date(); oggi.setHours(0,0,0,0);
+    document.querySelectorAll('[data-fine]').forEach(function(el){
+      var p = el.getAttribute('data-fine').split('-');
+      if (new Date(+p[0], +p[1]-1, +p[2]) < oggi) el.remove();
+    });
+  })();
+  // conto alla rovescia (senza JavaScript resta nascosto e si vede solo la data)
+  document.querySelectorAll('.countdown').forEach(function(el){
+    var p = el.getAttribute('data-data').split('-');
+    var evento = new Date(+p[0], +p[1]-1, +p[2]);
+    var oggi = new Date(); oggi.setHours(0,0,0,0);
+    var giorni = Math.round((evento - oggi) / 86400000);
+    if (giorni > 1) el.innerHTML = 'Mancano <strong>' + giorni + '</strong> giorni';
+    else if (giorni === 1) el.innerHTML = '<strong>Domani!</strong>';
+    else if (giorni === 0) el.innerHTML = '<strong>È oggi!</strong>';
+    else return;
+    el.hidden = false;
+  });
+  document.getElementById('chiudi').addEventListener('click', function(e){ e.preventDefault(); chiudiPagina(); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.querySelector('.page.con-x.active') && !document.querySelector('details.poster[open]') && !menu.classList.contains('open')) chiudiPagina();
+  }, true);
+  var salta = document.querySelector('.salta-link');
+  salta.addEventListener('click', function(e){ e.preventDefault(); var m = document.getElementById('contenuto'); m.focus({preventScroll:true}); m.scrollIntoView(); });
+  // pulsante torna su
+  var su = document.getElementById('su');
+  function mostraSu(){ su.hidden = window.scrollY < 700; }
+  window.addEventListener('scroll', mostraSu, {passive:true}); mostraSu();
+  su.addEventListener('click', function(){ window.scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}); });
+  var intro = document.getElementById('intro');
+  function saltaIntro(){ if (intro) intro.classList.add('salta'); }
+  if (intro) {
+    intro.addEventListener('click', saltaIntro);
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') saltaIntro(); }, {once:true});
+    intro.addEventListener('animationend', function(e){ if (e.target === intro) intro.style.display = 'none'; });
+  }
+  btn.addEventListener('click', function(){
+    var aperto = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', aperto ? 'true' : 'false');
+  });
+  function chiudi(){ menu.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { chiudi(); document.querySelectorAll('details.poster[open]').forEach(function(d){ d.open = false; }); } });
+  document.addEventListener('click', function(e){ if (!menu.contains(e.target) && !btn.contains(e.target)) chiudi(); });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 1080) chiudi(); });
+  menu.addEventListener('click', function(e){ if (e.target.closest('a')) chiudi(); });
+  document.getElementById('anno').textContent = new Date().getFullYear();
+  mostra();
+
+  // rassegna scientifica: legge rassegna.json (aggiornato ogni settimana)
+  (function(){
+    var box = document.getElementById('rs-corrente'); if (!box) return;
+    var MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+    var COLORI = {
+      'Nutrizione clinica': ['#82BB0D','#3F5F0B'], 'Microbiota': ['#E5A45F','#8A4A10'], 'Salute femminile': ['#D2577F','#9C2F55'],
+      'Nutrizione sportiva': ['#3E8EB5','#1F5672'], 'Longevità': ['#633126','#633126'], 'Prevenzione e infiammazione': ['#C9A227','#6E5200']
+    };
+    function el(tag, cls, testo){ var e = document.createElement(tag); if (cls) e.className = cls; if (testo != null) e.textContent = testo; return e; }
+    function data(s){
+      if (!s) return '';
+      var p = s.split('-');
+      if (p.length === 3) return (+p[2]) + ' ' + MESI[+p[1]-1] + ' ' + p[0];
+      if (p.length === 2) return MESI[+p[1]-1] + ' ' + p[0];
+      return p[0];
+    }
+    function link(href, testo){ var a = el('a', null, testo); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; }
+    function vuoto(msg){ box.appendChild(el('p', 'rs-vuoto', msg)); }
+    function scheda(a){
+      var c = COLORI[a.tema] || ['#82BB0D','#3F5F0B'];
+      var s = el('article', 'studio'); s.style.setProperty('--c', c[0]); s.style.setProperty('--ct', c[1]);
+      var meta = el('div', 'rs-meta');
+      if (a.tema) meta.appendChild(el('span', 'tag rs', a.tema));
+      meta.appendChild(el('span', null, [a.rivista_abbr || a.rivista, data(a.data)].filter(Boolean).join(' · ')));
+      s.appendChild(meta);
+      s.appendChild(el('h3', null, a.titolo_it || a.titolo_originale));
+      if (a.titolo_it && a.titolo_originale) { var o = el('p', 'orig', a.titolo_originale); o.lang = 'en'; s.appendChild(o); }
+      var dl = el('dl');
+      [['Disegno', a.tipo_studio], ['Partecipanti', a.popolazione]].forEach(function(r){
+        if (r[1]) { dl.appendChild(el('dt', null, r[0])); dl.appendChild(el('dd', null, r[1])); }
+      });
+      if (dl.children.length) s.appendChild(dl);
+      function blocco(titolo, testo){ if (!testo) return; var b = el('div', 'blocco'); b.appendChild(el('h4', null, titolo)); b.appendChild(el('p', null, testo)); s.appendChild(b); }
+      blocco('Obiettivo', a.obiettivo);
+      if (a.risultati && a.risultati.length) {
+        var b = el('div', 'blocco'); b.appendChild(el('h4', null, 'Risultati principali'));
+        var ul = el('ul', 'lista'); a.risultati.forEach(function(r){ ul.appendChild(el('li', null, r)); });
+        b.appendChild(ul); s.appendChild(b);
+      }
+      blocco('Limiti', a.limiti);
+      blocco('Perché l’abbiamo scelto', a.perche_selezionato);
+      if (a.nota_redazione) { var n = el('div', 'nota-red'); n.appendChild(el('h4', null, 'Il commento di NutrizioniaMO')); n.appendChild(el('p', null, a.nota_redazione)); s.appendChild(n); }
+      var l = el('div', 'link-studio');
+      l.appendChild(link(a.link || ('https://pubmed.ncbi.nlm.nih.gov/' + a.pmid + '/'), 'Leggi l’abstract su PubMed ↗'));
+      if (a.doi) l.appendChild(link('https://doi.org/' + a.doi, 'Articolo originale (DOI) ↗'));
+      s.appendChild(l);
+      return s;
+    }
+    fetch('rassegna.json', {cache: 'no-cache'}).then(function(r){ if (!r.ok) throw r.status; return r.json(); }).then(function(d){
+      var numeri = (d && d.numeri) || [];
+      if (!numeri.length) { vuoto('Il primo numero della rassegna è in preparazione: torna a trovarci nei prossimi giorni.'); return; }
+      var n = numeri[0];
+      var h = el('div', 'stack'); h.style.gap = '6px';
+      h.appendChild(el('span', 'eyebrow', 'Ultimo numero'));
+      h.appendChild(el('h2', null, 'Settimana del ' + data(n.settimana)));
+      box.appendChild(h);
+      var g = el('div', 'rs-griglia'); n.articoli.forEach(function(a){ g.appendChild(scheda(a)); }); box.appendChild(g);
+      if (numeri.length > 1) {
+        var arch = document.getElementById('rs-archivio');
+        numeri.slice(1).forEach(function(num){
+          var det = el('details'), sum = el('summary', null, 'Settimana del ' + data(num.settimana) + ' ');
+          sum.appendChild(el('span', null, '· ' + num.articoli.length + (num.articoli.length === 1 ? ' studio' : ' studi')));
+          det.appendChild(sum);
+          var ul = el('ul');
+          num.articoli.forEach(function(a){
+            var li = el('li'); li.appendChild(link(a.link || ('https://pubmed.ncbi.nlm.nih.gov/' + a.pmid + '/'), a.titolo_it || a.titolo_originale));
+            li.appendChild(document.createTextNode(' · ' + [a.rivista_abbr || a.rivista, a.tipo_studio].filter(Boolean).join(' · ')));
+            ul.appendChild(li);
+          });
+          det.appendChild(ul); arch.appendChild(det);
+        });
+        document.getElementById('rs-precedenti').hidden = false;
+      }
+    }).catch(function(){ vuoto('Non è stato possibile caricare la rassegna. Riprova tra qualche minuto.'); });
+  })();
+})();
+</script>
+</body>
+</html>

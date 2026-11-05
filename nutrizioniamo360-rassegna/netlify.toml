@@ -1,0 +1,9 @@
+# Netlify pubblica solo la cartella "sito": script e configurazioni restano fuori dal sito pubblico.
+[build]
+  publish = "sito"
+  command = ""
+
+[[headers]]
+  for = "/rassegna.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
