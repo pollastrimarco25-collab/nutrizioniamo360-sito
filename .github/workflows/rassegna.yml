@@ -1,0 +1,69 @@
+# Rassegna scientifica settimanale di NutrizioniaMO 360
+name: Rassegna scientifica
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: "Solo prova PubMed (non chiama Claude e non apre la revisione)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: rassegna
+  cancel-in-progress: false
+
+jobs:
+  rassegna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prova PubMed
+        if: ${{ inputs.prova }}
+        env:
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          NCBI_EMAIL: ${{ vars.NCBI_EMAIL }}
+        run: python3 strumenti/rassegna.py --solo-pubmed
+
+      - name: Prepara la rassegna
+        if: ${{ !inputs.prova }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          NCBI_EMAIL: ${{ vars.NCBI_EMAIL }}
+          PR_BODY: ${{ runner.temp }}/revisione.md
+        run: python3 strumenti/rassegna.py
+
+      - name: Apri la richiesta di revisione
+        if: ${{ !inputs.prova }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVISORE: ${{ vars.REVISORE }}
+        run: |
+          if git diff --quiet -- sito/rassegna.json; then
+            echo "Nessuna novità da proporre."; exit 0
+          fi
+          SETTIMANA=$(python3 -c "import json;print(json.load(open('sito/rassegna.json'))['numeri'][0]['settimana'])")
+          RAMO="rassegna/$SETTIMANA"
+          git config user.name "Rassegna NutrizioniaMO"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$RAMO"
+          git add sito/rassegna.json
+          git commit -m "Rassegna scientifica: settimana del $SETTIMANA"
+          git push --force origin "$RAMO"
+          if gh pr view "$RAMO" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$RAMO" --body-file "$RUNNER_TEMP/revisione.md"
+          else
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$RAMO" \
+              --title "Rassegna scientifica: settimana del $SETTIMANA" \
+              --body-file "$RUNNER_TEMP/revisione.md" \
+              ${REVISORE:+--reviewer "$REVISORE"}
+          fi
