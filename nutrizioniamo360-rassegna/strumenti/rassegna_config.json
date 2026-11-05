@@ -188,6 +188,6 @@
     "Menopause",
     "Am J Obstet Gynecol"
   ],
-  "filtro_epmc": "(PUB_TYPE:\"Randomized Controlled Trial\" OR PUB_TYPE:\"Meta-Analysis\" OR PUB_TYPE:\"Systematic Review\" OR PUB_TYPE:\"Practice Guideline\" OR TITLE:\"randomized\" OR TITLE:\"randomised\" OR TITLE:\"meta-analysis\" OR TITLE:\"systematic review\" OR TITLE:\"umbrella review\" OR ABSTRACT:\"randomized controlled\" OR ABSTRACT:\"prospective cohort\")",
+  "filtro_epmc": "(PUB_TYPE:\"Randomized Controlled Trial\" OR PUB_TYPE:\"Meta-Analysis\" OR PUB_TYPE:\"Systematic Review\" OR PUB_TYPE:\"Practice Guideline\" OR TITLE:\"randomized\" OR TITLE:\"randomised\" OR TITLE:\"meta-analysis\" OR TITLE:\"systematic review\" OR TITLE:\"umbrella review\" OR ABSTRACT:\"randomized controlled\" OR ABSTRACT:\"prospective cohort\") NOT TITLE:\"protocol\"",
   "data_epmc": "FIRST_PDATE"
 }
