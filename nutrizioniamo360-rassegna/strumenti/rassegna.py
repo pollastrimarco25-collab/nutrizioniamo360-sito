@@ -319,6 +319,7 @@ Regole tassative:
 - Per studi osservazionali usa linguaggio di associazione ("è associato a"), mai causale.
 - Non dare raccomandazioni cliniche, dosaggi o indicazioni ai pazienti: non è il tuo compito.
 - Registro tecnico e asciutto, adatto a un professionista. Niente enfasi o aggettivi promozionali.
+- Scrivi l'indice di eterogeneità come I² e separa le migliaia con uno spazio (es. 38 433).
 Rispondi SOLO con JSON: {"articoli": [ {
   "pmid": "...",
   "titolo_it": "traduzione fedele e chiara del titolo",

@@ -1799,7 +1799,13 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
       'Nutrizione clinica': ['#82BB0D','#3F5F0B'], 'Microbiota': ['#E5A45F','#8A4A10'], 'Salute femminile': ['#D2577F','#9C2F55'],
       'Nutrizione sportiva': ['#3E8EB5','#1F5672'], 'Longevità': ['#633126','#633126'], 'Prevenzione e infiammazione': ['#C9A227','#6E5200']
     };
-    function el(tag, cls, testo){ var e = document.createElement(tag); if (cls) e.className = cls; if (testo != null) e.textContent = testo; return e; }
+    // tipografia: migliaia non spezzate (38 433), I² per l'eterogeneità
+    function tipo(t){
+      return String(t)
+        .replace(/(\d)[  ](?=\d{3}(?!\d))/g, '$1 ')
+        .replace(/\bI\s?\^?2(?=\s*[=<>≤≥:,;)])/g, 'I²');
+    }
+    function el(tag, cls, testo){ var e = document.createElement(tag); if (cls) e.className = cls; if (testo != null) e.textContent = tipo(testo); return e; }
     function data(s){
       if (!s) return '';
       var p = s.split('-');
