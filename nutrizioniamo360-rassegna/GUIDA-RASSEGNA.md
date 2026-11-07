@@ -82,6 +82,7 @@ Se la richiesta di una settimana resta aperta, il lunedì dopo ne arriva una nuo
 ## Come è fatto
 
 - **Ricerca**: per ogni tema una query PubMed limitata agli ultimi 14 giorni e a studi su esseri umani con abstract. I disegni ammessi sono meta-analisi, revisioni sistematiche, RCT, coorti prospettiche, linee guida e position stand. Il filtro è per data di inserimento in PubMed, così non si perdono gli articoli appena usciti e non ancora indicizzati. Gli studi già usciti in un numero precedente vengono scartati.
+- **Fonte di riserva**: dai server di GitHub PubMed spesso non risponde. In quel caso il programma usa da solo Europe PMC, che contiene gli stessi articoli con lo stesso PMID e restituisce anche gli abstract. Nel registro dell'esecuzione la riga "Fonte di questa settimana" dice quale è stata usata.
 - **Selezione**: Claude sceglie privilegiando disegno solido, rilevanza pratica e qualità della rivista, con al massimo 2 studi per tema. Esclude studi pilota, studi su animali e riviste predatorie. Se non trova almeno 5 studi validi, ne pubblica meno.
 - **Sintesi**: solo dall'abstract, con i numeri riportati tali e quali e linguaggio di associazione per gli studi osservazionali. Niente raccomandazioni cliniche.
 - **Dati bibliografici** (titolo originale, rivista, data, DOI, link): presi sempre da PubMed, mai scritti dall'AI. Se Claude indica uno studio che non è tra quelli trovati, viene scartato.
