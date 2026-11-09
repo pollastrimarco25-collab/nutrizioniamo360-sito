@@ -1,6 +1,126 @@
 {
   "numeri": [
     {
+      "settimana": "2026-11-09",
+      "articoli": [
+        {
+          "pmid": "42966567",
+          "titolo_originale": "Antenatal multiple micronutrients versus iron-folic acid supplementation and infant neurodevelopment: a systematic review and meta-analysis.",
+          "rivista": "The American journal of clinical nutrition",
+          "rivista_abbr": "Am J Clin Nutr",
+          "data": "2026-10-31",
+          "doi": "10.1016/j.ajcnut.2026.101621",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42966567/",
+          "tema": "Salute femminile",
+          "titolo_it": "Supplementazione antenatale con multimicronutrienti versus ferro-acido folico e sviluppo neurologico del lattante: revisione sistematica e meta-analisi",
+          "tipo_studio": "Revisione sistematica e meta-analisi di 7 RCT (8 report)",
+          "popolazione": "Lattanti di madri randomizzate in gravidanza a multimicronutrienti (MMN) o ferro e acido folico (IFA); 5 331 lattanti nel confronto sullo sviluppo cognitivo. Follow-up fino a 24 mesi di età.",
+          "obiettivo": "Stimare l'effetto della supplementazione antenatale con MMN rispetto a IFA sullo sviluppo cognitivo, motorio e linguistico del lattante fino a 24 mesi di età.",
+          "risultati": [
+            "Su 2 943 record identificati sono stati inclusi 7 trial. Non è emersa differenza tra MMN e IFA per lo sviluppo cognitivo (g = +0.02; IC 95% -0.06, +0.10; P = 0.53; I² = 13%) né per quello motorio (g = -0.02; IC 95% -0.09, +0.05; P = 0.49; I² = 0%).",
+            "Per il linguaggio si è osservato un lieve vantaggio per MMN, non significativo e non robusto nelle analisi di sensibilità (g = +0.07; IC 95% -0.00, +0.14; P = 0.06; I² = 0%).",
+            "Tutte le stime puntuali aggregate erano inferiori alla soglia convenzionale di 0.2 per un effetto standardizzato piccolo.",
+            "La certezza delle prove (GRADE) era moderata per gli esiti cognitivo e motorio e bassa per il linguaggio."
+          ],
+          "limiti": "Non robustezza del risultato sul linguaggio alle analisi di sensibilità e certezza GRADE bassa per questo esito. Altri limiti non riportati nell'abstract.",
+          "perche_selezionato": "Valuta se la superiorità di MMN rispetto a IFA su peso alla nascita e nati piccoli per età gestazionale si estenda agli esiti di neurosviluppo, con stime aggregate prossime allo zero.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42947921",
+          "titolo_originale": "Protein supplementation and resistance training-induced strength gains in young adults: a meta-analysis.",
+          "rivista": "Frontiers in nutrition",
+          "rivista_abbr": "Front Nutr",
+          "data": "2026-10-13",
+          "doi": "10.3389/fnut.2026.1946052",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42947921/",
+          "tema": "Nutrizione sportiva",
+          "titolo_it": "Supplementazione proteica e incrementi di forza indotti dall'allenamento contro resistenza in giovani adulti: una meta-analisi",
+          "tipo_studio": "Revisione sistematica e meta-analisi di 23 RCT",
+          "popolazione": "611 giovani adulti sani in 23 RCT.",
+          "obiettivo": "Determinare se la supplementazione proteica produca benefici aggiuntivi sulla forza muscolare rispetto al solo allenamento contro resistenza (RT) in giovani adulti sani.",
+          "risultati": [
+            "Rispetto al solo RT, RT più supplementazione proteica ha prodotto miglioramenti significativi nella panca piana (WMD: 2.63 kg, IC 95%: 0.77-4.49, p = 0.006) e nello squat (WMD: 7.40 kg, IC 95%: 2.15-12.66, p = 0.006).",
+            "Nelle analisi per sottogruppi l'effetto sullo squat è risultato prevalente con interventi di durata ≤12 settimane o con assunzione di proteine sia intorno all'esercizio (pre e/o post) sia prima del sonno.",
+            "Nella meta-regressione la durata dell'intervento è risultata un moderatore significativo dell'eterogeneità dello squat (p = 0.037) e il timing delle proteine un moderatore borderline (p = 0.073).",
+            "Le analisi di sensibilità (leave-one-out e leave-one-category-out) hanno mostrato effetti aggregati significativi e coerenti nella direzione."
+          ],
+          "limiti": "Limiti non dichiarati esplicitamente nell'abstract. Gli autori indicano la necessità di trial con dose e fonte proteica standardizzate, misure ripetute dell'assunzione abituale di proteine e disegni stratificati. Valori di I² non riportati nell'abstract.",
+          "perche_selezionato": "Quantifica in kg l'incremento di forza associato alla supplementazione proteica oltre l'allenamento contro resistenza e analizza durata e timing come possibili moderatori.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42942938",
+          "titolo_originale": "Comparative Effectiveness of Nutritional Strategies for Sarcopenia-Related Outcomes in Older Adults: A Systematic Review and Network Meta-Analysis.",
+          "rivista": "Nutrients",
+          "rivista_abbr": "Nutrients",
+          "data": "2026-10-14",
+          "doi": "10.3390/nu18203368",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42942938/",
+          "tema": "Longevità",
+          "titolo_it": "Efficacia comparativa di strategie nutrizionali sugli esiti correlati alla sarcopenia negli anziani: revisione sistematica e network meta-analisi",
+          "tipo_studio": "Revisione sistematica e network meta-analisi di 20 RCT (17 nodi di rete)",
+          "popolazione": "2 160 partecipanti anziani con sarcopenia o ad alto rischio di sarcopenia.",
+          "obiettivo": "Confrontare gli effetti relativi di diverse strategie nutrizionali su massa muscolare, forza muscolare e performance fisica in anziani con sarcopenia o ad alto rischio.",
+          "risultati": [
+            "Nel complesso gli interventi nutrizionali hanno migliorato indice di massa muscolare scheletrica appendicolare (ASMI), forza di presa e velocità del cammino; l'effetto aggregato sul test five-times sit-to-stand (5STS) non è risultato statisticamente significativo (entità degli effetti aggregati non riportata nell'abstract).",
+            "Nella NMA, whey protein + vitamina D + leucina ha migliorato ASMI (SMD = 0.29, IC 95%: 0.06 to 0.52) e forza di presa (SMD = 0.82, IC 95%: 0.13 to 1.50) e ha ridotto il tempo di esecuzione del 5STS (SMD = -1.41, IC 95%: -2.63 to -0.18).",
+            "Omega-3 + leucina + Lactobacillus paracasei PS23 ha migliorato ASMI (SMD = 0.67, IC 95%: 0.10 to 1.25) e forza di presa (SMD = 1.84, IC 95%: 0.39 to 3.28); leucina + vitamina D + trigliceridi a catena media ha migliorato la velocità del cammino (SMD = 1.28, IC 95%: 0.13 to 2.43). Entrambi i nodi erano supportati da un singolo RCT.",
+            "Le analisi di sensibilità hanno mostrato che entità e precisione di alcune stime specifiche per formulazione variavano escludendo singoli trial o restringendo ai partecipanti con sarcopenia confermata. La certezza delle prove per i confronti principali variava da bassa a molto bassa."
+          ],
+          "limiti": "Rete sparsa, nodi basati su un singolo RCT, certezza delle prove da bassa a molto bassa per i confronti principali e variabilità delle stime nelle analisi di sensibilità. Gli autori considerano i risultati segnali candidati e non una gerarchia definitiva dei trattamenti.",
+          "perche_selezionato": "Offre un confronto indiretto tra formulazioni nutrizionali multicomponente su massa, forza e performance negli anziani con sarcopenia, con una valutazione esplicita della certezza delle prove.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42958331",
+          "titolo_originale": "Effects of selenium supplementation on glycemic indices and oxidative-stress biomarkers in adults: a systematic review, meta-analysis, and dose-response analysis of randomized controlled trials.",
+          "rivista": "Nutrition journal",
+          "rivista_abbr": "Nutr J",
+          "data": "2026-08-01",
+          "doi": "10.1186/s12937-026-01376-w",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42958331/",
+          "tema": "Nutrizione clinica",
+          "titolo_it": "Effetti della supplementazione di selenio su indici glicemici e biomarcatori di stress ossidativo negli adulti: revisione sistematica, meta-analisi e analisi dose-risposta di studi randomizzati controllati",
+          "tipo_studio": "Revisione sistematica, meta-analisi e analisi dose-risposta di RCT (52 bracci di trattamento; numero di trial non riportato nell'abstract)",
+          "popolazione": "10 916 adulti, incluse donne in gravidanza con diabete gestazionale (GDM), in RCT di supplementazione orale di selenio.",
+          "obiettivo": "Valutare gli effetti della supplementazione di selenio su indici glicemici, biomarcatori correlati allo stress ossidativo, metabolismo lipidico e indicatori metabolici correlati negli adulti, ed esplorare possibili modificatori d'effetto.",
+          "risultati": [
+            "Il selenio ha ridotto insulinemia a digiuno, HOMA-IR e HOMA-β e aumentato QUICKI, senza effetto complessivo chiaro su glicemia a digiuno ed emoglobina glicata (entità delle differenze medie ponderate non riportata nell'abstract).",
+            "Sono state osservate variazioni favorevoli in biomarcatori antiossidanti e infiammatori: aumento di glutatione, capacità antiossidante totale, superossido dismutasi, glutatione perossidasi e selenio sierico; riduzione di malondialdeide e proteina C-reattiva ad alta sensibilità; nessun effetto chiaro sull'ossido nitrico.",
+            "Variazioni modeste dei lipidi: HDL più alto e LDL, trigliceridi e colesterolo totale più bassi. Tra gli esiti antropometrici ed emodinamici è stata ridotta solo la pressione diastolica.",
+            "Gli effetti variavano per dose, durata, caratteristiche dei partecipanti e contesto geografico di esposizione al selenio."
+          ],
+          "limiti": "Limiti non dichiarati esplicitamente nell'abstract; i risultati della valutazione GRADE non sono riportati. Gli autori indicano maggiore applicabilità a popolazioni con stato basale di selenio marginale o basso, cautela nell'estrapolazione a contesti con selenio adeguato e necessità di RCT di lunga durata e alta qualità su effetti specifici per stato basale, intervalli di dose sicuri e sicurezza a lungo termine.",
+          "perche_selezionato": "Sintetizza un ampio insieme di RCT su selenio, marker di sensibilità insulinica, stress ossidativo e lipidi, includendo donne con GDM e un'analisi dose-risposta.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42952548",
+          "titolo_originale": "Comparative efficacy of aerobic training, resistance training, combined training, and multicomponent exercise on interleukin-6, C-reactive protein, and tumor necrosis factor-α levels in older adults (≥60 years): a systematic review and network meta-analysis.",
+          "rivista": "Frontiers in physiology",
+          "rivista_abbr": "Front Physiol",
+          "data": "2026-10-14",
+          "doi": "10.3389/fphys.2026.1837579",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42952548/",
+          "tema": "Prevenzione e infiammazione",
+          "titolo_it": "Efficacia comparativa di allenamento aerobico, allenamento contro resistenza, allenamento combinato ed esercizio multicomponente sui livelli di interleuchina-6, proteina C-reattiva e fattore di necrosi tumorale-α negli anziani (≥60 anni): revisione sistematica e network meta-analisi",
+          "tipo_studio": "Revisione sistematica con meta-analisi a tre livelli e network meta-analisi frequentista a effetti random di 82 studi",
+          "popolazione": "6 493 anziani (≥60 anni; età media 71.04 anni), di cui 3 125 nel gruppo di controllo e 3 368 nel gruppo sperimentale; sani o con malattie croniche.",
+          "obiettivo": "Confrontare e classificare l'efficacia di allenamento aerobico (AT), contro resistenza (RT), combinato (AT+RT) ed esercizio multicomponente (MCEx) sui livelli sierici di IL-6, CRP e TNF-α negli anziani, ed esaminare se la modalità ottimale differisca in base allo stato di salute.",
+          "risultati": [
+            "Nella meta-analisi multilivello l'esercizio ha ridotto IL-6 (SMD = -0.31), CRP (SMD = -0.44) e TNF-α (SMD = -0.40); gli IC 95% non sono riportati nell'abstract.",
+            "Nella NMA, AT è risultato primo in classifica per IL-6 (SUCRA = 84.6%) e TNF-α (SUCRA = 97.5%); RT per CRP (SUCRA = 89.1%).",
+            "Nei soggetti con malattie croniche RT e AT+RT hanno migliorato IL-6 e CRP; negli anziani sani AT è risultato efficace nel ridurre TNF-α.",
+            "La maggior parte degli studi presentava rischio di bias poco chiaro o alto; la certezza delle prove GRADE era molto bassa per tutti e tre gli esiti."
+          ],
+          "limiti": "Rischio di bias poco chiaro o alto nella maggior parte degli studi, eterogeneità, publication bias e certezza GRADE molto bassa; gli autori definiscono i risultati esplorativi e da confermare in trial di alta qualità. Il disegno dei singoli studi non è specificato nell'abstract.",
+          "perche_selezionato": "Confronta quattro modalità di esercizio su tre marcatori infiammatori negli anziani, distinguendo tra soggetti sani e con malattie croniche, con una valutazione esplicita della bassa certezza delle prove.",
+          "nota_redazione": ""
+        }
+      ]
+    },
+    {
       "settimana": "2026-11-02",
       "articoli": [
         {
@@ -118,5 +238,5 @@
       ]
     }
   ],
-  "aggiornato": "2026-11-05T12:44+01:00"
+  "aggiornato": "2026-11-09T14:56+01:00"
 }
