@@ -1,6 +1,126 @@
 {
   "numeri": [
     {
+      "settimana": "2026-11-16",
+      "articoli": [
+        {
+          "pmid": "43010964",
+          "titolo_originale": "Probiotics for the prevention of antibiotic-associated diarrhea: an umbrella review and second-order meta-analysis of 21 systematic reviews covering 170 unique randomized controlled trials.",
+          "rivista": "Frontiers in nutrition",
+          "rivista_abbr": "Front Nutr",
+          "data": "2026-10-27",
+          "doi": "10.3389/fnut.2026.1994645",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43010964/",
+          "tema": "Microbiota",
+          "titolo_it": "Probiotici per la prevenzione della diarrea associata agli antibiotici: umbrella review e meta-analisi di secondo ordine di 21 revisioni sistematiche che comprendono 170 trial randomizzati controllati unici",
+          "tipo_studio": "Umbrella review con meta-analisi di secondo ordine di 21 revisioni sistematiche/meta-analisi di RCT (478 RCT inclusi, 170 unici); registrata in PROSPERO (CRD420261404660)",
+          "popolazione": "Pazienti inclusi nei trial di probiotici orali per la prevenzione della diarrea associata agli antibiotici (AAD); il numero totale di partecipanti non è riportato nell'abstract. Sottogruppi analizzati: bambini, adulti, anziani.",
+          "obiettivo": "Valutare efficacia e sicurezza dei probiotici nella prevenzione dell'AAD tramite una sintesi delle revisioni sistematiche e meta-analisi disponibili.",
+          "risultati": [
+            "Qualità e sovrapposizione: la maggior parte delle revisioni è risultata di qualità bassa o criticamente bassa secondo AMSTAR 2 (solo 1 su 21 di qualità alta, 13 su 21 criticamente bassa). La sovrapposizione complessiva dei trial primari (CCA) è stata moderata (9,06%), ma 71 coppie di revisioni su 210 mostravano sovrapposizione molto alta (≥15%).",
+            "Analisi aggregata: i probiotici sono associati a un minor rischio di AAD (RR 0.54, 95% CI 0.48-0.61; OR 0.37, 95% CI 0.31-0.46). Gli autori precisano che, per la condivisione dei trial primari, queste stime sono probabilmente più precise di quanto l'evidenza giustifichi.",
+            "Analisi di sensibilità e sottogruppi: stime simili nelle analisi leave-one-review-out (RR 0.54-0.55) e limitando l'analisi alle revisioni di qualità alta o bassa (RR 0.52, 95% CI 0.48-0.57); stime più deboli e meno precise nei sottoinsiemi con bassa sovrapposizione (RR 0.59-0.63). Bambini RR 0.46, adulti RR 0.55; nelle 4 revisioni sugli anziani nessun beneficio chiaro (RR 0.96, 95% CI 0.85-1.08).",
+            "Dose e sicurezza: in un confronto esplorativo basato su 3 revisioni sovrapposte, la stima era più bassa per dosi giornaliere ≥5 × 109 CFU rispetto a dosi inferiori; il confronto è confuso da età e prodotto. Non è stato rilevato un aumento di eventi avversi, ma solo 2 revisioni hanno riportato questo esito."
+          ],
+          "limiti": "Dichiarati dagli autori: evidenza a bassa certezza; qualità metodologica prevalentemente bassa o criticamente bassa; molti trial primari condivisi tra le revisioni; eterogeneità di ceppo, dose e formulazione; confronto per dose confuso da età e prodotto; sicurezza riportata solo in 2 revisioni. I risultati non dimostrano l'efficacia di uno specifico prodotto e non supportano affermazioni per classe o per singolo prodotto.",
+          "perche_selezionato": "Sintetizza a livello di revisioni sistematiche l'evidenza sui probiotici nella prevenzione dell'AAD, con quantificazione della sovrapposizione tra studi e della qualità metodologica.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43007647",
+          "titolo_originale": "The Influence of Protein on Beverage Hydration Efficacy: A Systematic Review and Meta-analysis.",
+          "rivista": "Sports medicine (Auckland, N.Z.)",
+          "rivista_abbr": "Sports Med",
+          "data": "2026-11-10",
+          "doi": "10.1007/s40279-026-02577-3",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43007647/",
+          "tema": "Nutrizione sportiva",
+          "titolo_it": "Influenza delle proteine sull'efficacia idratante delle bevande: revisione sistematica e meta-analisi",
+          "tipo_studio": "Revisione sistematica con meta-analisi ad effetti random (16 studi); pre-registrata su Open Science Framework; conforme a PRISMA",
+          "popolazione": "205 partecipanti adulti (≥18 anni) in 16 studi; 17,1% donne; euidratati: n = 2, ipoidratati: n = 14 (come riportato nell'abstract). Contenuto proteico medio delle bevande: 23.7 ± 9.9 g/L.",
+          "obiettivo": "Valutare gli effetti di bevande contenenti proteine (≥2 g/L) su idratazione e reidratazione (ritenzione di fluidi, urine cumulative, bilancio idrico netto e variazione del volume plasmatico) rispetto a una bevanda di controllo.",
+          "risultati": [
+            "Ritenzione di fluidi maggiore con le bevande proteiche (SMD 0.66, 95% CI 0.39-0.93, P < 0.00001, Z = 4.85, effetto medio).",
+            "Diuresi cumulativa ridotta (SMD - 0.71, 95% CI - 0.99 to - 0.43, P < 0.00001, Z = 4.93, effetto medio).",
+            "Bilancio idrico netto aumentato (SMD 0.58, 95% CI 0.30-0.85, P < 0.0001, Z = 4.10, effetto medio) e variazione del volume plasmatico maggiore (SMD 0.29, 95% CI 0.03-0.55, P = 0.03, Z = 2.19, effetto piccolo).",
+            "Le stime provengono dalla meta-analisi sugli studi di reidratazione; il numero di studi inclusi in ciascuna analisi non è riportato nell'abstract."
+          ],
+          "limiti": "Dichiarati dagli autori: scarsa rappresentanza femminile (17,1%) e assenza di bevande a base vegetale, che limitano la generalizzabilità alle atlete e a chi segue diete prive di derivati del lattosio. Valutazione del rischio di bias ed eterogeneità (I²): non riportate nell'abstract. Quasi tutti gli studi riguardano soggetti ipoidratati (n = 14 vs n = 2 euidratati).",
+          "perche_selezionato": "Affronta un aspetto poco studiato della composizione delle bevande per la reidratazione (l'aggiunta di proteine), con esiti fisiologici misurabili sintetizzati in meta-analisi.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43030578",
+          "titolo_originale": "The Effect of Vitamins During Pregnancy on Pregnancy and Assisted Reproduction Outcomes: An Umbrella Review.",
+          "rivista": "Journal of clinical medicine",
+          "rivista_abbr": "J Clin Med",
+          "data": "2026-10-29",
+          "doi": "10.3390/jcm15218434",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43030578/",
+          "tema": "Salute femminile",
+          "titolo_it": "Effetto delle vitamine in gravidanza sugli esiti della gravidanza e della riproduzione assistita: umbrella review",
+          "tipo_studio": "Umbrella review di 33 revisioni sistematiche/meta-analisi (679 studi primari); protocollo registrato in PROSPERO (CRD420251026875); qualità valutata con AMSTAR 2",
+          "popolazione": "Gravide e donne in percorsi di riproduzione assistita (ART) negli studi primari inclusi (679 studi primari); numero di partecipanti non riportato nell'abstract. Sei vitamine e 29 esiti materno-fetali esaminati.",
+          "obiettivo": "Sintetizzare le revisioni sistematiche e meta-analisi sull'impatto della carenza e della supplementazione vitaminica in gravidanza su esiti materni e fetali, compresi gli esiti dell'ART.",
+          "risultati": [
+            "Le carenze di vitamina B12, folato, vitamina C e vitamina D risultano associate a maggior rischio di diabete mellito gestazionale (GDM), pre-eclampsia, basso peso alla nascita, aborto spontaneo ricorrente (RSA), parto pretermine e altri esiti avversi.",
+            "Bassi livelli di vitamina D risultano correlati a esiti peggiori dell'ART, inclusa la riduzione dei tassi di gravidanza clinica e di nati vivi.",
+            "Per la supplementazione di folato, vitamina C e vitamina D, gli autori indicano una possibile riduzione del rischio di anemia megaloblastica, rottura prematura delle membrane, GDM e morte fetale, e un miglioramento della crescita neonatale.",
+            "La vitamina A non ha mostrato un'influenza rilevante sugli esiti della gravidanza. Odds ratio e intervalli di confidenza per i singoli esiti: non riportati nell'abstract."
+          ],
+          "limiti": "Non riportati nell'abstract. Il disegno (sintesi di revisioni) implica che le associazioni tra carenza ed esiti derivino verosimilmente da dati osservazionali; i risultati della valutazione AMSTAR 2, la sovrapposizione tra revisioni e l'eterogeneità non sono riportati nell'abstract.",
+          "perche_selezionato": "Offre un quadro d'insieme su stato vitaminico, supplementazione e diversi esiti di gravidanza e ART, riunendo 33 revisioni su sei vitamine.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43030266",
+          "titolo_originale": "Effects of Bioactive Compound Supplementation on Insulin Resistance and Systemic Inflammation in Overweight and Obese Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+          "rivista": "Nutrients",
+          "rivista_abbr": "Nutrients",
+          "data": "2026-10-31",
+          "doi": "10.3390/nu18213638",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43030266/",
+          "tema": "Prevenzione e infiammazione",
+          "titolo_it": "Effetti della supplementazione con composti bioattivi su insulino-resistenza e infiammazione sistemica in adulti in sovrappeso e obesi: revisione sistematica e meta-analisi di trial randomizzati controllati",
+          "tipo_studio": "Revisione sistematica e meta-analisi ad effetti random di 59 RCT; rischio di bias con RoB 2, certezza dell'evidenza con GRADE",
+          "popolazione": "59 RCT, 3 263 partecipanti adulti con BMI ≥25.0 kg/m2 senza diabete di tipo 2 (omega-3: 23 trial; curcumina: 13; tè verde: 13; resveratrolo: 10).",
+          "obiettivo": "Valutare l'effetto della supplementazione orale con curcumina, estratto di tè verde, resveratrolo e acidi grassi omega-3 su HOMA-IR e proteina C-reattiva (CRP) rispetto a placebo o controllo (durata ≥4 settimane).",
+          "risultati": [
+            "Solo la curcumina ha ridotto in modo significativo l'HOMA-IR (MD = -0.30 [-0.53, -0.07], p = 0.019; certezza moderata), con bassa eterogeneità.",
+            "L'estratto di tè verde ha mostrato una riduzione non significativa della CRP (MD = -0.43 mg/L [-0.87, 0.02], p = 0.057; certezza bassa), con eterogeneità sostanziale.",
+            "Resveratrolo e omega-3 non hanno mostrato effetti significativi su nessuno dei due esiti (certezza bassa).",
+            "Eterogeneità significativa in cinque analisi su otto; la maggior parte dei trial presentava alcune preoccupazioni o alto rischio di bias."
+          ],
+          "limiti": "Dichiarati dagli autori: formulazioni e dosi eterogenee, campioni piccoli e rischio di bias limitano l'interpretazione; eterogeneità significativa in cinque analisi su otto. Valori di I²: non riportati nell'abstract.",
+          "perche_selezionato": "Confronta in un'unica sintesi quattro composti bioattivi su insulino-resistenza e infiammazione in adulti con sovrappeso/obesità, con valutazione GRADE della certezza per ciascun esito.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "42970410",
+          "titolo_originale": "Mediterranean Diet Adherence and Markers of Healthy Aging: A Systematic Review of Biological and Functional Outcomes.",
+          "rivista": "Nutrition reviews",
+          "rivista_abbr": "Nutr Rev",
+          "data": "2026-11-02",
+          "doi": "10.1093/nutrit/nuag160",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/42970410/",
+          "tema": "Longevità",
+          "titolo_it": "Aderenza alla dieta mediterranea e marcatori di invecchiamento in salute: revisione sistematica degli esiti biologici e funzionali",
+          "tipo_studio": "Revisione sistematica senza meta-analisi di 11 studi (5 RCT, 4 coorti prospettiche, 2 studi trasversali); registrata in PROSPERO (CRD420251107773)",
+          "popolazione": "Adulti inclusi in 11 studi; numero totale di partecipanti non riportato nell'abstract.",
+          "obiettivo": "Valutare le associazioni tra aderenza a pattern dietetici di tipo mediterraneo (e interventi correlati) e marcatori di invecchiamento in salute: biomarcatori biologici dell'invecchiamento, cognizione, fragilità, performance fisica e stato di salute generale.",
+          "risultati": [
+            "Una maggiore aderenza è associata a migliore performance cognitiva e a un declino mnemonico più lento in alcuni studi.",
+            "Sono stati riportati risultati favorevoli per dinamica telomerica, età epigenetica e biomarcatori infiammatori; dati numerici non riportati nell'abstract.",
+            "I miglioramenti di fragilità e performance fisica sono stati osservati principalmente in interventi che combinavano modifica della dieta e attività fisica.",
+            "L'eterogeneità di definizioni dietetiche, misure di aderenza, componenti degli interventi ed esiti ha precluso la meta-analisi."
+          ],
+          "limiti": "Dichiarati dagli autori: eterogeneità metodologica, esposizione dietetica auto-riferita e inclusione di interventi modificati o multicomponente; le evidenze non stabiliscono effetti uniformi o causali.",
+          "perche_selezionato": "Raccoglie evidenze eterogenee su dieta mediterranea e marcatori biologici e funzionali di invecchiamento, distinguendo i risultati per disegno di studio e tipo di intervento.",
+          "nota_redazione": ""
+        }
+      ]
+    },
+    {
       "settimana": "2026-11-09",
       "articoli": [
         {
@@ -238,5 +358,5 @@
       ]
     }
   ],
-  "aggiornato": "2026-11-09T14:56+01:00"
+  "aggiornato": "2026-11-16T14:41+01:00"
 }
