@@ -281,7 +281,6 @@ nav.menu a.cta:hover{background:#D48F45;color:var(--marrone)}
 .prossima-box strong{font-family:var(--display);font-size:1.6rem}
 body:has(.poster[open]){overflow:hidden}
 
-
 /* ===== Animazione d'apertura (solo CSS: funziona anche senza JavaScript) ===== */
 .intro{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;overflow:hidden;
   background:radial-gradient(circle at 50% 45%,#fff 0%,#fff 38%,var(--fondo-alt) 100%);
@@ -399,7 +398,6 @@ footer::before{content:"";position:absolute;left:0;right:0;top:-27px;height:28px
   .pilastro,.persona,.contatto,.numero,.obiettivo,.valori .card,.socio{animation:none!important}
 }
 
-
 /* ===== Calendario e conto alla rovescia ===== */
 .cal-azioni{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:6px}
 .countdown{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:var(--marrone);color:#fff;font-size:.9rem}
@@ -432,7 +430,6 @@ main:focus{outline:none}
 @media (hover:hover){.su:hover{background:var(--verde-scuro)}}
 @media print{.intro,.su,.top,.salta-link{display:none!important}.page{display:block!important}}
 
-
 /* ===== Tasto chiudi (Privacy, Statuto) ===== */
 .chiudi{display:none;position:fixed;z-index:15;top:calc(env(safe-area-inset-top) + 86px);right:max(18px,env(safe-area-inset-right));
   width:46px;height:46px;border-radius:50%;background:#fff;border:1.5px solid var(--linea);color:var(--marrone);place-items:center;
@@ -449,7 +446,6 @@ html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* 
 .lb-x{position:absolute;top:max(16px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));width:46px;height:46px;border-radius:50%;
   background:rgba(255,255,255,.95);color:var(--marrone);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
 .lb-x svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
-
 
 /* ===== Galleria foto eventi ===== */
 .galleria{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -470,7 +466,6 @@ html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* 
 @media (hover:hover){.striscia-foto:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(99,49,38,.14)}}
 @media (max-width:620px){.striscia-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 130px 130px}.striscia-foto:first-child{grid-column:span 2;grid-row:auto}.striscia-foto:nth-child(4){grid-column:span 2}}
 
-
 /* ===== Evento con programma dettagliato ===== */
 .link-freccia{justify-self:start;font-weight:700;text-decoration:none;color:var(--verde-scuro);display:inline-flex;align-items:center;gap:6px;margin-top:4px}
 .link-freccia::after{content:"→";transition:transform .2s}
@@ -490,13 +485,11 @@ html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* 
 @media (max-width:820px){.dett-corpo{grid-template-columns:1fr}.relatore{order:-1}.dett-colonne{grid-template-columns:1fr}}
 #prossimi .evento-top + .evento-top, .page[data-page="eventi"] .evento-top + .evento-top{margin-top:20px}
 
-
 /* ===== Evento soci ===== */
 .tag.soci{background:#FFF1C9;color:#6E5200}
 .evento-cena .data{background:#9E2A2B}
 .chips-evento{justify-self:start;max-width:100%}
 .chips-evento .chip-evento:not(:first-child){display:none}
-
 
 /* ===== Perché associarsi ===== */
 .associarsi{background:linear-gradient(180deg,#fff, var(--pesca-chiaro) 140%)}
@@ -517,7 +510,6 @@ html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* 
 @supports (animation-timeline: view()){ .motivo{animation:sale linear both;animation-timeline:view();animation-range:entry 0% entry 40%} }
 @media (prefers-reduced-motion: reduce){ .motivo{animation:none!important} }
 
-
 /* ===== Come associarsi ===== */
 .come{background:#fff;border:1.5px solid var(--pesca);border-radius:22px;padding:32px;display:grid;gap:22px;scroll-margin-top:90px}
 .come-testa h3{font-size:clamp(1.4rem,2.8vw,1.8rem)}
@@ -536,7 +528,6 @@ html:not(.js) .chiudi{top:auto;bottom:max(18px,env(safe-area-inset-bottom))} /* 
   .passi::before{top:24px;bottom:24px;left:23px;right:auto;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--pesca) 0 8px,transparent 8px 14px)}
   .passo{grid-template-columns:48px 1fr;justify-items:start;text-align:left;align-items:start}
 }
-
 
 /* ===== Due percorsi in home ===== */
 .percorsi-band{padding-top:40px}
@@ -590,7 +581,6 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
 .foot-brand{display:flex;gap:14px;align-items:center}
 .foot-brand .logo-img{width:64px;height:64px;flex-shrink:0;background-color:#fff;border-radius:50%;background-size:92%}
 @media (max-width:820px){.foot-grid{grid-template-columns:1fr}}
-
 /* Rassegna scientifica */
 .nota-metodo{display:grid;gap:6px;padding:20px 24px;border-radius:18px;background:var(--pesca-chiaro);border:1.5px solid var(--pesca);font-size:.97rem}
 .nota-metodo strong{font-family:var(--display);font-size:1.1rem;color:var(--marrone)}
@@ -737,35 +727,6 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
     </div>
   </section>
 
-  <section class="band alt">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">La mission in sintesi</span>
-        <h2>Quattro pilastri</h2>
-        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
-      </div>
-      <div class="pilastri">
-        <article class="pilastro p1"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 11.6V16c3 2 7 2 10 0v-4.4"/><path d="M21 9.5V14"/></svg></span><span class="num" aria-hidden="true">1</span><h3>Formazione scientifica</h3><p>Congressi, convegni e incontri di aggiornamento per professionisti sanitari, basati sulle evidenze.</p></article>
-        <article class="pilastro p2"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span><span class="num" aria-hidden="true">2</span><h3>Cultura della salute</h3><p>Serate, scuole di nutrizione ed eventi su prevenzione e stili di vita, aperti alla comunità.</p></article>
-        <article class="pilastro p3"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2.4"/><circle cx="5.5" cy="17.5" r="2.4"/><circle cx="18.5" cy="17.5" r="2.4"/><path d="M10.8 7.6 6.7 15.4M13.2 7.6l4.1 7.8M7.9 17.5h8.2"/></svg></span><span class="num" aria-hidden="true">3</span><h3>Lavoro di rete</h3><p>Collaborazione con medici, farmacisti, ostetriche, fisioterapisti e altri professionisti sanitari.</p></article>
-        <article class="pilastro p4"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 19 6.5v5.6c0 4.3-2.9 7.3-7 8.9-4.1-1.6-7-4.6-7-8.9V6.5l7-3Z"/><path d="m9 12 2.1 2.1L15.3 10"/></svg></span><span class="num" aria-hidden="true">4</span><h3>Contro la disinformazione</h3><p>Valorizziamo il professionista qualificato della nutrizione e contrastiamo abusivismo e informazioni non validate.</p></article>
-      </div>
-      <div class="btns" style="margin-top:28px"><a class="btn vuoto" href="#mission">Leggi la mission completa</a></div>
-    </div>
-  </section>
-
-  <section class="band striscia" aria-label="Dai nostri eventi">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">Dai nostri eventi</span>
-        <h2>Formazione, cucina e sport</h2>
-        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
-      </div>
-      <div class="striscia-grid"><a class="striscia-foto" href="#galleria" style="--img:var(--g1t)" aria-label="Congresso Nutriamo la Vita 2026: One planet, one health: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g9t)" aria-label="Show cooking: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g11t)" aria-label="Il team a un evento sportivo: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g5t)" aria-label="Il gruppo durante la pausa del congresso: apri la galleria"></a></div>
-      <div class="btns" style="margin-top:24px"><a class="btn vuoto" href="#galleria">Guarda tutte le foto</a></div>
-    </div>
-  </section>
-
   <section class="band" id="prossimi">
     <div class="wrap">
       <div class="head">
@@ -821,6 +782,35 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
     </div>
   </section>
 
+  <section class="band alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">La mission in sintesi</span>
+        <h2>Quattro pilastri</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="pilastri">
+        <article class="pilastro p1"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 11.6V16c3 2 7 2 10 0v-4.4"/><path d="M21 9.5V14"/></svg></span><span class="num" aria-hidden="true">1</span><h3>Formazione scientifica</h3><p>Congressi, convegni e incontri di aggiornamento per professionisti sanitari, basati sulle evidenze.</p></article>
+        <article class="pilastro p2"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span><span class="num" aria-hidden="true">2</span><h3>Cultura della salute</h3><p>Serate, scuole di nutrizione ed eventi su prevenzione e stili di vita, aperti alla comunità.</p></article>
+        <article class="pilastro p3"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="2.4"/><circle cx="5.5" cy="17.5" r="2.4"/><circle cx="18.5" cy="17.5" r="2.4"/><path d="M10.8 7.6 6.7 15.4M13.2 7.6l4.1 7.8M7.9 17.5h8.2"/></svg></span><span class="num" aria-hidden="true">3</span><h3>Lavoro di rete</h3><p>Collaborazione con medici, farmacisti, ostetriche, fisioterapisti e altri professionisti sanitari.</p></article>
+        <article class="pilastro p4"><span class="icona" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 19 6.5v5.6c0 4.3-2.9 7.3-7 8.9-4.1-1.6-7-4.6-7-8.9V6.5l7-3Z"/><path d="m9 12 2.1 2.1L15.3 10"/></svg></span><span class="num" aria-hidden="true">4</span><h3>Contro la disinformazione</h3><p>Valorizziamo il professionista qualificato della nutrizione e contrastiamo abusivismo e informazioni non validate.</p></article>
+      </div>
+      <div class="btns" style="margin-top:28px"><a class="btn vuoto" href="#mission">Leggi la mission completa</a></div>
+    </div>
+  </section>
+
+  <section class="band striscia" aria-label="Dai nostri eventi">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Dai nostri eventi</span>
+        <h2>Formazione, cucina e sport</h2>
+        <svg class="pennellata" aria-hidden="true"><use href="#pen"/></svg>
+      </div>
+      <div class="striscia-grid"><a class="striscia-foto" href="#galleria" style="--img:var(--g1t)" aria-label="Congresso Nutriamo la Vita 2026: One planet, one health: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g9t)" aria-label="Show cooking: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g11t)" aria-label="Il team a un evento sportivo: apri la galleria"></a><a class="striscia-foto" href="#galleria" style="--img:var(--g5t)" aria-label="Il gruppo durante la pausa del congresso: apri la galleria"></a></div>
+      <div class="btns" style="margin-top:24px"><a class="btn vuoto" href="#galleria">Guarda tutte le foto</a></div>
+    </div>
+  </section>
+
   <section class="band associarsi" id="associarsi">
     <div class="wrap">
       <div class="head">
@@ -861,7 +851,7 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
         <ol class="passi">
           <li class="passo"><span class="passo-n" aria-hidden="true">1</span><div><h4>Compila la domanda di adesione</h4><p>Inserisci i tuoi dati anagrafici e i tuoi recapiti nel modulo online dedicato per inoltrare la richiesta al Consiglio direttivo.</p></div></li>
           <li class="passo"><span class="passo-n" aria-hidden="true">2</span><div><h4>Versa la quota annuale</h4><p>Effettua il pagamento della quota associativa tramite bonifico bancario o carta di pagamento sicura sul portale.</p></div></li>
-          <li class="passo"><span class="passo-n" aria-hidden="true">3</span><div><h4>Ricevi la conferma e la tessera digitale</h4><p>Una volta convalidata l’iscrizione, riceverai via email la tessera di socio, la ricevuta e le credenziali per accedere ai contenuti riservati.</p></div></li>
+          <li class="passo"><span class="passo-n" aria-hidden="true">3</span><div><h4>Ricevi la conferma via email</h4><p>Una volta convalidata l’iscrizione dal Consiglio direttivo, riceverai una email di conferma dell’avvenuta iscrizione.</p></div></li>
         </ol>
         <p class="nota-soci"><strong>Nota:</strong> la qualifica di socio ha validità per l’anno solare in corso e dà diritto immediato alla partecipazione a tutte le attività istituzionali dell’associazione.</p>
         <div class="come-azioni">
@@ -886,11 +876,7 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
         </details>
         <details>
           <summary>Quanto costa associarsi?</summary>
-          <p>La quota associativa del socio ordinario è di 20 €, da versare con bonifico. Le coordinate bancarie sono indicate nel modulo di adesione.</p>
-        </details>
-        <details>
-          <summary>Come funziona l’iscrizione?</summary>
-          <p>Compili il modulo online e versi la quota. Il Consiglio direttivo valuta la domanda e, dopo il versamento, il tuo nome viene annotato nel libro soci.</p>
+          <p>La quota associativa annuale del socio ordinario è di 20 €. Le indicazioni per il pagamento sono nel modulo di adesione.</p>
         </details>
         <details>
           <summary>Che cosa comporta essere socio?</summary>
@@ -1258,9 +1244,9 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
         <div class="stack">
           <span class="eyebrow">Diventa socio</span>
           <h3 style="font-size:1.5rem">Associati per partecipare ai nostri eventi</h3>
-          <p class="narrow">Compila il modulo di adesione online. Come previsto dallo Statuto, la domanda viene valutata dal Consiglio direttivo e l'iscrizione diventa effettiva con il versamento della quota associativa. Prima di compilare puoi leggere l'<a href="#privacy">informativa privacy</a>.</p>
+          <p class="narrow">Quota annuale di 20 €, iscrizione online in pochi minuti. Scopri i vantaggi per i soci e i tre passaggi per associarti.</p>
         </div>
-        <a class="btn pesca" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Compila il modulo</a>
+        <div class="btns"><a class="btn vuoto" href="#associarsi">Perché associarsi</a><a class="btn pesca" href="https://docs.google.com/forms/d/1S6ihtOJHgXW6ENFzsthMmSEh6yCQlyiVTR7vR9UBWm4/viewform" target="_blank" rel="noopener">Compila la domanda</a></div>
       </div></div>
     </div>
   </section>
@@ -1790,7 +1776,6 @@ footer .tbd{background:rgba(255,255,255,.08);color:#F7D3AE;border-color:#F7D3AE}
   menu.addEventListener('click', function(e){ if (e.target.closest('a')) chiudi(); });
   document.getElementById('anno').textContent = new Date().getFullYear();
   mostra();
-
   // rassegna scientifica: legge rassegna.json (aggiornato ogni settimana)
   (function(){
     var box = document.getElementById('rs-corrente'); if (!box) return;
