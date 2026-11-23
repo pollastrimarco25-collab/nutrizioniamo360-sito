@@ -1,6 +1,125 @@
 {
   "numeri": [
     {
+      "settimana": "2026-11-23",
+      "articoli": [
+        {
+          "pmid": "43045679",
+          "titolo_originale": "Dietary interventions and stroke clinical outcomes: a systematic review.",
+          "rivista": "International journal of stroke : official journal of the International Stroke Society",
+          "rivista_abbr": "Int J Stroke",
+          "data": "2026-11-17",
+          "doi": "10.1177/17474930261511416",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43045679/",
+          "tema": "Nutrizione clinica",
+          "titolo_it": "Interventi dietetici ed esiti clinici dell'ictus: una revisione sistematica.",
+          "tipo_studio": "Revisione sistematica di 8 RCT (meta-analisi quantitativa non eseguita per marcata eterogeneità)",
+          "popolazione": "Adulti con ictus o attacco ischemico transitorio (TIA); 8 RCT per un totale di n=15 974. Interventi dietetici orali di durata ≥4 settimane: sostituti del sale (n=2 studi), dieta mediterranea (n=2), dieta chetogenica (n=1), sostituzione parziale dei pasti (n=1), miele Trigona (n=1), latte di soia (n=1).",
+          "obiettivo": "Sintetizzare le evidenze degli RCT sugli effetti di interventi dietetici basati su alimenti o sull'intera dieta sugli esiti clinici (disabilità, funzione neurologica, cognizione, umore, qualità di vita, recidiva di ictus) in adulti con ictus/TIA.",
+          "risultati": [
+            "Nei grandi trial di fase III, la sostituzione del sale con prodotti a ridotto contenuto di sodio ha ridotto la recidiva di ictus (RR 0,86, IC 95% 0,77-0,95) e la mortalità (RR 0,88, IC 95% 0,82-0,96).",
+            "Le diete mediterranee hanno migliorato la qualità di vita (EQ-5D, differenza media: 10,1, IC 95% 1,8-18,4).",
+            "I piccoli trial pilota di fase I/II hanno fornito segnali esplorativi di proof-of-concept specifici per dominio (latte di soia dopo esercizio: miglioramento della performance di cammino; miele Trigona: miglioramento dei punteggi MoCA).",
+            "La dieta chetogenica ha migliorato NIHSS (5±2 vs 7±2, p<0,01) e disabilità (mRS: 2±1 vs 3±1, p<0,05), con elevata frequenza di eventi avversi (keto-flu 25%, disturbi gastrointestinali 15%, iperlipidemia 10%)."
+          ],
+          "limiti": "Evidenza limitata ed eterogenea, tale da precludere la meta-analisi quantitativa. Rischio di bias (RoB 2): 1 studio a basso rischio, 6 con alcune preoccupazioni, 1 ad alto rischio. I piccoli trial di fase I/II sono esposti a errori di tipo I e a sovrastima della dimensione dell'effetto. Gli autori indicano la necessità di RCT di alta qualità specifici per fase.",
+          "perche_selezionato": "Sintetizza le evidenze randomizzate sugli interventi dietetici dopo ictus/TIA, ambito in cui le linee guida sono descritte come limitate e non specifiche.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43059105",
+          "titolo_originale": "Gut microbiome-based interventions to prevent ICU-acquired infections: A systematic review and meta-analysis.",
+          "rivista": "Gut microbes",
+          "rivista_abbr": "Gut Microbes",
+          "data": "2026-11-19",
+          "doi": "10.1080/19490976.2026.2765035",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43059105/",
+          "tema": "Microbiota",
+          "titolo_it": "Interventi basati sul microbioma intestinale per prevenire le infezioni acquisite in terapia intensiva: revisione sistematica e meta-analisi.",
+          "tipo_studio": "Revisione sistematica e meta-analisi di RCT (9 studi su decontaminazione digestiva selettiva, SDD; 29 studi su supplementazione con biotici), modelli ad effetti casuali",
+          "popolazione": "Pazienti adulti in terapia intensiva (ICU): 9 trial SDD con 19 907 soggetti e 29 trial su supplementazione con biotici (prebiotici, probiotici o simbiotici) con 5 483 soggetti.",
+          "obiettivo": "Confrontare le dimensioni d'effetto di SDD e interventi con biotici su mortalità e outcome infettivi in assenza di RCT di confronto diretto.",
+          "risultati": [
+            "Rispetto a trattamento standard o placebo, nessuno dei due interventi ha ridotto in modo significativo la mortalità globale (SDD: RR = 0,96 [IC 95% 0,88-1,05]; biotici: RR = 0,93 [IC 95% 0,87-1,00]).",
+            "Infezioni acquisite in ICU da tutte le cause: SDD RR = 0,76 (IC 95% 0,60-0,98); biotici RR = 0,82 (IC 95% 0,64-1,05); la differenza tra i due interventi non era statisticamente significativa.",
+            "Polmonite: SDD RR = 0,50 (IC 95% 0,26-0,96); prebiotici e simbiotici RR = 0,70 (IC 95% 0,54-0,90)."
+          ],
+          "limiti": "Studi selezionati eterogenei, in particolare quelli sui biotici (valori di I² non riportati nell'abstract). Ricerca condotta solo su PubMed (2000-2025). Nessun RCT di confronto diretto tra SDD e biotici; il confronto tra interventi è indiretto.",
+          "perche_selezionato": "Mette a confronto indiretto due strategie opposte di modulazione del microbioma intestinale per la prevenzione delle infezioni in terapia intensiva.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43059093",
+          "titolo_originale": "Effects of dietary nitrate supplementation in team sport athletes: a systematic review and meta-analysis.",
+          "rivista": "Journal of the International Society of Sports Nutrition",
+          "rivista_abbr": "J Int Soc Sports Nutr",
+          "data": "2026-11-19",
+          "doi": "10.1080/15502783.2026.2751378",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43059093/",
+          "tema": "Nutrizione sportiva",
+          "titolo_it": "Effetti della supplementazione di nitrato alimentare negli atleti di sport di squadra: revisione sistematica e meta-analisi.",
+          "tipo_studio": "Revisione sistematica e meta-analisi di 24 RCT controllati con placebo (PROSPERO CRD42022358739); modelli multilivello ad effetti casuali (REML), valutazione con RoB 2.0 e GRADE",
+          "popolazione": "Atleti di sport di squadra, n = 365 (277 maschi, 88 femmine); supplementazione acuta (dose singola) o cronica (≥2 giorni, ultima dose 2-3 h prima dell'esercizio).",
+          "obiettivo": "Valutare gli effetti della supplementazione di nitrato (NO3-) sulla performance specifica degli sport di squadra e su esiti fisiologici e biochimici correlati.",
+          "risultati": [
+            "Effetto ergogenico complessivo piccolo ma statisticamente significativo (g = 0,075; IC 95% 0,026-0,124; p = 0,005). Nei compiti specifici degli sport di squadra: g = 0,143 (IC 95% 0,041-0,245; p = 0,011), con bassa eterogeneità e certezza moderata.",
+            "Protocolli cronici: g = 0,145 (IC 95% 0,076-0,214; p < 0,001); protocolli acuti senza effetti chiari. Il contrasto cronico-acuto era significativo (g = 0,118; IC 95% 0,029-0,207; p = 0,013) ma non robusto ad assunzioni più conservative sulla correlazione nei crossover, con certezza ridotta a molto bassa.",
+            "Segnali aggiuntivi meno certi per sforzi ripetuti ad alta intensità e outcome neuromuscolari sensibili alla fatica (entrambi certezza molto bassa); sprint singolo e la maggior parte dei marcatori metabolici/biochimici senza beneficio coerente; risposte cardiorespiratorie in gran parte invariate.",
+            "Le meta-regressioni dose-risposta non hanno mostrato andamenti lineari o non lineari coerenti."
+          ],
+          "limiti": "Evidenza scarsa per alcuni contrasti; certezza molto bassa per il contrasto cronico-acuto e per alcuni outcome. I protocolli cronici includevano anche una dose pre-esercizio, per cui il contrasto non va interpretato come evidenza di adattamento a lungo termine. L'evidenza sui moderatori (protocollo, sesso, livello di allenamento) è suggestiva ma incerta e, secondo gli autori, insufficiente a sostenere indicazioni di dosaggio specifiche. Campione complessivo ridotto, con 88 femmine.",
+          "perche_selezionato": "Valuta con GRADE e analisi di robustezza gli effetti del nitrato alimentare nei soli atleti di sport di squadra, popolazione meno studiata rispetto agli sport di endurance.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43044201",
+          "titolo_originale": "Sarcopenia, a proteomics-derived sarcopenia score, and risk of incident liver outcomes: a prospective cohort study.",
+          "rivista": "The journal of nutrition, health & aging",
+          "rivista_abbr": "J Nutr Health Aging",
+          "data": "2026-11-17",
+          "doi": "10.1016/j.jnha.2026.101029",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43044201/",
+          "tema": "Longevità",
+          "titolo_it": "Sarcopenia, un punteggio di sarcopenia derivato dalla proteomica e rischio di esiti epatici incidenti: studio di coorte prospettico.",
+          "tipo_studio": "Coorte prospettica (UK Biobank), modelli di Cox multivariabili; sviluppo di un punteggio proteomico con validazione interna in cross-validation a cinque fold",
+          "popolazione": "492 305 partecipanti UK Biobank per l'analisi sarcopenia-esiti epatici; sottocoorte proteomica di 51 637 partecipanti per lo sviluppo del punteggio ProSS. Follow-up mediano di circa 14 anni.",
+          "obiettivo": "Esaminare le associazioni prospettiche della sarcopenia con esiti epatici incidenti, sviluppare un punteggio di sarcopenia derivato dalla proteomica (ProSS), valutarne il valore predittivo ed esplorare le vie biologiche associate.",
+          "risultati": [
+            "La sarcopenia è risultata associata a maggior rischio di MASLD incidente (HR 1,37, IC 95% 1,26-1,48), cirrosi (HR 1,58, IC 95% 1,39-1,79), tumore epatico (HR 1,86, IC 95% 1,37-2,52) e mortalità epatica (HR 1,91, IC 95% 1,53-2,38).",
+            "Nella cross-validation, i valori out-of-fold di ProSS erano associati a MASLD (HR 1,49 per aumento di 1 DS, IC 95% 1,38-1,61) e a cirrosi (HR 2,39, IC 95% 2,15-2,65).",
+            "L'aggiunta di ProSS a un modello clinico con lo stato di sarcopenia ha aumentato l'AUC a 10 anni da 0,765 a 0,788 per MASLD (ΔAUC 0,023, IC 95% 0,014-0,033; P<0,001) e da 0,780 a 0,846 per cirrosi (ΔAUC 0,067, IC 95% 0,043-0,091; P<0,001).",
+            "Le analisi di arricchimento hanno evidenziato segnalazione immunitaria e infiammatoria, organizzazione della matrice extracellulare e vie citochine/recettori; le analisi esplorative degli effetti indiretti hanno indicato GDF15, IGFBPL1 e BST2 come principali segnali proteici per MASLD e cirrosi."
+          ],
+          "limiti": "Disegno osservazionale: le associazioni non consentono inferenze causali. Le analisi sugli effetti indiretti dei singoli proteine sono esplorative. La validazione del punteggio è interna (cross-validation); validazione esterna non riportata nell'abstract. Definizione di sarcopenia e fattori di confondimento considerati non riportati nell'abstract.",
+          "perche_selezionato": "Collega la sarcopenia al rischio di esiti epatici in una coorte di grandi dimensioni e valuta il contributo prognostico incrementale di un punteggio proteomico.",
+          "nota_redazione": ""
+        },
+        {
+          "pmid": "43038634",
+          "titolo_originale": "Do lifestyle interventions slow epigenetic aging in middle-aged and older adults? A systematic review and meta-analysis of randomized controlled trials.",
+          "rivista": "Archives of gerontology and geriatrics",
+          "rivista_abbr": "Arch Gerontol Geriatr",
+          "data": "2026-11-15",
+          "doi": "10.1016/j.archger.2026.106484",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/43038634/",
+          "tema": "Longevità",
+          "titolo_it": "Gli interventi sullo stile di vita rallentano l'invecchiamento epigenetico in adulti di mezza età e anziani? Revisione sistematica e meta-analisi di studi randomizzati controllati.",
+          "tipo_studio": "Revisione sistematica e meta-analisi di RCT (registrata prospetticamente, PRISMA 2020); modelli a tre livelli con inferenza cluster-robusta; certezza valutata con GRADE",
+          "popolazione": "Adulti con età media ≥45 anni in RCT di interventi sullo stile di vita (esercizio, dieta, restrizione calorica, multidominio) che riportavano un orologio di metilazione del DNA (DNAm) validato. Inclusi 9 RCT, 8 dei quali aggregati (1 675 partecipanti; 27 stime a livello di orologio).",
+          "obiettivo": "Valutare se gli interventi sullo stile di vita rallentano l'invecchiamento basato su orologi di metilazione del DNA in adulti di mezza età e anziani.",
+          "risultati": [
+            "Nessun effetto statisticamente significativo per gli orologi dell'età cronologica (SMD -0,04, IC 95% -0,31 a 0,24), gli orologi fenotipici/di mortalità (-0,17, da -0,42 a 0,09) e DunedinPACE (-0,01, da -0,17 a 0,15); SMD negativo = invecchiamento più lento.",
+            "I due trial più ampi erano centrati sul valore nullo (-0,01, da -0,06 a 0,04); le stime favorevoli provenivano da trial più piccoli.",
+            "I risultati erano coerenti nelle analisi di sensibilità, inclusa quella con un orologio per trial (-0,26, da -0,57 a 0,06). Certezza dell'evidenza da bassa a molto bassa.",
+            "Secondo gli autori, un piccolo effetto sugli orologi fenotipici/di mortalità non può essere escluso."
+          ],
+          "limiti": "Certezza dell'evidenza da bassa a molto bassa. Numero ridotto di RCT (8 aggregati). Le stime favorevoli provengono da trial più piccoli. Gli autori indicano la necessità di trial con adeguata potenza, orologio primario pre-specificato e reporting standardizzato.",
+          "perche_selezionato": "Verifica con evidenza randomizzata se gli interventi sullo stile di vita modificano gli orologi epigenetici, usati come endpoint surrogati dell'invecchiamento biologico.",
+          "nota_redazione": ""
+        }
+      ]
+    },
+    {
       "settimana": "2026-11-16",
       "articoli": [
         {
@@ -358,5 +477,5 @@
       ]
     }
   ],
-  "aggiornato": "2026-11-16T14:41+01:00"
+  "aggiornato": "2026-11-23T17:00+01:00"
 }
